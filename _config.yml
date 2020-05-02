@@ -31,7 +31,7 @@ github_username:  jacqkevin
 linkedin_username: kevinjacq
 
 # Build settings
-theme: cayman
+theme: minima
 plugins:
   - jekyll-feed
 
