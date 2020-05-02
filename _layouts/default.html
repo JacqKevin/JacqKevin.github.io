@@ -36,7 +36,17 @@
         <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
       {% endif %}
       {% if site.show_onglets %}
- 	<div class="vertical-menu">
+ 	<a href="https://jacqkevin.github.io/HSI_Visualization/" class="btn" role="button">HSI visualize</a>
+	<a href="https://jacqkevin.github.io/HSI_PLSR/" class="btn" role="button">PLS regression</a>
+	<a href="https://jacqkevin.github.io/HSI_Regression/" class="btn" role="button">Regression</a>
+	<a href="https://jacqkevin.github.io/HSI_Spectral_Indices/" class="btn" role="button">Indices</a>
+	<a href="https://jacqkevin.github.io/HSI_SupervisedClassification/" class="btn" role="button">Supervised classification</a>
+      {% endif %}
+    </header>
+
+    <main id="content" class="main-content" role="main">
+	<div class="sidenav">
+ 	 <div class="vertical-menu">
 	<a href="#" class="active">Matlab</a>
 	<a href="https://jacqkevin.github.io/HSI_Visualization/">HSI visualize</a>
 	<a href="https://jacqkevin.github.io/HSI_PLSR/">PLS regression</a>
@@ -44,10 +54,11 @@
 	<a href="https://jacqkevin.github.io/HSI_Spectral_Indices/">Indices</a>
 	<a href="https://jacqkevin.github.io/HSI_SupervisedClassification/">Supervised classification</a>
 	</div> 
-      {% endif %}
-    </header>
+	  <a href="#">Services</a>
+	  <a href="#">Clients</a>
+	  <a href="#">Contact</a>
+	</div>
 
-    <main id="content" class="main-content" role="main">
       {{ content }}
 
       <footer class="site-footer">
