@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: PLSR
 permalink: https://jacqkevin.github.io/HSI_PLSR/
 ---
 
