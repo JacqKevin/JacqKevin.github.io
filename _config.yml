@@ -1,9 +1,11 @@
 theme: jekyll-theme-cayman
 
-title: Hyperspectral imaging precessing Matlab toolboxes
-description: Matlab toolboxes to precess hyperspectral image
+title: Hyperspectral imaging processing Matlab toolboxes
+description: Matlab toolboxes to process hyperspectral image
 
 ogle_analytics: 108259528
 
 github_username:  jacqkevin
 linkedin_username: kevinjacq
+
+show_downloads: true
