@@ -2,19 +2,6 @@
 layout: default
 ---
 
-<div class="sidenav">
- 	 <div class="vertical-menu">
-	<a href="#" class="active">Matlab</a>
-	<a href="https://jacqkevin.github.io/HSI_Visualization/">HSI visualize</a>
-	<a href="https://jacqkevin.github.io/HSI_PLSR/">PLS regression</a>
-	<a href="https://jacqkevin.github.io/HSI_Regression/">Regression</a>
-	<a href="https://jacqkevin.github.io/HSI_Spectral_Indices/">Indices</a>
-	<a href="https://jacqkevin.github.io/HSI_SupervisedClassification/">Supervised classification</a>
-	</div> 
-	  <a href="#">Services</a>
-	  <a href="#">Clients</a>
-	  <a href="#">Contact</a>
-	</div>
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
