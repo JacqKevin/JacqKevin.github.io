@@ -1,15 +1,17 @@
 ---
 layout: pageCV
-title: Curriculum Vitae
-description: Curriculum Vitae
+title: CV
+description: Curriculum Vitae and publications
 ---
+
+# Current position
 
 # Education & professional experience
 
 <table style="width:100%">
   <tr>
-    <th>2020</th>
-    <th>Postoctoral Research Fellow - M2C laboratory - Rouen Normandie University - CNRS</th> 
+    <p style="color:DodgerBlue;"><th>2020</th></p>
+    <p style="color:DodgerBlue;"><th>Postoctoral Research Fellow - M2C laboratory - Rouen Normandie University - CNRS</th></p>
   </tr>
   <tr>
     <td>2016-2019</td>
