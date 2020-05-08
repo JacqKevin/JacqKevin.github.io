@@ -1,5 +1,5 @@
 ---
-layout: pagePublications
+layout: pageCV
 title: Publications
 description: Publications
 ---
