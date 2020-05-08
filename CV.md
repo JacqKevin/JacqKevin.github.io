@@ -10,8 +10,8 @@ description: Curriculum Vitae and publications
 
 <table style="width:100%">
   <tr>
-    <p style="color:DodgerBlue;"><th>2020</th></p>
-    <p style="color:DodgerBlue;"><th>Postoctoral Research Fellow - M2C laboratory - Rouen Normandie University - CNRS</th></p>
+    <th><p style="color:DodgerBlue;">2020</p></th>
+    <th><p style="color:DodgerBlue;">Postoctoral Research Fellow - M2C laboratory - Rouen Normandie University - CNRS</p></th>
   </tr>
   <tr>
     <td>2016-2019</td>
