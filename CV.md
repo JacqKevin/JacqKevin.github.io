@@ -1,7 +1,7 @@
 ---
 layout: pageCV
-title: CV
-description: Curriculum Vitae and publications
+title: Curriculum Vitae
+description: Curriculum Vitae
 ---
 
 # Education & professional experience
