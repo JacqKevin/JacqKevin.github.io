@@ -10,6 +10,11 @@ description: Curriculum Vitae and publications
 
 <table style="width:100%">
   <tr>
+    <th>Year</th>
+    <th>Position - Employer</th>
+    <th>Keywords</th>
+  </tr>
+  <tr>
     <th><p style="color:DodgerBlue;">2020</p></th>
     <th><p style="color:DodgerBlue;">Postoctoral Research Fellow - <a href="https://www.unicaen.fr/m2c/">M2C laboratory</a> - <a href="https://www.univ-rouen.fr/">Rouen Normandie University</a> - <a href="http://www.cnrs.fr/fr/page-daccueil">CNRS</a></p></th>
     <th><p style="color:DodgerBlue;">Hyperspectral imaging, Chemometrics, Image processing, Machine Learning, Organic matter, Sedimentology, Matlab, ENVI+IDL</p></th>
