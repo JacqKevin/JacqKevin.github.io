@@ -1,0 +1,39 @@
+<?php
+ $title = 'Publications';
+ include("header.php");
+
+ if (isset($_GET))
+ {
+ $author  = $_GET["author"];
+ $keyword = $_GET["keyword"]; 
+ $year    = $_GET["year"];
+ } 
+
+ $author_disp = $author;
+ $author = str_replace(" ","%20",$author); /* replace spaces by %20 to pass over to haltools, fails otherwise */
+
+ $fieldsize = 15;
+?>
+  
+<h1>LEAR Publications</h1>
+<form action='http://lear.inrialpes.fr/publications_lear.php' method='get'>
+<?php
+echo "Author: <input type='text' size='$fieldsize' name='author' value='$author_disp'> ";
+echo "Title word: <input type='text' size='$fieldsize' name='keyword' value='$keyword'> ";
+echo "Year: <input type='text' size='$fieldsize' name='year' value='$year'>   ";
+echo "<BUTTON type='submit'> Search </button>";
+  
+echo "</form>";
+echo "<div id=\"content\">";
+
+$team_subset = "labos_exp=2398;44942&auteurs_EPI=cordelia,schmid;jakob,verbeek;matthijs,douze;zaid,harchaoui;thomas,mensink;remi,ronfard;laurent,zwald;frederic,jurie";
+
+$url = "https://haltools.inria.fr/Public/afficheRequetePubli.php?&$team_subset&auteur_exp=$author&titre=$keyword&annee_publideb=$year&annee_publifin=$year&CB_auteur=oui&CB_titre=oui&CB_article=oui&CB_vignette=oui&langue=Anglais&tri_exp=annee_publi&tri_exp2=date_publi&tri_exp3=titre&ordre_aff=TA&Fen=Aff";
+
+echo utf8_decode( file_get_contents($url));  
+
+?>
+
+</div> 
+</body>
+</html>
