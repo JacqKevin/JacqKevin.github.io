@@ -11,19 +11,19 @@ description: Curriculum Vitae and publications
 <table style="width:100%">
   <tr>
     <th><p style="color:DodgerBlue;">2020</p></th>
-    <th><p style="color:DodgerBlue;">Postoctoral Research Fellow - M2C laboratory - Rouen Normandie University - CNRS</p></th>
+    <th><p style="color:DodgerBlue;">Postoctoral Research Fellow - <a href="https://www.unicaen.fr/m2c/">M2C laboratory</a> - <a href="https://www.univ-rouen.fr/">Rouen Normandie University</a> - <a href="http://www.cnrs.fr/fr/page-daccueil">CNRS</a></p></th>
   </tr>
   <tr>
     <td><p style="color:MediumSeaGreen;">2016-2019</p></td>
-    <td><p style="color:MediumSeaGreen;">PhD - EDYTEM-LISTIC laboratory - Savoie Mont Blanc University - CNRS</p></td>
+    <td><p style="color:MediumSeaGreen;"><a href="http://www.theses.fr/s188783">PhD</a> - <a href="http://edytem.cnrs.fr/">EDYTEM</a> - <a href="https://www.listic.univ-smb.fr/">LISTIC</a> laboratories - <a href="https://www.univ-smb.fr/">Savoie Mont Blanc University</a> - <a href="http://www.cnrs.fr/fr/page-daccueil">CNRS</a></p></td>
   </tr>
   <tr>
     <td><p style="color:DodgerBlue;">2015-2016</p></td>
-    <td><p style="color:DodgerBlue;">Technician - Ecole d'Ingénieurs de Purpan</p></td>
+    <td><p style="color:DodgerBlue;">Technician - <a href="www.purpan.fr">EIP</a></p></td>
   </tr>
   <tr>
     <td><p style="color:DodgerBlue;">2015</p></td>
-    <td><p style="color:DodgerBlue;">Trainee - Ecole d'Ingénieurs de Purpan / Agronutrition</p></td>
+    <td><p style="color:DodgerBlue;">Trainee - <a href="www.purpan.fr">EIP</a> / <a href="https://www.agronutrition.com/fr">Agronutrition</a></p></td>
   </tr>
   <tr>
     <td><p style="color:DodgerBlue;">2014</p></td>
@@ -31,11 +31,11 @@ description: Curriculum Vitae and publications
   </tr>
   <tr>
     <td><p style="color:MediumSeaGreen;">2013-2015</p></td>
-    <td><p style="color:MediumSeaGreen;">MSC in chemometrics- Université de Bretagne Occidentale</p></td>
+    <td><p style="color:MediumSeaGreen;"><a href="https://www.univ-brest.fr/departement-chimie/menu/FORMATIONS/Masters_/Parcours--CACQ-OPEx-">MSC in chemometrics</a> - <a href="https://www.univ-brest.fr/">Université de Bretagne Occidentale</a></p></td>
   </tr>
   <tr>
     <td><p style="color:MediumSeaGreen;">2010-2013</p></td>
-    <td><p style="color:MediumSeaGreen;">BSC in Physical-Chemical - Université de Bretagne Occidentale</p></td>
+    <td><p style="color:MediumSeaGreen;">BSC in Physical-Chemical - <a href="https://www.univ-brest.fr/">Université de Bretagne Occidentale</a></p></td>
   </tr>
 </table>
 
