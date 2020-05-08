@@ -1,5 +1,5 @@
 ---
-layout: pageCV
-title: CV
-description: Curriculum Vitae and publications
+layout: pagePublications
+title: Publications
+description: Publications
 ---
