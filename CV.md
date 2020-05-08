@@ -18,16 +18,16 @@ description: Curriculum Vitae and publications
     <td>PhD - EDYTEM-LISTIC laboratory - Savoie Mont Blanc University - CNRS</td>
   </tr>
   <tr>
-    <td>2015-2016</td>
-    <td>Technician - Ecole d'Ingénieurs de Purpan</td>
+    <td><p style="color:DodgerBlue;">2015-2016</p></td>
+    <td><p style="color:DodgerBlue;">Technician - Ecole d'Ingénieurs de Purpan</p></td>
   </tr>
   <tr>
-    <td>2015</td>
-    <td>Trainee - Ecole d'Ingénieurs de Purpan / Agronutrition</td>
+    <td><p style="color:DodgerBlue;">2015</p></td>
+    <td><p style="color:DodgerBlue;">Trainee - Ecole d'Ingénieurs de Purpan / Agronutrition</p></td>
   </tr>
   <tr>
-    <td>2014</td>
-    <td> Trainee - HOCER</td>
+    <td><p style="color:DodgerBlue;">2014</td>
+    <td><p style="color:DodgerBlue;">Trainee - HOCER</td>
   </tr>
   <tr>
     <td>2013-2015</td>
