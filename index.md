@@ -4,6 +4,8 @@ layout: default
 
 Description soon
 
+<h1>News</h1>
+
 <ul>
   {% for post in site.posts %}
     <li>
