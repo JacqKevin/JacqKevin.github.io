@@ -5,7 +5,7 @@ date:   2019-01-24
 categories: jekyll update
 ---
 
-Publication of the paper "High-resolution prediction of organic matter concentration with hyperspectral imaging on a sediment core" that present the Matlab PLSR toolbox to create regression model with hyperspectral image and reference data.
+Publication of the paper <a href="https://www.sciencedirect.com/science/article/pii/S0048969719303699">"High-resolution prediction of organic matter concentration with hyperspectral imaging on a sediment core"</a> in Science of The Total Environment. It presents the Matlab PLSR toolbox to create regression model with hyperspectral image and reference data.
 
 Abstract:
 
