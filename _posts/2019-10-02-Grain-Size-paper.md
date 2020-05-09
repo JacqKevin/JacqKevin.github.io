@@ -2,7 +2,7 @@
 layout: post
 title: "Publication of "High-resolution grain size distribution of sediment core with hyperspectral imaging""
 date: 2019-07-02
-categories: jekyll update
+categories: Publication
 ---
 
 Publication of <a href="https://www.sciencedirect.com/science/article/abs/pii/S0037073819301861">"High-resolution grain size distribution of sediment core with hyperspectral imaging"</a> in Sedimentary Geology. It use the Matlab PLSR toolbox to create a particle size regression model with hyperspectral image. This allows to characterize sediment sources and understand the sedimentation.
