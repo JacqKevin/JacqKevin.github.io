@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Publication of "High-resolution prediction of organic matter concentration with hyperspectral imaging on a sediment core""
+title: "Publication of High-resolution prediction of organic matter concentration with hyperspectral imaging on a sediment core"
 date: 2019-01-24
 categories: Publication
 ---
