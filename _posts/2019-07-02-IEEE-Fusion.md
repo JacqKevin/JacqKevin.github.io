@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Presentation of the paper of "Study of pansharpening methods applied to hyperspectral images of sediment cores" at the IEEE Fusion 2019 congress"
+title: "Presentation of the paper of Study of pansharpening methods applied to hyperspectral images of sediment cores at the IEEE Fusion 2019 congress"
 date: 2019-07-02
 categories: [Publication, Congress]
 ---
