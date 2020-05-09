@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Publication of "High-resolution grain size distribution of sediment core with hyperspectral imaging""
+title: "Publication of High-resolution grain size distribution of sediment core with hyperspectral imaging"
 date: 2019-07-02
 categories: Publication
 ---
