@@ -5,7 +5,7 @@ date:   2019-07-02
 categories: jekyll update
 ---
 
-Presentation of the paper of "Study of pansharpening methods applied to hyperspectral images of sediment cores" at the IEEE Fusion 2019 congress.
+Presentation of the paper of <a href="https://ieeexplore.ieee.org/abstract/document/9011365">"Study of pansharpening methods applied to hyperspectral images of sediment cores"</a> at the IEEE Fusion 2019 congress.
 
 Abstract:
 
