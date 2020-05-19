@@ -31,7 +31,7 @@ entries:
     output: web, pdf
 
     folderitems:
-    - title: Regresssions
+    - title: Regressions
       url: /HSI_Regressions.html
       output: web, pdf
 
