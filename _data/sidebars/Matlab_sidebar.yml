@@ -1,0 +1,60 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+
+entries:
+- title: Sidebar
+  product: Matlab
+  version: 1.0
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: PLS Regression
+    output: web, pdf
+    folderitems:
+    - title: PLS Regression
+      url: /HSI_PLSR.html
+      output: web
+
+  - title: Regressions
+    output: web, pdf
+
+    folderitems:
+    - title: Regresssions
+      url: /HSI_Regressions.html
+      output: web, pdf
+
+  - title: Spectral indices
+    output: web, pdf
+
+    folderitems:
+    - title: Spectral indices
+      url: /HSI_SpectralIndices.html
+      output: web, pdf
+
+  - title: Supervised Classification
+    output: web, pdf
+
+    folderitems:
+    - title: Supervised Classification
+      url: /HSI_SupervisedClassification.html
+      output: web, pdf
+
+  - title: HSI visualization
+    output: web, pdf
+
+    folderitems:
+    - title: HSI visualization
+      url: /HSIvisualize.html
+      output: web, pdf
