@@ -8,10 +8,6 @@
       "config": {"distDir": "public"}
     }
   ]
-}
-
-{
-  ...
   "routes": [
     {"src": "/JacqKevin.github.io(/.*)?", "dest": "$1"},
     {
