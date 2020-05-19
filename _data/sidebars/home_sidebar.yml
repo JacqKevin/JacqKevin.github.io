@@ -9,18 +9,10 @@ entries:
     output: web
     folderitems:
     - title: News
-      url: /news.html
+      url: /news
       output: web
     - title: Toolboxes
-      folderitems:
-        - title: Matlab
-          url: /Matlab.html
-        - title: IDL
-          url: /IDL.html
-        - title: Python
-          url: /Python.html
-        - title: Others
-          url: /Others.html
+      url: /Toolboxes.html
       output: web
     - title: Data
       url: /Data.html
