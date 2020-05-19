@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-{%- assign _sections = site.sections | sort: 'order' -%}
-{%- include header.html scrolly_nav=_sections -%}
+{%- assign _sectionsMatlab = site.sectionsMatlab | sort: 'order' -%}
+{%- include header.html scrolly_nav=_sectionsMatlab -%}
 <!-- Main -->
 <div id="main">
 	{%- if page.content != "" -%}
