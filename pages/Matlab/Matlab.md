@@ -6,6 +6,6 @@ sidebar: Matlab_sidebar
 ---
 
 
-{% include file="Matlab.jpg" %}
+{% include image.html file="Matlab.jpg" %}
 
 
