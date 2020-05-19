@@ -4,4 +4,7 @@ description: Matlab toolboxes
 permalink: Matlab.html
 ---
 
-<center><img src="Matlab.jpg" width="900"/></center>
+
+{% include image.html file="Matlab.jpg" %}
+
+
