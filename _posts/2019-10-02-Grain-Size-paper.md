@@ -1,6 +1,7 @@
 ---
 title: "Publication of High-resolution grain size distribution of sediment core with hyperspectral imaging"
 published: true
+permalink: GrainSizepaper.html
 date: 2019-10-02
 tags: Publication
 ---
