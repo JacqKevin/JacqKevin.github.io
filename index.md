@@ -1,8 +1,8 @@
 ---
 title: "Toolboxes to process Hyperspectral Images"
 keywords: sample homepage
-tags: [home]
+#tags: [home]
 permalink: index.html
-summary: Toolboxes to process Hyperspectral Images.
+#summary: Toolboxes to process Hyperspectral Images.
 ---
 Available soon
