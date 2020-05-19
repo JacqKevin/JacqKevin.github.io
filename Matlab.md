@@ -1,7 +1,0 @@
----
-layout: pageMatlab
-title: Matlab
-description: Matlab toolboxes
----
-
-<center><img src="Matlab.jpg" width="900"/></center>
