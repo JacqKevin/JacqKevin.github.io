@@ -2,6 +2,7 @@
 title: Partial Least Squares regression modeling
 description: Matlab Toolbox for the creation of a PLSR model
 permalink: HSI_PLSR.html
+sidebar: Matlab_sidebar
 ---
 
 # Matlab Toolbox for the creation of a PLSR model
