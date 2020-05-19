@@ -58,3 +58,11 @@ entries:
     - title: HSI visualization
       url: /HSIvisualize.html
       output: web, pdf
+
+  - title: Fusion
+    output: web, pdf
+
+    folderitems:
+    - title: Fusion
+      url: /Fusion.html
+      output: web, pdf
