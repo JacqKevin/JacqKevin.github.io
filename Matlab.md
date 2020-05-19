@@ -1,7 +1,7 @@
 ---
 title: Matlab
 subtitle: Matlab toolboxes
-layout: "page"
+layout: "homeMatlab"
 icon: fa-book
 order: 3
 ---
