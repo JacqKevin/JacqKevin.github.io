@@ -28,6 +28,6 @@ topnav_dropdowns:
         - title: CV
           url: /CV.html
         - title: Publications
-           url: /Publications.html
+          url: /Publications.html
         - title: Other valorisations
           url: /OtherValo.html
