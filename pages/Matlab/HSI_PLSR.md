@@ -17,7 +17,7 @@ Jacq, K., Giguet-Covex, C., et al. (2019) High-resolution grain size distributio
 
 # Worflow
 
-<img src="CreateModel.jpg" width="600"/>
+{% include image.html file="CreateModel.jpg" %}
 
 ## Raw data
 
@@ -30,7 +30,8 @@ Generally, the hyperspectral image unity is reflectance (R). According to Beer-L
 The two depth vectors are then compared to find the hyperspectral pixels related to a sampling area.
 
 ## Spectral preprocessing
-![](Preprocessing.jpg)
+
+{% include image.html file="Preprocessing.jpg" %}
 
 In this toolbox, four main preprocessing are used, also nine combinations of them. Thus, thirteen preprocessing and the raw data are compared to find an optimal one. They allow to reduce noise and highlight relevant spectral information to predict the interest variable(s).
 
