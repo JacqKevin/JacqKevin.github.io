@@ -2,6 +2,7 @@
 title: Spectroscopic and Remote Sensing indices
 description: Estimation of several chemical parameters based on literature indices. Some were created from spectroscopic and hyperspectral devices, others from remote sensing (multi- and hyper-spectral sensors).
 permalink: HSI_SpectralIndices.html
+sidebar: Matlab_sidebar
 ---
 
 # Toolbox
