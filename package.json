@@ -1,10 +1,10 @@
 {
   "name": "Site",
-  "repository": "JacqKevin/Site",
+  "repository": "JacqKevin/JacqKevin.github.io",
   "version": "1.0.0",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "now-build": "npm run build"
   },
   "dependencies": {
