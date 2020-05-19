@@ -23,6 +23,6 @@ entries:
   - title: Python
     output: web, pdf
     folderitems:
-    - title: PPython
+    - title: Python
       url: /Python.html
       output: web
