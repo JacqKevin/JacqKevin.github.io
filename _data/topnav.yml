@@ -22,8 +22,7 @@ topnav_dropdowns:
           url: /Python.html
         - title: Others
           url: /Others.html
-     - title: Data
-          url: /Data.html
+    - title: Data
     - title: About
       folderitems:
         - title: CV
