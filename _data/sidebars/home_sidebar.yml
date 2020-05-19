@@ -5,18 +5,26 @@ entries:
   levels: one
   folders:
 
-  - title: Products
+  - title: Site
     output: web
     folderitems:
     - title: News
       url: /news.html
       output: web
-    - title: Theme instructions
-      url: /mydoc_introduction.html
+    - title: Toolboxes
+      folderitems:
+        - title: Matlab
+          url: /Matlab.html
+        - title: IDL
+          url: /IDL.html
+        - title: Python
+          url: /Python.html
+        - title: Others
+          url: /Others.html
       output: web
-    - title: Product 1
-      url: /p1_landing_page.html
+    - title: Data
+      url: /Data.html
       output: web
-    - title: Product 2
-      url: /p2_landing_page.html
+    - title: About
+      url: /CV.html
       output: web
