@@ -1,5 +1,6 @@
 ---
 title: "Publication of High-resolution prediction of organic matter concentration with hyperspectral imaging on a sediment core"
+permalink: PLSRpaper.html
 published: true
 date: 2019-01-24
 tags: Publication
