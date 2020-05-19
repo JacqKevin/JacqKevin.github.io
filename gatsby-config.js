@@ -5,4 +5,5 @@ module.exports = {
     description: 'by Kévin Jacq',
   },
   plugins: ['@primer/gatsby-theme-doctocat'],
+  pathPrefix: '/HSItoolboxes',
 }
