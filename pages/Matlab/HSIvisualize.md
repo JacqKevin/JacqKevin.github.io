@@ -2,6 +2,7 @@
 title: Hyperspectral image visualization
 description: Toolbox to visualize an hyperspectral image on the spatial and/or spectral dimension.
 permalink: HSIvisualize.html
+sidebar: Matlab_sidebar
 ---
 
 # Toolbox
