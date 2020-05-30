@@ -2,7 +2,7 @@
 
 entries:
 - title: Sidebar
-  levels: one
+  #levels: one
   folders:
 
   - title:
