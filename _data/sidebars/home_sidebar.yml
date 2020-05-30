@@ -9,10 +9,12 @@ entries:
     output: pdf
     type: frontmatter
     folderitems:
+
     - title:
       url: /titlepage.html
       output: pdf
       type: frontmatter
+
     - title:
       url: /tocpage.html
       output: pdf
@@ -21,23 +23,31 @@ entries:
   - title: Site
     output: web
     folderitems:
+
     - title: News
       url: /news
       output: web
+
     - title: Toolboxes
       output: web
-      subfolderitems:
+      subfolders:
+
       - title: Matlab
         url: /Matlab.html
+
       - title: IDL
         url: /IDL.html
+
       - title: Python
         url: /Python.html
+
       - title: Others
         url: /Others.html
+
     - title: Data
       url: /Data.html
       output: web
+
     - title: About
       url: /CV.html
       output: web
