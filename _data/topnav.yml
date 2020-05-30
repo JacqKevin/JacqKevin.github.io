@@ -15,7 +15,7 @@ topnav_dropdowns:
     - title: Toolboxes
       folderitems:
         - title: Matlab
-          url: /Matlab.md
+          url: /Matlab.html
         - title: IDL
           url: /IDL.html
         - title: Python
