@@ -2,6 +2,7 @@
 title: Matlab
 description: Matlab toolboxes
 permalink: Matlab.html
+toc: false
 sidebar: Matlab_sidebar
 ---
 
