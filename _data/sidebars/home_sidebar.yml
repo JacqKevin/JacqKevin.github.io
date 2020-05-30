@@ -25,8 +25,16 @@ entries:
       url: /news
       output: web
     - title: Toolboxes
-      url: /Toolboxes.html
       output: web
+      subfolderitems:
+        - title: Matlab
+          url: /Matlab.html
+        - title: IDL
+          url: /IDL.html
+        - title: Python
+          url: /Python.html
+        - title: Others
+          url: /Others.html
     - title: Data
       url: /Data.html
       output: web
