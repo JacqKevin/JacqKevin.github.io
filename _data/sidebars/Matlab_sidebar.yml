@@ -1,14 +1,87 @@
-# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
-
-
 entries:
 - title: sidebar
   product: Matlab
   folders:
-
   - title: Introduction
     output: web, pdf
     folderitems:
+
     - title: Overview
       url: /Matlab.html
       output: web
+
+    - title: Overview
+      url: /Matlab.html
+      output: web
+
+  - title: PLS Regression
+    output: web, pdf
+    folderitems:
+
+    - title: PLS Regression
+      url: /HSI_PLSR.html
+      output: web, pdf
+
+    - title: PLS Regression
+      url: /HSI_PLSR.html
+      output: web, pdf
+
+  - title: Regressions
+    output: web, pdf
+    folderitems:
+
+    - title: Regressions
+      url: /HSI_Regressions.html
+      output: web, pdf
+
+    - title: Regressions
+      url: /HSI_Regressions.html
+      output: web, pdf
+
+  - title: Spectral indices
+    output: web, pdf
+    folderitems:
+
+    - title: Spectral indices
+      url: /HSI_SpectralIndices.html
+      output: web, pdf
+
+    - title: Spectral indices
+      url: /HSI_SpectralIndices.html
+      output: web, pdf
+
+  - title: Supervised Classification
+    output: web, pdf
+    folderitems:
+
+    - title: Supervised Classification
+      url: /HSI_SupervisedClassification.html
+      output: web, pdf
+
+    - title: Supervised Classification
+      url: /HSI_SupervisedClassification.html
+      output: web, pdf
+
+  - title: HSI visualization
+    output: web, pdf
+    folderitems:
+
+    - title: HSI visualization
+      url: /HSIvisualize.html
+      output: web, pdf
+
+    - title: HSI visualization
+      url: /HSIvisualize.html
+      output: web, pdf
+
+  - title: Fusion
+    output: web, pdf
+    folderitems:
+
+    - title: Fusion
+      url: /Fusion.html
+      output: web, pdf
+
+    - title: Fusion
+      url: /Fusion.html
+      output: web, pdf
