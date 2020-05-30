@@ -97,13 +97,47 @@ defaults:
       sidebar: home_sidebar
       topnav: topnav
 
+  -
+    scope:
+      path: "pages/Matlab"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      sidebar: Matlab_sidebar
+      topnav: topnav
+
+  -
+    scope:
+      path: "pages/IDL"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      sidebar: IDL_sidebar
+      topnav: topnav
+
+  -
+    scope:
+      path: "pages/Python"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      sidebar: Python_sidebar
+      topnav: topnav
+
 # these are defaults used for the frontmatter for these file types
 
 sidebars:
 - home_sidebar
-- mydoc_sidebar
-- product1_sidebar
-- product2_sidebar
+- Matlab_sidebar
+- IDL_sidebar
+- Python_sidebar
+- Others_sidebar
 - other
 
 description: "Hyperspectral imaging toolboxes"
