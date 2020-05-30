@@ -1,6 +1,6 @@
 ---
-title: CV
-description: Curriculum Vitae and publications
+title: Other valorisations
+description: Other valorisations
 permalink: OtherValo.html
 ---
 
