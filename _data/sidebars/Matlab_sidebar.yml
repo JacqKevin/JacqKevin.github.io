@@ -4,7 +4,7 @@
 entries:
 - title: Sidebar
   product: Matlab
-  folders:
+  folders: /Matlab
 
   - title:
     output: pdf
