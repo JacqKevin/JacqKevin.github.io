@@ -19,6 +19,13 @@ entries:
       output: pdf
       type: frontmatter
 
+  - title: Introduction
+    output: web, pdf
+    folderitems:
+    - title: Overview
+      url: /Matlab.html
+      output: web
+
   - title: PLS Regression
     output: web, pdf
     folderitems:
@@ -28,7 +35,6 @@ entries:
 
   - title: Regressions
     output: web, pdf
-
     folderitems:
     - title: Regressions
       url: /HSI_Regressions.html
@@ -36,7 +42,6 @@ entries:
 
   - title: Spectral indices
     output: web, pdf
-
     folderitems:
     - title: Spectral indices
       url: /HSI_SpectralIndices.html
@@ -44,7 +49,6 @@ entries:
 
   - title: Supervised Classification
     output: web, pdf
-
     folderitems:
     - title: Supervised Classification
       url: /HSI_SupervisedClassification.html
@@ -52,7 +56,6 @@ entries:
 
   - title: HSI visualization
     output: web, pdf
-
     folderitems:
     - title: HSI visualization
       url: /HSIvisualize.html
@@ -60,7 +63,6 @@ entries:
 
   - title: Fusion
     output: web, pdf
-
     folderitems:
     - title: Fusion
       url: /Fusion.html
