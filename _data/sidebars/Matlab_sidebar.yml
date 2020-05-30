@@ -31,7 +31,7 @@ entries:
     folderitems:
     - title: PLS Regression
       url: /HSI_PLSR.html
-      output: web
+      output: web, pdf
 
   - title: Regressions
     output: web, pdf
