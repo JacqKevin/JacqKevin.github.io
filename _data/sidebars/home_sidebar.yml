@@ -13,6 +13,26 @@ entries:
 
     -
 
+  - title: Hyperspectral imaging
+    output: web
+    folderitems:
+
+    - title: Introduction
+      url: /Introduction_HSI.html
+      output: web
+
+    - title: Preprocessings
+      url: //Preprocessing_HSI.html
+      output: web
+
+    - title: Methods
+      url: /Methods_HSI.html
+      output: web
+
+    - title: Applications
+      url: /Applications_HSI.html
+      output: web
+
   - title: Toolboxes
     output: web
     folderitems:
@@ -33,12 +53,13 @@ entries:
       url: /Others.html
       output: web
 
-  - title: Data
-    url: /Data.html
+  - title: Hyperspectral Data
     output: web
     folderitems:
 
-    -
+    - title: Hyperspectral Data
+      url: /HSI_Data.html
+      output: web
 
   - title: About
     url: /CV.html
