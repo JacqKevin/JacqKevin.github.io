@@ -9,6 +9,9 @@ entries:
   - title: News
     url: /news
     output: web
+    folderitems:
+
+    -
 
   - title: Toolboxes
     output: web
@@ -33,7 +36,13 @@ entries:
   - title: Data
     url: /Data.html
     output: web
+    folderitems:
+
+    -
 
   - title: About
     url: /CV.html
     output: web
+    folderitems:
+
+    -
