@@ -6,51 +6,60 @@ entries:
   folders:
 
   - title: Overview
-    url: /Matlab.html
     output: web
     folderitems:
 
-    -
+    - title: Worflow
+      url: /Matlab.html
+      output: web
 
   - title: PLS Regression
-    url: /HSI_PLSR.html
     output: web
     folderitems:
 
-    -
+    - title: Worflow
+      url: /HSI_PLSR.html
+      output: web
 
   - title: Regressions
-    url: /HSI_Regressions.html
     output: web
     folderitems:
 
-    -
+    - title: Worflow
+      url: /HSI_Regressions.html
+      output: web
 
   - title: Spectral indices
-    url: /HSI_SpectralIndices.html
     output: web
     folderitems:
 
-    -
+    - title: Worflow
+      url: /HSI_SpectralIndices.html
+      output: web
 
   - title: Supervised Classification
-    url: /HSI_SupervisedClassifications.html
     output: web
     folderitems:
 
-    -
+    - title: Worflow
+      url: /HSI_SupervisedClassifications.html
+      output: web
 
   - title: HSI visualization
-    url: /HSI_Visualize.html
     output: web
     folderitems:
 
-    -
+    - title: Worflow
+      url: /HSI_Visualize.html
+      output: web
 
   - title: Fusion
-    url: /Fusion.html
     output: web
     folderitems:
+
+    - title: Worflow
+      url: /Fusion.html
+      output: web
 
     - title: Fusion at high resolution
       url: /FusionHR.html
