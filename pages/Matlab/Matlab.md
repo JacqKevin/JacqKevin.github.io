@@ -5,10 +5,11 @@ sidebar: Matlab_sidebar
 folder: Matlab
 ---
 
-<p> Description soon!! </p>
+## Proposed workflow 
+
+Description soon!!
 
 
-#{% include image.html file="Matlab.jpg" %}
-<img src="images/Matlab.jpg">
+{% include image.html file="Matlab.jpg" %}
 
 
