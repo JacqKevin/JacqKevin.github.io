@@ -1,7 +1,7 @@
 ---
-title: Data
+title: Hyperspectral data
 description: Open hyperspectral image database
-permalink: Data.html
+permalink: HSI_Data.html
 ---
 
 Available soon
