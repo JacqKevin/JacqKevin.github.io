@@ -6,22 +6,9 @@ entries:
   product: Python
   folders:
 
-  - title:
-    output: pdf
-    type: frontmatter
-    folderitems:
-    - title:
-      url: /titlepage.html
-      output: pdf
-      type: frontmatter
-    - title:
-      url: /tocpage.html
-      output: pdf
-      type: frontmatter
-
   - title: Python
-    output: web, pdf
+    url: /Python.html
+    output: web
     folderitems:
-    - title: Python
-      url: /Python.html
-      output: web
+
+    -
