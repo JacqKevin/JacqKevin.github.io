@@ -3,7 +3,7 @@
 entries:
 - title: Sidebar
   product: Site
-  #levels: one
+  levels: one
   folders:
 
   - title: News
