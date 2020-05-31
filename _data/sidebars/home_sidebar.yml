@@ -22,7 +22,7 @@ entries:
       output: web
 
     - title: Preprocessings
-      url: //Preprocessing_HSI.html
+      url: /Preprocessing_HSI.html
       output: web
 
     - title: Methods
