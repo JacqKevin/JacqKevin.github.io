@@ -12,6 +12,16 @@ topnav:
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
+    - title: Hyperspectral imaging
+      folderitems:
+        - title: Introduction
+          url: /Introduction_HSI.html
+        - title: Preprocessings
+          url: /Preprocessing_HSI.html
+        - title: Methods
+          url: /Methods_HSI.html
+        - title: Applications
+          url: /Applications_HSI.html
     - title: Toolboxes
       folderitems:
         - title: Matlab
@@ -22,11 +32,12 @@ topnav_dropdowns:
           url: /Python.html
         - title: Others
           url: /Others.html
-    - title: Data
+    - title: Hyperspectral Data
       folderitems:
-      - title: Data
-        url: /Data.html
-      -
+        - title: Hyperspectral Data
+          url: /HSI_Data.html
+        - title: Hyperspectral Data
+          url: /HSI_Data.html
     - title: About
       folderitems:
         - title: CV
