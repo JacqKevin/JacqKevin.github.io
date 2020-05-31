@@ -2,6 +2,7 @@
 title: CV
 description: Curriculum Vitae and publications
 permalink: CV.html
+sidebar: home_sidebar
 ---
 
 # Current position
