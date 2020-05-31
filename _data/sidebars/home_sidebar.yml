@@ -2,52 +2,34 @@
 
 entries:
 - title: Sidebar
+  product: Site
   #levels: one
   folders:
 
-  - title:
-    output: pdf
-    type: frontmatter
-    folderitems:
+  - title: News
+    url: /news
+    output: web
 
-    - title:
-      url: /titlepage.html
-      output: pdf
-      type: frontmatter
-
-    - title:
-      url: /tocpage.html
-      output: pdf
-      type: frontmatter
-
-  - title: Site
+  - title: Toolboxes
     output: web
     folderitems:
 
-    - title: News
-      url: /news
-      output: web
+    - title: Matlab
+      url: /Matlab.html
 
-    - title: Toolboxes
-      output: web
-      subfolders:
+    - title: IDL
+      url: /IDL.html
 
-      - title: Matlab
-        url: /Matlab.html
+    - title: Python
+      url: /Python.html
 
-      - title: IDL
-        url: /IDL.html
+    - title: Others
+      url: /Others.html
 
-      - title: Python
-        url: /Python.html
+  - title: Data
+    url: /Data.html
+    output: web
 
-      - title: Others
-        url: /Others.html
-
-    - title: Data
-      url: /Data.html
-      output: web
-
-    - title: About
-      url: /CV.html
-      output: web
+  - title: About
+    url: /CV.html
+    output: web
