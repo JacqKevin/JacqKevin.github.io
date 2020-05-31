@@ -6,7 +6,7 @@ entries:
   product: IDL
   folders:
 
-  - title: IDL
+  - title: Overview
     url: /IDL.html
     output: web
     folderitems:
