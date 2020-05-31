@@ -6,7 +6,7 @@ entries:
   product: Python
   folders:
 
-  - title: Python
+  - title: Overview
     url: /Python.html
     output: web
     folderitems:
