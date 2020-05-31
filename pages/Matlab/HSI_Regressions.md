@@ -1,7 +1,7 @@
 ---
 title: Regressions
 description: Regressions
-permalink: Regressions.html
+permalink: HSI_Regressions.html
 sidebar: Matlab_sidebar
 ---
 
