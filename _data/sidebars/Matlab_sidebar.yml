@@ -1,87 +1,53 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
 entries:
-- title: sidebar
-  product: Matlab
+- title: Sidebar
+  #levels: one
   folders:
-  - title: Introduction
-    output: web, pdf
+
+  - title:
+    output: pdf
+    type: frontmatter
     folderitems:
 
-    - title: Overview
-      url: /Matlab.html
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: Site
+    output: web
+    folderitems:
+
+    - title: News
+      url: /news
       output: web
 
-    - title: Overview
-      url: /Matlab.html
+    - title: Toolboxes
+      output: web
+      subfolders:
+
+      - title: Matlab
+        url: /Matlab.html
+
+      - title: IDL
+        url: /IDL.html
+
+      - title: Python
+        url: /Python.html
+
+      - title: Others
+        url: /Others.html
+
+    - title: Data
+      url: /Data.html
       output: web
 
-  - title: PLS Regression
-    output: web, pdf
-    folderitems:
-
-    - title: PLS Regression
-      url: /HSI_PLSR.html
-      output: web, pdf
-
-    - title: PLS Regression
-      url: /HSI_PLSR.html
-      output: web, pdf
-
-  - title: Regressions
-    output: web, pdf
-    folderitems:
-
-    - title: Regressions
-      url: /HSI_Regressions.html
-      output: web, pdf
-
-    - title: Regressions
-      url: /HSI_Regressions.html
-      output: web, pdf
-
-  - title: Spectral indices
-    output: web, pdf
-    folderitems:
-
-    - title: Spectral indices
-      url: /HSI_SpectralIndices.html
-      output: web, pdf
-
-    - title: Spectral indices
-      url: /HSI_SpectralIndices.html
-      output: web, pdf
-
-  - title: Supervised Classification
-    output: web, pdf
-    folderitems:
-
-    - title: Supervised Classification
-      url: /HSI_SupervisedClassification.html
-      output: web, pdf
-
-    - title: Supervised Classification
-      url: /HSI_SupervisedClassification.html
-      output: web, pdf
-
-  - title: HSI visualization
-    output: web, pdf
-    folderitems:
-
-    - title: HSI visualization
-      url: /HSIvisualize.html
-      output: web, pdf
-
-    - title: HSI visualization
-      url: /HSIvisualize.html
-      output: web, pdf
-
-  - title: Fusion
-    output: web, pdf
-    folderitems:
-
-    - title: Fusion
-      url: /Fusion.html
-      output: web, pdf
-
-    - title: Fusion
-      url: /Fusion.html
-      output: web, pdf
+    - title: About
+      url: /CV.html
+      output: web
