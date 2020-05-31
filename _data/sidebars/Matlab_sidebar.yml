@@ -1,3 +1,5 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
 entries:
 - title: Sidebar
   product: Matlab
@@ -32,14 +34,14 @@ entries:
     -
 
   - title: Supervised Classification
-    url: /HSI_SupervisedClassification.html
+    url: /HSI_SupervisedClassifications.html
     output: web
     folderitems:
 
     -
 
   - title: HSI visualization
-    url: /HSIvisualize.html
+    url: /HSI_Visualize.html
     output: web
     folderitems:
 
@@ -50,4 +52,10 @@ entries:
     output: web
     folderitems:
 
-    -
+    - title: Fusion at high resolution
+      url: /FusionHR.html
+      output: web
+
+    - title: Fusion at lowresolution
+      url: /FusionBR.html
+      output: web
