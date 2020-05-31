@@ -23,9 +23,7 @@ topnav_dropdowns:
         - title: Others
           url: /Others.html
     - title: Data
-      folderitems:
-        - title: Data
-          url: /Data.html
+      url: /Data.html
     - title: About
       folderitems:
         - title: CV
