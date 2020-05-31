@@ -1,53 +1,52 @@
-# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
-
 entries:
-- title: Sidebar
-  #levels: one
+- title: sidebar
+  product: Matlab
   folders:
-
-  - title:
-    output: pdf
-    type: frontmatter
-    folderitems:
-
-    - title:
-      url: /titlepage.html
-      output: pdf
-      type: frontmatter
-
-    - title:
-      url: /tocpage.html
-      output: pdf
-      type: frontmatter
-
-  - title: Site
+  - title: Overview
+    url: /Matlab.html
     output: web
     folderitems:
 
-    - title: News
-      url: /news
-      output: web
+    -
 
-    - title: Toolboxes
-      output: web
-      subfolders:
+  - title: PLS Regression
+    url: /HSI_PLSR.html
+    output: web
+    folderitems:
 
-      - title: Matlab
-        url: /Matlab.html
+    -
 
-      - title: IDL
-        url: /IDL.html
+  - title: Regressions
+    url: /HSI_Regressions.html
+    output: web
+    folderitems:
 
-      - title: Python
-        url: /Python.html
+    -
 
-      - title: Others
-        url: /Others.html
+  - title: Spectral indices
+    url: /HSI_SpectralIndices.html
+    output: web
+    folderitems:
 
-    - title: Data
-      url: /Data.html
-      output: web
+    -
 
-    - title: About
-      url: /CV.html
-      output: web
+  - title: Supervised Classification
+    url: /HSI_SupervisedClassification.html
+    output: web
+    folderitems:
+
+    -
+
+  - title: HSI visualization
+    url: /HSIvisualize.html
+    output: web
+    folderitems:
+
+    -
+
+  - title: Fusion
+    url: /Fusion.html
+    output: web
+    folderitems:
+
+    -
