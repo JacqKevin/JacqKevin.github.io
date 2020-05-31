@@ -1,7 +1,7 @@
 ---
-title: Supervised Classification
-description: Supervised Classification
-permalink: HSI_SupervisedClassification.html
+title: Supervised Classifications
+description: Supervised Classifications
+permalink: HSI_SupervisedClassifications.html
 sidebar: Matlab_sidebar
 ---
 
