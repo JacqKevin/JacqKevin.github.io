@@ -1,11 +1,11 @@
 ---
 title: Matlab
-description: Matlab toolboxes
 permalink: Matlab.html
 sidebar: Matlab_sidebar
 ---
 
-Description soon!!
+<p align="left">Description soon!!</p>
+
 
 {% include image.html file="Matlab.jpg" %}
 
