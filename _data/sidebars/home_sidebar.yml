@@ -16,15 +16,19 @@ entries:
 
     - title: Matlab
       url: /Matlab.html
+      output: web
 
     - title: IDL
       url: /IDL.html
+      output: web
 
     - title: Python
       url: /Python.html
+      output: web
 
     - title: Others
       url: /Others.html
+      output: web
 
   - title: Data
     url: /Data.html
