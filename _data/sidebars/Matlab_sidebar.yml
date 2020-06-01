@@ -13,12 +13,20 @@ entries:
       url: /Matlab.html
       output: web
 
-  - title: PLS Regression
+  - title: HSI Visualization
     output: web
     folderitems:
 
     - title: Worflow
-      url: /HSI_PLSR.html
+      url: /HSI_Visualize.html
+      output: web
+
+  - title: Spectral Indices
+    output: web
+    folderitems:
+
+    - title: Worflow
+      url: /HSI_SpectralIndices.html
       output: web
 
   - title: Regressions
@@ -26,15 +34,7 @@ entries:
     folderitems:
 
     - title: Worflow
-      url: /HSI_Regressions.html
-      output: web
-
-  - title: Spectral indices
-    output: web
-    folderitems:
-
-    - title: Worflow
-      url: /HSI_SpectralIndices.html
+      url: /HSI_PLSR.html
       output: web
 
   - title: Supervised Classification
@@ -45,12 +45,20 @@ entries:
       url: /HSI_SupervisedClassifications.html
       output: web
 
-  - title: HSI visualization
+  - title: Unsupervised Classification
     output: web
     folderitems:
 
     - title: Worflow
-      url: /HSI_Visualize.html
+      url: /HSI_UnsupervisedClassifications.html
+      output: web
+
+  - title: Image Processing
+    output: web
+    folderitems:
+
+    - title: Worflow
+      url: /HSI_ImageProcessing.html
       output: web
 
   - title: Fusion
