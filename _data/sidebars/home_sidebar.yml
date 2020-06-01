@@ -70,4 +70,14 @@ entries:
     output: web
     folderitems:
 
-    -
+    - title: CV
+      url: /CV.html
+      output: web
+
+    - title: Publications
+      url: /Publications.html
+      output: web
+
+    - title: Other Valorisations
+      url: /OtherValo.html
+      output: web
