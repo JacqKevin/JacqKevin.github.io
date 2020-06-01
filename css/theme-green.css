@@ -46,7 +46,7 @@ a[data-toggle="tooltip"] {
 }
 
 .navbar-inverse {
-    background-color: #007508;
+    background-color: #f700ff;
     border-color: #007508;
 }
 
@@ -75,7 +75,7 @@ a[data-toggle="tooltip"] {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    background-color: #f700ff;
+    background-color: #007508;
     border-color: #007508;
 }
 
