@@ -46,8 +46,8 @@ a[data-toggle="tooltip"] {
 }
 
 .navbar-inverse {
-    /* background-color: #f700ff; */
-    background-image: /images/background.jpg
+    background-color: #f700ff;
+    background-image: url("C:\Users\JacqKevin\Documents\GitHub\JacqKevin.github.io\images\background.jpg");
     border-color: #007508;
 }
 
