@@ -46,7 +46,7 @@ a[data-toggle="tooltip"] {
 }
 
 .navbar-inverse {
-    background-color: #007508;
+    background-color: #007508; /* couleur bandeau*/
     border-color: #007508;
 }
 
