@@ -1,7 +1,7 @@
 ---
-title: Supervised Classifications
-description: Supervised Classifications
-permalink: HSI_SupervisedClassifications.html
+title: Image Processing
+description: Image Processing
+permalink: HSI_ImageProcessing.html
 sidebar: Matlab_sidebar
 ---
 
