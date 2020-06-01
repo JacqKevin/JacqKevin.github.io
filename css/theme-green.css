@@ -46,7 +46,8 @@ a[data-toggle="tooltip"] {
 }
 
 .navbar-inverse {
-    background-color: #f700ff;
+    /* background-color: #f700ff; */
+    background-image: /images/background.jpg
     border-color: #007508;
 }
 
