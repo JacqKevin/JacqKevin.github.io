@@ -34,7 +34,7 @@ entries:
     folderitems:
 
     - title: Worflow
-      url: /HSI_PLSR.html
+      url: /HSI_Regressions.html
       output: web
 
   - title: Supervised Classification
