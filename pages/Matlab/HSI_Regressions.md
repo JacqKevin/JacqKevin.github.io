@@ -69,6 +69,7 @@ For all predicted variable sizes:
 * Partial least Squares Regression (PLSR)
 * Backgropagation Neural Network (BPNN)
 * Partial least Squares Regression - Backgropagation Neural Network (PLSR-BPNN)
+
 For a predicted variable size of one:
 * Regression Tree (RT)
 * Regression Tree Ensemble (RTE)
