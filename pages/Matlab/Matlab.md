@@ -5,10 +5,8 @@ sidebar: Matlab_sidebar
 folder: Matlab
 ---
 
-## Proposed workflow 
+Description soon
 
-Description soon!!
 
-![Worflow](/images/Matlab.jpg)
 
 
