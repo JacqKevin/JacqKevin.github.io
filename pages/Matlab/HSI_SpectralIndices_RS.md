@@ -5,7 +5,7 @@ permalink: HSI_SpectralIndices_RS.html
 sidebar: Matlab_sidebar
 ---
 
-# Remote sensing indices:
+# Remote sensing indices
 This toolbox uses the following list of remote sensing indices. If you find that important resources are not included, please feel free to contact me.
 
 ## VNIR 400-1000nm 
