@@ -1,6 +1,6 @@
 ---
 title: Interesting references
-permalink: References_HSI.html
+permalink: Link.html
 ---
 
 # In English
