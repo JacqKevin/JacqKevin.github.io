@@ -81,6 +81,6 @@ entries:
       url: /FusionHR.html
       output: web
 
-    - title: Fusion at lowresolution
+    - title: Fusion at low resolution
       url: /FusionBR.html
       output: web
