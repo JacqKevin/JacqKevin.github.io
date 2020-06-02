@@ -29,6 +29,14 @@ entries:
       url: /HSI_SpectralIndices.html
       output: web
 
+    - title: Spectroscopic and hyperspectral indices
+      url: /HSI_SpectralIndices_Lab.html
+      output: web
+
+    - title: Remote sensing indices
+      url: /HSI_SpectralIndices_RS.html
+      output: web
+
   - title: Regressions
     output: web
     folderitems:
