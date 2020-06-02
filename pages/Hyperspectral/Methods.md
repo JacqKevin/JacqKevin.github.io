@@ -8,17 +8,19 @@ Description soon
 
 ![Worflow](/images/Worflow.jpg)
 
-# Les méthodes semi-quantitatives
+## Les méthodes semi-quantitatives
 
 Une première approche pour extraire des informations à partir de données spectrales est de chercher des zones caractéristiques correspondant à une ou quelques longueur(s) d'onde. On parle dans ce cas d'approches univariées avec une approche spectrale locale plutôt que globale.
 Les énergies d'absorption ou d'excitation dans les gammes présentées précédemment sont quantifiées à des niveaux d'énergie connues. Il est donc possible de créer des tables qui référencent les composés ou liaisons chimiques associées à ces énergies ou longueurs d'onde. Comme c'est le cas avec les spectroscopies moyen-infrarouge, la fluorescence UV-visible ou des rayons X. Dans certaines gammes cela est compliqué à réaliser du fait de la superposition de nombreuses propriétés et de la résolution spectrale des capteurs, comme en spectroscopie proche-infrarouge.
 Il faut tout de même utiliser ces indices avec précaution, car plusieurs composés chimiques peuvent interagir dans les mêmes zones spectrales et la résolution spectrale peut ne pas être suffisamment fine pour distinguer ces composés. Il existe aussi de nombreux indices développés en télédétection pour des données RGB ou multispectrales, mais qui sont très peu utilisés en spectroscopie de laboratoire, car l'information recherchée n'est pas la même.
 Ces indices sont semi-quantitatifs et peuvent etre calibrés par la suite à partir de modèles de régression en estimant un lien avec une méthode analytique de référence. On parle de la régression linéaire simple (RLS) qui estime une relation entre une variable expliquée ($y$, analytique) et une variable explicative ($x$, spectral).
 
-# Les méthodes quantitatives
+## Les méthodes quantitatives
 Plutôt que d'étudier des zones spectrales spécifiques pour un composé ou une liaison chimique, des approches globales qui utilisent l'ensemble du spectre ont été développées et se nomment méthodes multivariées. Une information bio-physico-chimique peut se retrouver dans différentes zones du spectre, elle peut aussi être en lien avec un autre composé corrélé, ou au contraire perturbé par un autre. Ces méthodes globales peuvent ainsi retrouver toutes ces informations ce qui permet de créer des modèles de prédictions performants.
 		
 Les principales méthodes de régression que l'on trouve dans la littérature ou qui se développent sont présentées ci-dessous et peuvent être schématisées avec la figure \ref{fig:multi}. Davantage d'informations sont disponibles dans le livre de Tufféry \cite{Tuffery2012}. 
+
+{% include image.html file="Multi.jpg" %}
 
 <ul>
 <li> Les méthodes linéaires : </li>
@@ -37,12 +39,14 @@ Les principales méthodes de régression que l'on trouve dans la littérature ou
 </ul>
 D'un point de vue mathématique, on fait la différence entre un vecteur avec une lettre minuscule ($x$,$y$) et une matrice avec une lettre majuscule ($X$,$Y$). 
 
-# L'estimation de signaux purs
+## L'estimation de signaux purs
 
 A partir des données spectroscopiques, on peut obtenir des empreintes chimiques de composés si l'échantillon est pur et homogène, comme celle du minéral Illite de la figure \ref{fig:zonesdiscri}. Dans le cas d'images multi- ou hyper-spectrales, c'est l'inhomogénéité de l'échantillon qui est étudiée, et est ensuite caractérisée à travers les différents composés qu'il contient en estimant des signaux purs, aussi appelés endmembers (EM) \cite{Bioucas-Dias2012,Keshava2003}. On parle de méthodes de démélange pour l'extraction de signaux purs. Il existe trois groupes principaux de méthodes pour estimer ces signaux purs :
+
 <ul>
 <li> Les méthodes dites géométriques se basent sur la possibilité de trouver une forme géométrique qui encadrent l'ensemble des données. </li>
 <ul>
+{% include image.html file="EM.jpg" %}
 <li> Le principe standard repose sur l'hypothèse qu'un signal spectroscopique est la somme de sous-signaux correspondant à des constituants de l'échantillon. De nombreuses méthodes existent et peuvent être décrites comme la détermination d'un simplexe (triangle à n-dimensions) qui englobe toutes les données, et ses extrémités correspondent aux EMs. Les méthodes les plus connues sont l'indice de pureté du pixel (PPI) \cite{Boardman1993}, N-FINDR \cite{Winter1999}, Vertex Component Analysis (VCA) \cite{Nascimento2005}. </li>
 <li> On peut aussi utiliser l'hypothèse inverse, c'est à dire trouver dans le cas d'un échantillon globalement homogène, des pixels différents de la majorité. Avec un calcul des distances, on peut les mettre en avant. Comme par exemple, l'algorithme de Kennard et Stone \cite{Kennard1969} est utilisé pour trouver les spectres les plus différents dans un jeu de données. </li>
 </ul>
@@ -56,7 +60,7 @@ Ces signaux purs sont souvent comparés à des librairies ou à des spectres d'�
 
 Ces méthodes sont très utilisées en télédétection pour discriminer les principales entités (routes, bâtiments, forêts, rivières) ou la géologie au sol avec des données multi- et hyper-spectrales. Elles sont aussi très utilisées pour caractériser les minéraux présents dans des échantillons géologiques, comme les carottes sédimentaires et ainsi déterminer l'origine des sédiments. L'annexe \ref{SyntheseBiblioEM}, avec les tableaux \ref{tab:RecapEM1} et \ref{tab:RecapEM2}, récapitulent quelques exemples d'applications de ce type de méthode pour l'analyse des échantillons environnementaux.
 
-# La segmentation des images
+## La segmentation des images
 
 Une image porte des informations sur les structures composant une scène ou un échantillon. Des méthodes existent pour les caractériser, on parle de segmentation. Elles peuvent être regroupées dans deux familles :
 <ul>
@@ -72,11 +76,13 @@ Une image porte des informations sur les structures composant une scène ou un �
 </ul>
 </ul>
 
-# Les méthodes de classification
+## Les méthodes de classification
 
 Les données peuvent aussi être regroupées de manière qualitative, on parle de classification ou de reconnaissance de formes. On peut avoir des connaissances partielles des données et les utiliser, on parle de classification supervisée ou discrimination qui permettent d'estimer par exemple : la présence ou l'absence d'un composé, ou des niveaux d'abondances haut-moyen-élevé. Dans le cas de données inconnues, on parle de classification non-supervisée ou clustering. Ces méthodes peuvent s'appliquer aussi bien sur la dimension spatiale que spectrale.
 
-## Les méthodes non supervisées (clustering)
+{% include image.html file="classif.jpg" %}
+
+### Les méthodes non supervisées (clustering)
 
 <ul>
 <li> L'Analyse en Composantes Principales (ACP) permet de réduire les données et ainsi de visualiser rapidement leurs principales variabilités. Une approche similaire appelée Minimum Noise Fraction (MNF) permet de garder les composantes les plus informatives et les moins bruitées. </li>
@@ -84,7 +90,7 @@ Les données peuvent aussi être regroupées de manière qualitative, on parle d
 <li> Les classifications hiérarchiques se divisent en deux familles, celles qui agglomèrent (classification ascendante hiérarchique CAH) et celles qui divisent (classification descendante hiérarchique CDH) \cite{Ward1963}. Dans le cas de la CAH, les données sont agglomérées de proche en proche suivant un critère de distance jusqu'à obtenir un groupe unique, et inversement pour la CDH. Le résultat est un dendrogramme qui peut être coupé à un certain niveau définissant le nombre de groupes. </li>
 </ul>
 
-## Les méthodes supervisées (discrimination)
+### Les méthodes supervisées (discrimination)
 
 <ul>
 <li> La méthode des K plus proches voisins (KNN) est une méthode non paramétrique qui estime une probabilité d’appartenance à un groupe suivant une règle, qui est ici la distance avec les individus environnants \cite{Hart1968}. Elle calcule la distance entre un échantillon « inconnu » avec tous ceux connus. Puis ce nouvel échantillon est classé dans un groupe avec ses K voisins les plus proches. Il existe plusieurs approches pour améliorer ces prédictions, comme rajouter des règles floues avec la méthode KNN-floue \cite{Keller1985}, ou utiliser la théorie des fonctions de croyance EkNN (Evidential KNN) \cite{Denoeux1995,Shafer1976}. </li>
