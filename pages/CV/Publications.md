@@ -5,7 +5,8 @@ permalink: Publications.html
 sidebar: home_sidebar
 ---
 
-<script src="https://bibbase.org/service/mendeley/21822643-f304-3983-9194-69f4c2fd8343/group/2f21703b-55a7-3bea-9257-2d1c2ef28431?jsonp=1"></script>
+<iframe src="https://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fusers%2F6658537%2Fcollections%2FCAU35BA6%2Fitems%3Fkey%3Dbb0X1GWJRprHKP1HcBhqyZJb%26format%3Dbibtex%26limit%3D100"></iframe>
+
 
 
 
