@@ -21,6 +21,8 @@ Le spectre électromagnétique est divisé en plusieurs gammes spectrales en fon
 <li> Les rayons gamma influent sur les transitions d'énergie au sein des noyaux des atomes. Elle est aussi représentée par deux méthodes principales, la spectrométrie gamma et la spectrométrie de Mössbauer. </li>
 </ul>
 
+{% include image.html file="Spectre-electromagnetique-en-energie-frequence-longueur-et-nombre-donde-Les-modes.png" %}
+
 # Spectroscopic acquisition
 Le type d'acquisition est aussi spécifique du capteur et de la problématique à résoudre :
 <ul>
