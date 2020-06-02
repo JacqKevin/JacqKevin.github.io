@@ -6,13 +6,6 @@ entries:
   levels: one
   folders:
 
-  - title: News
-    url: /news
-    output: web
-    folderitems:
-
-    -
-
   - title: Hyperspectral imaging
     output: web
     folderitems:
