@@ -5,7 +5,7 @@ permalink: HSI_SpectralIndices_Lab.html
 sidebar: Matlab_sidebar
 ---
 
-# Spectroscopic and hyperspectral indices:
+# Spectroscopic and hyperspectral indices
 This toolbox uses the following list of spectroscopic indices. If you find that important resources are not included, please feel free to contact me.
 
 ## VNIR 400-1000nm
