@@ -1,7 +1,7 @@
 ---
 title: Introduction
 description: Introduction
-permalink: IntroHSI.html
+permalink: Introduction_HSI.html
 ---
 
 # Hyperspectral représentation
