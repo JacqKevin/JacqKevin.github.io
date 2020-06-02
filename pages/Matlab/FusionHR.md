@@ -7,14 +7,7 @@ sidebar: Matlab_sidebar
 
 L'homogénéisation des résolutions (2) peut être effectuée à plusieurs niveaux. Soit à la plus basse des résolutions, ce qui est effectué lors de l'étape de recalage (1), on peut parler de fusion à basse résolution, qui correspond à une combinaison des jeux de données. Soit on utilise des approches de fusion avancées pour une fusion à haute résolution. Ces méthodes peuvent être regroupées en trois familles suivant le type d'information fusionnée \cite{Dasarathy1997,Martin2005,Ghassemian2016}. Elles peuvent être représentées par la figure \ref{fig:fus}.
 
-<ul>
-<li> La fusion de bas niveau ou au niveau pixel consiste à fusionner les informations brutes après l'acquisition, ainsi toutes les informations sont retenues. Ensuite, le capteur composite est prétraité avant la création d'un modèle prédictif quantitatif ou qualitatif. </li>
-<li>  La fusion de niveau moyen ou au niveau des attributs représente la fusion des données initiales réduites, comme par exemple avec une ACP, ou des méthodes de démélange, ou de segmentation. Ceci permet de garder des informations globales sur l'échantillon, et d'enlever le bruit, ainsi que potentiellement des informations locales si des vérifications ne sont pas effectuées. Enfin, un modèle quantitatif ou qualitatif est créé.  </li>
-<li>  La fusion de haut niveau ou au niveau décision consiste en la fusion de données extraites des données initiales, comme par exemple avec les méthodes d'apprentissage automatique ou de régression. Chaque capteur est donc prétraité, puis un modèle quantitatif ou qualitatif est créé pour estimer des cartes d'abondance ou de classification qui sont ensuite fusionnées. Dans le cas, de l'étude d'une unique propriété, il faut s'assurer que des informations discriminantes soient disponibles dans chacun des capteurs.  </li>
-</ul>
-
-
-L'homogénéisation des résolutions (2) peut être effectuée à plusieurs niveaux. Soit à la plus basse des résolutions, ce qui est effectué lors de l'étape de recalage (1), on peut parler de fusion à basse résolution, qui correspond à une combinaison des jeux de données. Soit on utilise des approches de fusion avancées pour une fusion à haute résolution. Ces méthodes peuvent être regroupées en trois familles suivant le type d'information fusionnée \cite{Dasarathy1997,Martin2005,Ghassemian2016}. Elles peuvent être représentées par la figure \ref{fig:fus}.
+{% include image.html file="Fus.jpg" %}
 
 <ul>
 <li> La fusion de bas niveau ou au niveau pixel consiste à fusionner les informations brutes après l'acquisition, ainsi toutes les informations sont retenues. Ensuite, le capteur composite est prétraité avant la création d'un modèle prédictif quantitatif ou qualitatif. </li>
@@ -25,6 +18,8 @@ L'homogénéisation des résolutions (2) peut être effectuée à plusieurs nive
 Dans le cas des données spectroscopiques, comme on a pu le voir les gammes spectrales ne portent pas toujours des informations similaires. C'est pourquoi la fusion de haut niveau est intéressante pour la fusion de cartes de classification de variables différentes et complémentaires. Comme par exemple pour estimer la minéralogie d'un échantillon sédimentaire qui sont caractérisables avec différentes gammes spectrales qui portent des informations majoritaires. Mais dans le cas d'une même variable entre différents capteurs, cela a peu d'intérêt si certains de ces capteurs portent des informations minoritaires qui ne peuvent permettre une modélisation correcte. 
 
 Il se peut tout de même que des informations minoritaires sur une variable d'intérêt soient contenues dans certaines gammes spectrales, et que leur fusion avec une gamme spectrale portant des informations plus nombreuses, soit bénéfique pour augmenter les performances de modélisation. C'est pourquoi les méthodes de fusion au niveau pixel sont intéressantes et seront mieux détaillées par la suite \cite{Yokoya2017,Li2017,Loncan2015,Vivone2015}. En effet, celles-ci peuvent être regroupées dans quatre familles que l'on peut schématiser avec la figure \ref{fig:recap}. Les deux premières familles ont été créées pour la fusion de données multispectrales avec une image panchromatique (similaire à une image en niveau de gris), c'est pourquoi ces méthodes sont appelées pansharpening. Elles ont ensuite été modifiées pour la fusion de données multi- et hyper-spectrales, on parle d'hypersharpening.
+
+{% include image.html file="recap.jpg" %}
 
 <ul>
 <li> La substitution de composantes (CS) consiste à projeter les données basses (BR) et hautes (HR) résolutions dans un autre espace qui sépare les informations spatiales et spectrales.  Ensuite, ces méthodes vont estimer les composantes BR qui sont les plus proches de celles à HR pour les substituer. Les méthodes les plus utilisées sont l'ACP \cite{Chavez1991}, l'ICA, Intensity-Hue-Saturation (IHS) \cite{Tu2001}, Brovey transform (BT) \cite{Gillespie1987}, Gram-Schmidt (GS) \cite{Laben2000,Aiazzi2007}. </li>
