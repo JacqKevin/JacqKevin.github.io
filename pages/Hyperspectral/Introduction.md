@@ -9,6 +9,14 @@ A conventional RGB image is represented as three-dimensional data with two spati
 
 Spectroscopic sensors can use different ranges of the electromagnetic spectrum (ultraviolet, visible, infrared, X-rays). They record physical, chemical and biological information about the samples being analysed, known as structural properties.
 
+Thus hyperspectral imaging benefits from the advantages of: 
+<ul>
+<li>imaging with data spatialization and structure visualization, </li>
+<li> as well as spectroscopy with the biological-physical-chemical characteristic of the sample properties. </li>
+</ul>
+
+{% include image.html file="HSI.jpg" %}
+
 ```markdown
 CIE (1999) IEC 61966-2-1:1999: Multimedia Systems and Equipment - Colour Measurement and Management - Part 2-1: Colour Management - Default RGB Colour Space - SRGB
 ```
