@@ -1,5 +1,5 @@
 ---
-title: "Hyperspectral Images processing"
+title: "Hyperspectral Image Processing"
 keywords: homepage
 #tags: [home]
 permalink: index.html
