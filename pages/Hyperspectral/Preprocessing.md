@@ -6,11 +6,11 @@ permalink: Preprocessing_HSI.html
 
 ## Sensor Normalization
 
-Generally, the hyperspectral image unity is reflectance (R). According to Beer-Lambert law, the chemical concentration of a compound is related to the absorbance (A). Thus, the hyperspectral image can be converted into pseudo-absorbance with the formula: A=log(1/R).
+Generally, reflectance of the sample are acquire with HSI. It need to be calibrated with a white and a dark to be defined in percentage of reflectance. This step is called data normalization.
 
 ## Conversion
 
-Hyperspectral in refelctance
+According to Beer-Lambert law, the chemical concentration of a compound is related to the absorbance (A). Thus, the hyperspectral image can be converted into pseudo-absorbance with the formula: A=log(1/R).
 
 ## Spectral preprocessing
 
@@ -19,6 +19,8 @@ Hyperspectral in refelctance
 In this toolbox, four main preprocessing are used, also nine combinations of them. Thus, thirteen preprocessing and the raw data are compared to find an optimal one. They allow to reduce noise and highlight relevant spectral information to predict the interest variable(s).
 
 Detrending is used to remove the baseline. Multiplicative Scatter Correction (MSC) and Standard Normal Variate (SNV) are used to correct the spectra from light scattering. The Savitzky–Golay filter is used to derivate the spectra and to reduce additive effects (baseline offset and slope).
+
+Then it is necessary to be careful with their effects which can make interesting wavelength structures disappear or on the contrary artificially create them.
 
 ```markdown
 Vidal, M., Amigo, J. M. (2012) Pre-processing of hyperspectral images. Essential steps before image analysis. Chemometrics and Intelligent Laboratory Systems 117: 138–148
@@ -35,9 +37,17 @@ Second spectral processing can be used to normalized the signal base on the mean
 
 ## Data reduction
 
-On peut les réduire pour accélérer le temps de calcul, cela est souvent réalisé avec une ACP ou une MNF afin d'enlever les variables redondantes et corrélées (colinéaires). Ou encore en sélectionnant des longueurs d'onde discriminantes pour une variable à prédire avec des algorithmes de sélection de variables. 
+They can be reduced to speed up computation time, this is often done with PCA or MNF to remove redundant and correlated (collinear) variables. Or by selecting discriminating and remove irrelevant or noisy wavelengths for a variable to be predicted with variable selection algorithms. 
+
+```markdown
+Pearson, K. (1901) On lines and planes of closest fit to systems of points in space. Philosophical Magazine 2: 559–572
+
+Green, A.A., Berman, M., Switzer, P., Craig, M.D. (1988) A Transformation for Ordering Multispectral Data in Terms of Image Quality with Implications for Noise Removal. IEEE Transactions on Geoscience and Remote Sensing 26: 65–74
+
+Xiaobo, Z., Jiewen, Z., Povey, M.J.W., Holmes, M., Hanpin, M. (2010) Variables selection methods in near-infrared spectroscopy. Analytica Chimica Acta 667: 14–32
+```
 
 ## Spatial preprocessing
 
-Comme dans le cas de la création d'un modèle multivarié, les images nécessitent un ou des prétraitements pour réduire le bruit ou mettre en avant les structures, comme des normalisations, lissages, dérivées ou rehaussements de contraste. Et il faut aussi prendre garde à leurs effets qui peuvent faire disparaitre des structures intéressantes ou au contraire en créer.
+As with the creation of a multivariate model, the images require pre-processing to reduce noise or highlight structures, such as normalizations, smoothing, derivatives or contrast enhancements. And also be careful of their effects which can make interesting structures disappear or on the contrary artificially create them.
 
