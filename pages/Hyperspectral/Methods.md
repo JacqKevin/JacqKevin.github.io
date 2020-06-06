@@ -4,40 +4,64 @@ description: Methods
 permalink: Methods_HSI.html
 ---
 
-Description soon
-
 ![Worflow](/images/Worflow.jpg)
 
-## Les méthodes semi-quantitatives
+## Semi-quantitative methods
 
-Une première approche pour extraire des informations à partir de données spectrales est de chercher des zones caractéristiques correspondant à une ou quelques longueur(s) d'onde. On parle dans ce cas d'approches univariées avec une approche spectrale locale plutôt que globale.
-Les énergies d'absorption ou d'excitation dans les gammes présentées précédemment sont quantifiées à des niveaux d'énergie connues. Il est donc possible de créer des tables qui référencent les composés ou liaisons chimiques associées à ces énergies ou longueurs d'onde. Comme c'est le cas avec les spectroscopies moyen-infrarouge, la fluorescence UV-visible ou des rayons X. Dans certaines gammes cela est compliqué à réaliser du fait de la superposition de nombreuses propriétés et de la résolution spectrale des capteurs, comme en spectroscopie proche-infrarouge.
-Il faut tout de même utiliser ces indices avec précaution, car plusieurs composés chimiques peuvent interagir dans les mêmes zones spectrales et la résolution spectrale peut ne pas être suffisamment fine pour distinguer ces composés. Il existe aussi de nombreux indices développés en télédétection pour des données RGB ou multispectrales, mais qui sont très peu utilisés en spectroscopie de laboratoire, car l'information recherchée n'est pas la même.
-Ces indices sont semi-quantitatifs et peuvent etre calibrés par la suite à partir de modèles de régression en estimant un lien avec une méthode analytique de référence. On parle de la régression linéaire simple (RLS) qui estime une relation entre une variable expliquée ($y$, analytique) et une variable explicative ($x$, spectral).
+A first approach to extracting information from spectral data is to search for characteristic areas corresponding to one or a few wavelength(s). In this case we speak of univariate approaches with a local rather than global spectral approach.
 
-## Les méthodes quantitatives
-Plutôt que d'étudier des zones spectrales spécifiques pour un composé ou une liaison chimique, des approches globales qui utilisent l'ensemble du spectre ont été développées et se nomment méthodes multivariées. Une information bio-physico-chimique peut se retrouver dans différentes zones du spectre, elle peut aussi être en lien avec un autre composé corrélé, ou au contraire perturbé par un autre. Ces méthodes globales peuvent ainsi retrouver toutes ces informations ce qui permet de créer des modèles de prédictions performants.
+Absorption or excitation energies in the ranges presented above are quantified at known energy levels. It is therefore possible to create tables that reference the compounds or chemical bonds associated with these energies or wavelengths. As is the case with medium-infrared spectroscopy, UV-visible fluorescence or X-rays. In some ranges this is complicated to achieve because of the superposition of many properties and the spectral resolution of the sensors, as in near-infrared spectroscopy.
+
+Caution should be used with these indices, however, as several chemical compounds may interact in the same spectral regions and the spectral resolution may not be fine enough to distinguish these compounds. There are also many indices developed in remote sensing for multispectral data, but which are used very little in laboratory spectroscopy because the information sought is not the same.
+
+These indices are semi-quantitative and can be subsequently calibrated from regression models by estimating a link with a reference analytical method. This is known as simple linear regression (SLR), which estimates a relationship between an explained variable ($y$, analytical) and an explanatory variable ($x$, spectral).
+
+## Quantitative methods
+
+Rather than studying specific spectral regions for a compound or chemical bond, global approaches that use the entire spectrum have been developed and are called multivariate methods. Bio-physical-chemical information can be found in different areas of the spectrum, it can also be related to another correlated compound, or on the contrary, it can be perturbed by another. These global methods can thus find all this information, which makes it possible to create efficient prediction models.
 		
-Les principales méthodes de régression que l'on trouve dans la littérature ou qui se développent sont présentées ci-dessous et peuvent être schématisées avec la figure \ref{fig:multi}. Davantage d'informations sont disponibles dans le livre de Tufféry \cite{Tuffery2012}. 
+The main regression methods that can be found in the literature or that are being developed are presented below and can be schematized with the figure below. More information is available in Tuffery's book (Tufféry2012). 
 
 {% include image.html file="Multi.jpg" %}
 
 <ul>
-<li> Les méthodes linéaires : </li>
+<li> Linear methods: </li>
 <ul>
-<li> La régression linéaire multiple (RLM) est similaire à la RLS, la différence réside dans la multitude de variables explicatives ($X$) qui correspondent à une donnée spectrale à plusieurs longueurs d'onde. </li>
-<li> La régression sur composantes principales (PCR) \cite{Jolliffe1982} est une RLM qui utilise comme variables explicatives les composantes principales ($PC$) de l'analyse en composantes principales (ACP) \cite{Pearson1901}. Les PCs correspondent aux regroupements des variables explicatives $X$ portant des informations similaires. L'ACP permet ainsi de réduire la taille des données spectrales en regroupant les $X$ corrélées. L'ACP calcule un nouveau repère géométrique, différent de l'espace spectral, qui est orienté suivant des axes indépendants expliquant la variabilité des données explicatives. </li>
-<li> La régression des moindres carrés partiels (PLSR) \cite{Wold1984} (qui peut également être non linéaire). La régression PLS estime des variables latentes (VLs) qui correspondent aux regroupements des variables explicatives $X$ liées à celles à expliquer $Y$. Elle estime donc aussi un nouveau repère géométrique, qui s'oriente suivant des axes indépendants qui expliquent la variabilité des données explicatives $X$ tout en maximisant la corrélation entre $X$ et $Y$. C'est une des méthodes les plus utilisées en traitement de données spectroscopiques (chimiométrie). </li>
+<li> Multiple linear regression (MLR) is similar to SLR, the difference lies in the multitude of explanatory variables ($X$) that correspond to spectral data at several wavelengths. </li>
+<li> Principal component regression (PCR, Jolliffe1982) is an RLM that uses as explanatory variables the principal components ($PC$) of the principal component analysis (PCA, Pearson1901). PCs correspond to groupings of $X$ explanatory variables with similar information. Thus, PCA reduces the size of the spectral data by grouping the correlated $X$. The PCA calculates a new geometric landmark, different from spectral space, which is oriented along independent axes explaining the variability of the explanatory data. </li>
+<li> Partial least squares regression (PLSR) defined by Wold (Wold1984) (which may also be non-linear) estimates latent variables (LVs) that correspond to groupings of the $X$ explanatory variables related to those to be explained $Y$. It therefore also estimates a new geometric benchmark, which is oriented along independent axes that explain the variability of the $X$ explanatory data while maximizing the correlation between $X$ and $Y$. This is one of the most widely used methods in spectroscopic data processing (chemometrics). </li>
 </ul>
-<li> Les méthodes non linéaires : </li>
+<li> Non-linear methods: </li>
 <ul>
-<li> La régression multivariée par spline adaptative (MARS) \cite{Friedman1991} permet de modéliser des non-linéarités grâce à des règles, on parle d'une méthode non-paramétrique. Pour cela, elle utilise des partitionnements récursifs pour estimer des sous-zones pouvant être modélisées par des fonctions linéaires. Un modèle MARS peut donc être représenté par une succession de règles conduisant à des modèles linéaires terminaux. </li>
-<li> Les machines à vecteurs de support (SVM) \cite{Vapnik1998} utilisent un espace de grandes dimensions pour estimer un hyperplan (n>2) linéaire afin de répondre à un problème non linéaire. L'hyperplan linéaire estimé subit ensuite une transformation inverse pour revenir dans l'espace initiale non-linéaire. </li>
-<li> Les réseaux de neurones artificiels (ANN) \cite{McCulloch1943,Rosenblatt1958} cherche à reproduire la capacité du cerveau à apprendre. Cette méthode repose sur un ensemble d’unités fondamentales interconnectées, les neurones. Un réseau est un ensemble de couches de neurones qui fonctionne, les unes à la suite des autres. Chaque neurone reçoit une partie des informations qu’il traite et il communique les résultats avec ses plus proches voisins de la couche de neurones suivante. Le réseau le plus simple comporte trois couches, une d'entrée, une de calcul ou couche cachée et une couche de sortie. </li>
-<li> Les réseaux d'apprentissage profond sont des méthodes qui se développent dans tous les domaines et aussi récemment en analyse de données spectroscopiques. C'est une méthode proche de l'ANN, la différence est que le réseau profond comporte plusieurs couches cachées et un nombre de neurones souvent important \cite{Ivakhnenko1965,Schmidhuber2015}. </li>
+<li> Multivariate adaptive spline regression (MARS) created by Friedman (Friedman1991) allows non-linearities to be modelled using rules, a non-parametric method. To do this, it uses recursive partitioning to estimate subfields that can be modeled by linear functions. A MARS model can therefore be represented by a succession of rules leading to terminal linear models. </li>
+<li> Support Vector Machines (SVM, Vapnik1998) use a large dimensional space to estimate a linear (n>2) hyperplane to solve a nonlinear problem. The estimated linear hyperplane then undergoes an inverse transformation to return to the initial nonlinear space. </li>
+<li> Artificial Neural Networks (ANN, McCulloch1943, Rosenblatt1958) seeks to reproduce the brain's ability to learn. This method relies on a set of interconnected fundamental units, the neurons. A network is a set of layers of neurons that function, one after the other. Each neuron receives some of the information it processes and communicates the results to its closest neighbours in the next layer of neurons. The simplest network consists of three layers, one input layer, one computational or hidden layer and one output layer. </li>
+<li> Deep learning networks are methods that are developing in all fields and also recently in spectroscopic data analysis. It is a method close to ANN, the difference is that the deep network has several hidden layers and an often large number of neurons (Ivakhnenko1965, Schmidhuber2015). </li>
 </ul>
 </ul>
-D'un point de vue mathématique, on fait la différence entre un vecteur avec une lettre minuscule ($x$,$y$) et une matrice avec une lettre majuscule ($X$,$Y$). 
+From a mathematical point of view, we make the difference between a vector with a lower case letter ($x$,$y$) and a matrix with an upper case letter ($X$,$Y$). 
+
+```markdown
+Tufféry, S. (2012) Data Mining et Statistique Décisionnelle : L’intelligence Des Données Éd. Technip
+
+Jolliffe, I.T. (1982) A Note on the Use of Principal Components in Regression. Journal of the Royal Statistical Society. Series C (Applied Statistics) 31: 300–303
+
+Pearson, K. (1901) On lines and planes of closest fit to systems of points in space. Philosophical Magazine 2: 559–572
+
+Wold, S., Ruhe, A., Wold, H., Dunn, III, W.J. (1984) The Collinearity Problem in Linear Regression. The Partial Least Squares (PLS) Approach to Generalized Inverses. SIAM Journal on Scientific and Statistical Computing 5: 735–743
+
+Friedman, J.H. (1991) Multivariate Adaptive Regression Splines. The Annals of Statistics 19: 1–67
+
+Vapnik, V.N. (1998) Statistical Learning Theory Wiley
+
+McCulloch, W.S., Pitts, W. (1943) A logical calculus of the ideas immanent in nervous activity. The Bulletin of Mathematical Biophysics 5: 115–133
+
+Rosenblatt, F. (1958) The Perceptron: A Probabilistic Model for Information Storage and Organization in The Brain. Psychological Review 65: 386–408
+
+Ivakhnenko, A., Lapa, V.G. (1965) Cybernetic Predicting Devices New York, CCM Information Corp.
+
+Schmidhuber, J. (2015) Deep Learning in Neural Networks: An Overview. Neural Networks 61: 85–117
+```
 
 ## L'estimation de signaux purs
 
