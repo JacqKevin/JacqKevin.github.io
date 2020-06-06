@@ -3,7 +3,7 @@ title: Interesting references
 permalink: Link.html
 ---
 
-# In English
+## In English
 
-# In French
+## In French
 
