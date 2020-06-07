@@ -63,65 +63,143 @@ Ivakhnenko, A., Lapa, V.G. (1965) Cybernetic Predicting Devices New York, CCM In
 Schmidhuber, J. (2015) Deep Learning in Neural Networks: An Overview. Neural Networks 61: 85–117
 ```
 
-## L'estimation de signaux purs
+## Estimation of pure signals (endmembers)
 
-A partir des données spectroscopiques, on peut obtenir des empreintes chimiques de composés si l'échantillon est pur et homogène, comme celle du minéral Illite de la figure \ref{fig:zonesdiscri}. Dans le cas d'images multi- ou hyper-spectrales, c'est l'inhomogénéité de l'échantillon qui est étudiée, et est ensuite caractérisée à travers les différents composés qu'il contient en estimant des signaux purs, aussi appelés endmembers (EM) \cite{Bioucas-Dias2012,Keshava2003}. On parle de méthodes de démélange pour l'extraction de signaux purs. Il existe trois groupes principaux de méthodes pour estimer ces signaux purs :
+From the spectroscopic data, chemical fingerprints of compounds can be obtained if the sample is pure and homogeneous. In the case of multi- or hyper-spectral images, it is the inhomogeneity of the sample that is studied, and is then characterized through the different compounds it contains by estimating pure signals, also called endmembers (EM) (Bioucas-Dias2012, Keshava2003). These are referred to as unmixing methods for the extraction of pure signals. There are three main groups of methods for estimating these pure signals:
 
 <ul>
-<li> Les méthodes dites géométriques se basent sur la possibilité de trouver une forme géométrique qui encadrent l'ensemble des données. </li>
+<li> Geometric methods are based on the possibility of finding a geometric shape that frames the data set. </li>
 <ul>
 {% include image.html file="EM.jpg" %}
-<li> Le principe standard repose sur l'hypothèse qu'un signal spectroscopique est la somme de sous-signaux correspondant à des constituants de l'échantillon. De nombreuses méthodes existent et peuvent être décrites comme la détermination d'un simplexe (triangle à n-dimensions) qui englobe toutes les données, et ses extrémités correspondent aux EMs. Les méthodes les plus connues sont l'indice de pureté du pixel (PPI) \cite{Boardman1993}, N-FINDR \cite{Winter1999}, Vertex Component Analysis (VCA) \cite{Nascimento2005}. </li>
-<li> On peut aussi utiliser l'hypothèse inverse, c'est à dire trouver dans le cas d'un échantillon globalement homogène, des pixels différents de la majorité. Avec un calcul des distances, on peut les mettre en avant. Comme par exemple, l'algorithme de Kennard et Stone \cite{Kennard1969} est utilisé pour trouver les spectres les plus différents dans un jeu de données. </li>
+<li> The standard principle is based on the assumption that a spectroscopic signal is the sum of sub-signals corresponding to constituents of the sample. Many methods exist and can be described as the determination of a simplex (n-dimensional triangle) that encompasses all the data, and its extremities correspond to the EMs. The best known methods are Pixel Purity Index (PPI, Boardman1993), N-FINDR (Winter1999), Vertex Component Analysis (VCA, Nascimento2005).  </li>
+<li> We can also use the opposite hypothesis, i.e. find in the case of a globally homogeneous sample, pixels different from the majority. With a calculation of the distances, we can highlight them. For example, the algorithm of Kennard and Stone (Kennard1969) is used to find the most different spectra in a dataset. </li>
 </ul>
-<li> Les méthodes dites statistiques ou séparation de sources à l'aveugle sont utilisées lorsque les signaux purs sont très mélangés dans chaque pixel. C'est à dire que chaque pixel de l'IHS est constitué de plusieurs sources. Les méthodes géométriques ne sont pas assez performantes dans ce cas pour trouver des pôles représentatifs de la réalité. Alors que les méthodes statistiques, via un temps de calcul plus important, peuvent les estimer. On peut citer les méthodes : Analyse en Composantes Indépendantes (ICA) \cite{Comon1994,Rutledge2013} et Multivariate Curve Resolution Alternating Least Square (MCR-ALS) \cite{Jaumot2015} qui sont utilisées dans différentes études. </li>
-<li> Enfin, on trouve les méthodes parcimonieuses ou sparse qui utilisent les connaissances sur les échantillons grâce à des librairies ou spectres purs. Ces méthodes vont estimer la proportion de ces signatures dans chacun des spectres. Par exemple, on trouve les algorithmes : Fully Constrained Least Squares (FCLS) \cite{Heinz2001}, Sparse Unmixing by Variable Splitting and Augmented Lagrangian (SUnSAL) \cite{Bioucas-Dias2010}. </li>
+<li> Statistical or blind source separation methods are used when the pure signals are very mixed in each pixel. This means that each HSI pixel consists of several sources. Geometric methods are not efficient enough in this case to find poles that are representative of reality. Whereas statistical methods, via a longer calculation time, can estimate them. We can cite the methods: Independent Component Analysis (ICA, Comon1994, Rutledge2013) and Multivariate Curve Resolution Alternating Least Square (MCR-ALS, Jaumot2015) which are used in different studies. </li>
+<li> Finally, there are parsimonious or sparse methods that use sample knowledge through libraries or pure spectra. These methods will estimate the proportion of these signatures in each of the spectra. For example, we find the algorithms: Fully Constrained Least Squares (FCLS, Heinz2001), Sparse Unmixing by Variable Splitting and Augmented Lagrangian (SUnSAL, Bioucas-Dias201). </li>
 </ul>
 
-Ensuite ces EMs permettent d'estimer leurs abondances dans chacun des spectres à partir d'un calcul de similarité sur la base d'une distance. Dans le cas d'une image, ceci permet d'estimer une carte d'abondance de ces EMs et ainsi voir leurs variations.
+Then these EMs allow us to estimate their abundances in each of the spectra from a similarity calculation based on distance. In the case of an image, this makes it possible to estimate an abundance map of these EMs and thus see their variations.
 		
-Ces signaux purs sont souvent comparés à des librairies ou à des spectres d'échantillon pur pour les caractériser. Plusieurs librairies existent, comme celles de l'USGS \cite{Kokaly2017}, CSIRO \cite{Lau2017}, ECOSTRESS \cite{Meerdink2019}, ou encore d'autres intégrées dans des logiciels commerciaux (ENVI).
+These pure signals are often compared to libraries or pure sample spectra to characterize them. Several libraries exist, such as those from the USGS (Kokaly2017), CSIRO (Lau2017), ECOSTRESS (Meerdink2019), or others integrated into commercial software (ENVI).
 
-Ces méthodes sont très utilisées en télédétection pour discriminer les principales entités (routes, bâtiments, forêts, rivières) ou la géologie au sol avec des données multi- et hyper-spectrales. Elles sont aussi très utilisées pour caractériser les minéraux présents dans des échantillons géologiques, comme les carottes sédimentaires et ainsi déterminer l'origine des sédiments. L'annexe \ref{SyntheseBiblioEM}, avec les tableaux \ref{tab:RecapEM1} et \ref{tab:RecapEM2}, récapitulent quelques exemples d'applications de ce type de méthode pour l'analyse des échantillons environnementaux.
+These methods are widely used in remote sensing to discriminate the main entities (roads, buildings, forests, rivers) or ground geology with multi- and hyper-spectral data. They are also widely used to characterize minerals present in geological samples, such as sedimentary cores, and thus determine the origin of sediments.
 
-## La segmentation des images
+```markdown
+Bioucas-Dias, J.M., Plaza, A., Dobigeon, N., Parente, M., Du, Q., Gader, P., Chanussot, J. (2012) Hyperspectral Unmixing Overview: Geometrical, Statistical, and Sparse Regression-Based Approaches. IEEE Journal of selected topics in applied earth observations and remote sensing 5: 354–379
 
-Une image porte des informations sur les structures composant une scène ou un échantillon. Des méthodes existent pour les caractériser, on parle de segmentation. Elles peuvent être regroupées dans deux familles :
+Keshava, N. (2003) A Survey of Spectral Unmixing Algorithms. Lincoln Laboratory Journal 14: 55–78
+
+Boardman, J.W. (1993) Automating spectral unmixing of AVIRIS data using convex geometry concepts. In: 4th Annual JPL Airborne Geoscience Workshop 11–14.
+
+Winter, M.E. (1999) N-FINDR: an algorithm for fast autonomous spectral end-member determination in hyperspectral data. In: Descour, M. R. & Shen, S. S. (eds) Proc. SPIE 3753, Imaging Spectrometry V International Society for Optics and Photonics, 266–275.
+
+Nascimento, J.M.P., Dias, J.M.B. (2005) Vertex Component Analysis: A Fast Algorithm to Unmix Hyperspectral Data. IEEE Transactions on Geoscience and Remote Sensing 43: 898–910
+
+Kennard, R.W., Stone, L.A. (1969) Computer Aided Design of Experiments. Technometrics 11: 137–148
+
+Comon, P. (1994) Independent component analysis, A new concept? Signal Processing 36: 287–314
+
+Rutledge, D.N., Jouan-Rimbaud Bouveresse, D. (2013) Independent Components Analysis with the JADE algorithm. TrAC Trends in Analytical Chemistry 50: 22–32
+
+Jaumot, J., de Juan, A., Tauler, R. (2015) MCR-ALS GUI 2.0: New features and applications. Chemometrics and Intelligent Laboratory Systems 140: 1–12
+
+Heinz, D.C., Chein-I-Chang (2001) Fully constrained least squares linear spectral mixture analysis method for material quantification in hyperspectral imagery. IEEE Transactions on Geoscience and Remote Sensing 39: 529–545
+
+Bioucas-Dias, J.M., Plaza, A., Dobigeon, N., Parente, M., Du, Q., Gader, P., Chanussot, J. (2012) Hyperspectral Unmixing Overview: Geometrical, Statistical, and Sparse Regression-Based Approaches. IEEE Journal of selected topics in applied earth observations and remote sensing 5: 354–379
+
+Kokaly, R.F., Clark, R.N., et al. (2017) USGS Spectral Library Version 7
+
+Lau, I.C., LeGras, M., Laukamp, C., Mason, P., Warren, P. (2017) CSIRO Shortwave Infrared Spectral Library – Evaluation and Status Report 2017 Report EP175249
+
+Meerdink, S.K., Hook, S.J., Roberts, D.A., Abbott, E.A. (2019) The ECOSTRESS spectral library version 1.0. Remote Sensing of Environment 230: 111196
+```
+
+## Image segmentation
+
+An image carries information about the structures making up a scene or sample. Methods exist to characterize them, called segmentation. They can be grouped into two families:
 <ul>
-<li> Les méthodes géométriques qui estiment à partir d'opérateur morphologique des structures dans l'image. </li>
+<li> Geometric methods that estimate structures in the image using a morphological operator. </li>
 <ul>
-<li> Les lamines peuvent être détectées grâce à des maxima ou minima d'intensité avec des méthodes comme H-maxima, ou encore la méthode de la ligne de partage des eaux \cite{Vincent1991} qui considère une image comme un relief topographique et qui va détecter les limites de ceux-ci en "inondant" l'image. Si les lamines pouvaient être caractérisées par des gammes de couleurs, on pourrait effectuer un seuillage à plusieurs niveaux, mais comme les couleurs varient le long de l'échantillon, il faudrait envisager un seuillage adaptatif pour extraire chaque lamine \cite{Zuiderveld1994}. Il est également possible de détecter les limites de lamines, qui sont des ruptures plus ou moins nettes, avec des dérivées ou des gradients, ou en modélisant la limite avec la transformée de Hough \cite{Hough1959,Duda1972} par exemple. La détection des lamines est souvent réalisée avec un signal 1D le long de l'échantillon, car il peut être suffisamment informatif s'il n'est pas très bruité. Dans le cas contraire, il est possible de multiplier les signaux 1D avec du recouvrement puis de les ré-associer. On peut également utiliser la totalité de l'image, mais souvent les lamines ne sont pas caractérisables sur toute la largeur de l'échantillon, il faut donc rassembler les différents "morceaux" pour la reconstituer, ce qui n'est pas une tâche aisée. Les travaux de Gan \cite{Gan2013} sur le sujet, propose d'utiliser les opérateurs morphologiques de base comme l'érosion et la dilatation pour rattacher ou séparer ces zones (figure \ref{fig:erosiondilation}). </li>
-<li> Pour la granulométrie, les méthodes sont similaires avec la détection des ruptures entre les grains grâce à des gradients ou la ligne de partage des eaux. </li>
+<li> Laminae can be detected using intensity maxima or minima with methods such as H-maxima, or the watershed method (Vincent1991) which considers an image as a topographic relief and will detect their boundaries by "flooding" the image. If the laminae could be characterized by colour ranges, multi-level thresholding could be performed, but since the colours vary along the sample, adaptive thresholding should be considered to extract each lamina (Zuiderveld1994). It is also possible to detect lamina boundaries, which are more or less sharp breaks, with derivatives or gradients, or by modeling the boundary with the Hough transform (Hough1959, Duda1972) for example. The detection of laminae is often performed with a 1D signal along the sample, as it can be sufficiently informative if it is not very noisy. If this is not the case, 1D signals can be multiplied with overlap and then re-associated. It is also possible to use the whole image, but often the laminates are not characterizable over the whole width of the sample, so the different "pieces" have to be put together to reconstruct it, which is not an easy task. The work of Gan (Gan2013) on the subject, proposes to use basic morphological operators such as erosion and dilation to reattach or separate these areas. </li>
+<li> For granulometry, the methods are similar with the detection of breaks between grains through gradients or the watershed. </li>
 </ul>
-<li> Les méthodes statistiques qui estiment des similarités ou tendances dans l'image.  </li>
+<li> Statistical methods that estimate similarities or trends in the image. </li>
 <ul>
-<li> Dans le cas de la détection de lamines qui sont des phénomènes redondants et périodiques, on peut utiliser des approches basées sur la transformée de Fourier ou sur les ondelettes. </li>
-<li> Pour l'estimation de la granulométrie, l'approche la plus utilisée est basée sur l'autocorrélation qui estime les dépendances internes dans l'image, puisque les pixels voisins d'une même particule sont dépendants. </li>
+<li> In the case of the detection of laminates, which are redundant and periodic phenomena, approaches based on Fourier transform or wavelets can be used. </li>
+<li> For particle size estimation, the most commonly used approach is based on autocorrelation, which estimates internal dependencies in the image, since neighboring pixels of the same particle are dependent. </li>
 </ul>
 </ul>
 
-## Les méthodes de classification
+```markdown
+Vincent, L., Soille, P. (1991) Watersheds in digital spaces: an efficient algorithm based on immersion simulations. IEEE Transactions on Pattern Analysis and Machine Intelligence 13: 583–598
 
-Les données peuvent aussi être regroupées de manière qualitative, on parle de classification ou de reconnaissance de formes. On peut avoir des connaissances partielles des données et les utiliser, on parle de classification supervisée ou discrimination qui permettent d'estimer par exemple : la présence ou l'absence d'un composé, ou des niveaux d'abondances haut-moyen-élevé. Dans le cas de données inconnues, on parle de classification non-supervisée ou clustering. Ces méthodes peuvent s'appliquer aussi bien sur la dimension spatiale que spectrale.
+Zuiderveld, K. (1994) Contrast Limited Adaptive Histogram Equalization. In: Graphics Gems IV Academic Press, 474–485.
+
+Hough, P.V.C. (1959) Machine Analysis of Bubble Chamber Pictures. In: Proc. Int. Conf. High Energy Accelerators and Instrumentation 554–558.
+
+Duda, R.O., Hart, P.E. (1972) Use of the Hough transformation to detect lines and curves in pictures. Communications of the ACM 15: 11–15
+
+Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment laminae: An automated 2-D image processing method. Computers & Geosciences 52: 345–355
+```
+
+## Classification methods
+
+Data can also be grouped in a qualitative way, called classification or pattern recognition. Partial knowledge of the data can be obtained and used, known as supervised classification or discrimination, to estimate, for example, the presence or absence of a compound, or high-medium-high levels of abundance. In the case of unknown data, we speak of unsupervised classification or clustering. These methods can be applied to both the spatial and spectral dimensions.
 
 {% include image.html file="classif.jpg" %}
 
-### Les méthodes non supervisées (clustering)
+### Unsupervised methods (clustering)
 
 <ul>
-<li> L'Analyse en Composantes Principales (ACP) permet de réduire les données et ainsi de visualiser rapidement leurs principales variabilités. Une approche similaire appelée Minimum Noise Fraction (MNF) permet de garder les composantes les plus informatives et les moins bruitées. </li>
-<li> Les méthodes des K-moyennes (K-means) ou des K-médianes (K-medoids) estiment des centres représentatifs d'un nombre K de groupes \cite{Steinhaus1956}. Une méthode avancée utilisant des règles floues a été développée, C-moyennes floues (FCM) \cite{Dunn1973}. </li>
-<li> Les classifications hiérarchiques se divisent en deux familles, celles qui agglomèrent (classification ascendante hiérarchique CAH) et celles qui divisent (classification descendante hiérarchique CDH) \cite{Ward1963}. Dans le cas de la CAH, les données sont agglomérées de proche en proche suivant un critère de distance jusqu'à obtenir un groupe unique, et inversement pour la CDH. Le résultat est un dendrogramme qui peut être coupé à un certain niveau définissant le nombre de groupes. </li>
+<li> Principal Component Analysis (PCA) allows you to reduce the data and thus quickly visualize their main variabilities. A similar approach called Minimum Noise Fraction (MNF) keeps the most informative and least noisy components. </li>
+<li> The K-means or K-medoids methods estimate representative centers of a K number of groups. An advanced method using fuzzy rules has been developed, C-fuzzy means (FCM, Dunn1973). </li>
+<li> Hierarchical classifications are divided into two families, those that aggregate (hierarchical ascending classification HAC) and those that divide (hierarchical descending classification HDC) (Ward1963). In the case of HAC, the data are agglomerated from one group to the next according to a distance criterion until a single group is obtained, and vice versa for HDC. The result is a dendrogram that can be cut at a certain level defining the number of groups. </li>
 </ul>
 
-### Les méthodes supervisées (discrimination)
+```markdown
+Dunn, J.C. (1973) A Fuzzy Relative of the ISODATA Process and Its Use in Detecting Compact Well-Separated Clusters. Journal of Cybernetics 3: 32–57
+
+Ward, J.H. (1963) Hierarchical Grouping to Optimize an Objective Function. Journal of the American Statistical Association 58: 236–244
+```
+
+### Supervised methods (discrimination)
 
 <ul>
-<li> La méthode des K plus proches voisins (KNN) est une méthode non paramétrique qui estime une probabilité d’appartenance à un groupe suivant une règle, qui est ici la distance avec les individus environnants \cite{Hart1968}. Elle calcule la distance entre un échantillon « inconnu » avec tous ceux connus. Puis ce nouvel échantillon est classé dans un groupe avec ses K voisins les plus proches. Il existe plusieurs approches pour améliorer ces prédictions, comme rajouter des règles floues avec la méthode KNN-floue \cite{Keller1985}, ou utiliser la théorie des fonctions de croyance EkNN (Evidential KNN) \cite{Denoeux1995,Shafer1976}. </li>
-<li> L'analyse linéaire discriminante (LDA) cherche l’axe permettant de séparer au mieux les groupes \cite{Fisher1936}. On peut y voir une correspondance avec l’ACP et la PLS. Elle peut utiliser des fonctions non linéaires, comme avec l'Analyse Discriminante Quadratique. Une approche similaire appelée PLS-DA (discriminant analysis). </li>
-<li> Les arbres de décision (DT) sont des méthodes non paramétriques qui reposent sur la création d’un arbre de décision à choix binaire \cite{Breiman1984}. Pour une variable explicative l’algorithme va déterminer des règles pour séparer un ou des groupes. À la fin de celui-ci un ensemble de règles sur plusieurs variables est créé, et cela forme un arbre, où l'on trouve au niveau d’un nœud la décision binaire et au niveau des feuilles la classe estimée. Un apprentissage avec plusieurs arbres de décision permet de créer une forêt d'arbres décisionnels (RF) \cite{TinKamHo1995}, puis les règles majoritaires sont conservées. </li>
-<li> Les réseaux profonds, comme on a pu le dire précédemment, sont composés de plusieurs couches constitués d'un nombre souvent important de neurones \cite{Ivakhnenko1965,Schmidhuber2015}. Ces méthodes sont très utilisées dans le cas d'apprentissage d'images. En effet, elles vont les représenter grâce à leurs compositions, comme les niveaux d'intensité, les structures finies (arêtes d'un objet) et grossières (une région, une forme, un objet). On parle ici d'apprentissage à différents niveaux d'abstraction qui est fonction de la profondeur du réseau. </li>
-<li> Des méthodes de régression présentées précédemment peuvent aussi servir en classification : PLS-DA (discriminant analysis), MARS, SVM, ANN.  </li>
+<li> The k-nearest neighbors method (KNN) is a nonparametric method that estimates a probability of belonging to a group according to a rule, which here is the distance from the surrounding individuals (Hart1968). It calculates the distance between an "unknown" sample and all known ones. Then this new sample is classified in a group with its closest K neighbors. There are several approaches to improve these predictions, such as adding fuzzy rules with the KNN-fuzzy method (Keller1985), or using the theory of belief functions EkNN (Evidential KNN, Denoeux1995, Shafer1976).  </li>
+<li> Linear Discriminant Analysis (LDA) looks for the axis that best separates the groups (Fisher1936). This can be seen as a correspondence with PCA and PLS. It can use non-linear functions, as with Quadratic Discriminant Analysis (QDA). There is also a similar approach called PLS-DA (partial least squares discriminant analysis), or Soft independent modelling by class analogy (SIMCA). </li> % A terminer
+<li> Decision trees (DTs) are non-parametric methods based on the creation of a binary choice decision tree (Breiman1984). For an explanatory variable, the algorithm will determine rules to separate one or several groups. At the end of it a set of rules on several variables is created, and this forms a tree, where we find at the node level the binary decision and at the leaf level the estimated class. A training with several decision trees allows to create a forest of decision trees (RF) (TinKamHo1995), then the majority rules are kept. </li>
+<li> Multivariate adaptive spline regression (MARS), previously mentionned, created by Friedman (Friedman1991) allows non-linearities to be modelled using rules, a non-parametric method. To do this, it uses recursive partitioning to estimate subfields that can be modeled by linear functions. A MARS model can therefore be represented by a succession of rules leading to terminal linear models. </li>
+<li> Support Vector Machines (SVM, Vapnik1998) use a large dimensional space to estimate a linear (n>2) hyperplane to solve a nonlinear problem. The estimated linear hyperplane then undergoes an inverse transformation to return to the initial nonlinear space. </li>
+<li> Artificial Neural Networks (ANN, McCulloch1943, Rosenblatt1958) seeks to reproduce the brain's ability to learn. This method relies on a set of interconnected fundamental units, the neurons. A network is a set of layers of neurons that function, one after the other. Each neuron receives some of the information it processes and communicates the results to its closest neighbours in the next layer of neurons. The simplest network consists of three layers, one input layer, one computational or hidden layer and one output layer. </li>
+<li> The deep networks, as previously mentioned, are composed of several layers made up of an often large number of neurons (Ivakhnenko1965, Schmidhuber2015). These methods are widely used in the case of image learning. Indeed, they will represent them thanks to their compositions, such as intensity levels, finite (edges of an object) and coarse (a region, a shape, an object) structures. We are talking here about learning at different levels of abstraction which is a function of the depth of the network. </li>
 </ul>
 
-Du fait de la complexité des données multi- et hyper-spectrale, ce sont principalement des méthodes non linéaires (SVM, ANN, CNN) qui sont employées pour classifier chaque pixel à partir de zones labellisées. Afin de réduire cette complexité et le temps de calcul, deux propositions de traitement sont utilisées. Certains réduisent les données avec des algorithmes de démélange (VCA, ICA). D'autres utilisent la dimension spatiale avec les pixels voisins autour du pixel à classifier.
+Due to the complexity of multi- and hyper-spectral data, it is mainly non-linear methods (SVM, ANN, CNN) that are used to classify each pixel from labelled areas. In order to reduce this complexity and the computation time, two processing proposals are used. Some reduce the data with demixing algorithms (VCA, ICA). Others use the spatial dimension with neighbouring pixels around the pixel to be classified or superpixels.
+
+```markdown
+Hart, P. (1968) The condensed nearest neighbor rule. IEEE Transactions on Information Theory 14: 515–516
+
+Keller, J.M., Gray, M.R., Givens, J.A. (1985) A fuzzy K-nearest neighbor algorithm. IEEE Transactions on Systems, Man, and Cybernetics SMC-15: 580–585
+
+Denoeux, T. (1995) A k-nearest neighbor classification rule based on Dempster-Shafer theory. IEEE Transactions on Systems, Man, and Cybernetics 25: 804–813
+
+Shafer, G. (1976) A Mathematical Theory of Evidence Princeton University Press
+
+Fisher, R.A. (1936) The Use of Multiple Measurements in Taxonomic Problems. Annals of Eugenics 7: 179–188
+
+Breiman, L., Friedman, J.H., Olshen, R.A., Stone, C.J. (1984) Classification And Regression Trees Routledge
+
+Ho, T.K. (1995) Random decision forests. In: Proceedings of 3rd International Conference on Document Analysis and Recognition IEEE Comput. Soc. Press, 278–282.
+
+Friedman, J.H. (1991) Multivariate Adaptive Regression Splines. The Annals of Statistics 19: 1–67
+
+Vapnik, V.N. (1998) Statistical Learning Theory Wiley
+
+McCulloch, W.S., Pitts, W. (1943) A logical calculus of the ideas immanent in nervous activity. The Bulletin of Mathematical Biophysics 5: 115–133
+
+Rosenblatt, F. (1958) The Perceptron: A Probabilistic Model for Information Storage and Organization in The Brain. Psychological Review 65: 386–408
+
+Ivakhnenko, A., Lapa, V.G. (1965) Cybernetic Predicting Devices New York, CCM Information Corp.
+
+Schmidhuber, J. (2015) Deep Learning in Neural Networks: An Overview. Neural Networks 61: 85–117
+```
