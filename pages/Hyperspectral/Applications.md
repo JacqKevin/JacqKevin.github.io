@@ -12,12 +12,24 @@ permalink: Applications_HSI.html
 
 #### Mining and exploration industries
 
+### Art and Archeology
+
+### Food Industry
+
+### Recycling and waste management
+
+### Pharmaceutical industry
+
 #### Soil study
 
 ## In remote sensing
 
 ### Land classification
 
-### Mining and exploration industries
+### Geological and Geothermal Exploration
 
-### Soil study
+### Fire, Flood Risk, Erosion
+
+### Vegetation and agriculture
+
+### Environmental monitoring
