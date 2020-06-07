@@ -14,7 +14,9 @@ According to Beer-Lambert law, the chemical concentration of a compound is relat
 
 ## Spectral preprocessing
 
+<center>
 {% include image.html file="Preprocessing.jpg" %}
+</center>
 
 In this toolbox, four main preprocessing are used, also nine combinations of them. Thus, thirteen preprocessing and the raw data are compared to find an optimal one. They allow to reduce noise and highlight relevant spectral information to predict the interest variable(s) (Vidal2012, Rinnan2009).
 
