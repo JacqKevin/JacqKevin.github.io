@@ -16,9 +16,9 @@ According to Beer-Lambert law, the chemical concentration of a compound is relat
 
 {% include image.html file="Preprocessing.jpg" %}
 
-In this toolbox, four main preprocessing are used, also nine combinations of them. Thus, thirteen preprocessing and the raw data are compared to find an optimal one. They allow to reduce noise and highlight relevant spectral information to predict the interest variable(s).
+In this toolbox, four main preprocessing are used, also nine combinations of them. Thus, thirteen preprocessing and the raw data are compared to find an optimal one. They allow to reduce noise and highlight relevant spectral information to predict the interest variable(s) (Vidal2012, Rinnan2009).
 
-Detrending is used to remove the baseline. Multiplicative Scatter Correction (MSC) and Standard Normal Variate (SNV) are used to correct the spectra from light scattering. The Savitzky–Golay filter is used to derivate the spectra and to reduce additive effects (baseline offset and slope).
+Detrending is used to remove the baseline (Barnes1989). Multiplicative Scatter Correction (MSC) and Standard Normal Variate (SNV, Barnes1989) are used to correct the spectra from light scattering. The Savitzky–Golay filter is used to derivate the spectra and to reduce additive effects (baseline offset and slope, Savitzky1964).
 
 Then it is necessary to be careful with their effects which can make interesting wavelength structures disappear or on the contrary artificially create them.
 
