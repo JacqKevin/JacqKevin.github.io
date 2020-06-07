@@ -5,7 +5,7 @@ permalink: Introduction_HSI.html
 ---
 
 ## Hyperspectral representation
-A conventional RGB image is represented as three-dimensional data with two spatial dimensions and one dimension containing the 3 channels R, G, B. These channels correspond normal integration of wavelengths around 611nm, 549nm and 464nm respectively. For a hyperspectral image, we find these two spatial dimensions, to which is added a spectral dimension composed of multiple channels corresponding to wavelengths of the electromagnetic spectrum, which is why it is represented by a data cube. 
+A conventional RGB image is represented as three-dimensional data with two spatial dimensions and one dimension containing the 3 channels R, G, B. These channels correspond normal integration of wavelengths around 611nm, 549nm and 464nm respectively (CIE1999). For a hyperspectral image, we find these two spatial dimensions, to which is added a spectral dimension composed of multiple channels corresponding to wavelengths of the electromagnetic spectrum, which is why it is represented by a data cube. 
 
 Spectroscopic sensors can use different ranges of the electromagnetic spectrum (ultraviolet, visible, infrared, X-rays). They record physical, chemical and biological information about the samples being analysed, known as structural properties.
 
@@ -23,11 +23,11 @@ CIE (1999) IEC 61966-2-1:1999: Multimedia Systems and Equipment - Colour Measure
 
 ## The electromagnetic spectrum
 
-The electromagnetic spectrum is divided into several spectral ranges according to the modes of interaction between radiation and matter (molecules, atoms, electrons). Banwell proposes to divide it into seven main areas which are synthesized in the figure below :
+The electromagnetic spectrum is divided into several spectral ranges according to the modes of interaction between radiation and matter (molecules, atoms, electrons). Banwell proposes to divide it into seven main areas which are synthesized in the figure below (Banwell1994):
 <ul>
 <li> Radio waves can interact with the spin of particles by inverting them, for example with atomic nuclei or single electrons. The study of these two phenomena is called nuclear magnetic resonance (NMR), electron spin resonance (ESR) or electron paramagnetic resonance (EPR) respectively. </li>
 <li> Microwaves are capable of influencing the rotational speed of molecules, which is why his study is called rotational spectroscopy. </li>
-<li> Infrared (IR) is concerned with the vibration of molecular bonds, hence the name vibrational spectroscopy. Two main groups exist in this area, infrared spectroscopy and Raman spectroscopy. The first is also subdivided into three areas according to ISO 20473 (long- or far-, mid- and near-infrared), or commonly subdivided into five areas (far-, long wave-, mid wave-, short wave-, near-infrared). </li>
+<li> Infrared (IR) is concerned with the vibration of molecular bonds, hence the name vibrational spectroscopy. Two main groups exist in this area, infrared spectroscopy and Raman spectroscopy. The first is also subdivided into three areas according to ISO 20473 (long- or far-, mid- and near-infrared, ISO2007), or commonly subdivided into five areas (far-, long wave-, mid wave-, short wave-, near-infrared). </li>
 <li> The ultraviolet and the visible (UV-visible) excite the valence (external) electrons of atoms or molecules for the transitions of the electron states, we speak of electron spectroscopy. Two main methods exist in this range, UV-Visible spectroscopy and UV-Visible fluorescence spectroscopy (EEM, with laser excitation LIF , or resolved time TRES). </li>
 <li> X-rays can also be used for electron spectroscopy, but only at the core electrons or near the atomic nucleus. This range can also be divided into three main methods, X-ray absorption or diffraction (XRD) spectroscopy and X-ray fluorescence spectroscopy. </li>
 <li> Gamma rays affect energy transitions within the nuclei of atoms. It is also represented by two main methods, gamma spectrometry and Mössbauer spectrometry. </li>
