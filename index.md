@@ -14,4 +14,10 @@ Semi-quantitative and quantitave methods were used to reconstruct proxy variatio
 Unsupervised and supervised qualitative methods have also been used to classified the main components in each pixel or the lithology type. 
 Image processing approaches need to be developped to automatize lithology description or to separe areas.
 
+If you mention parts of this site, please cite my thesis or the article from which it comes from mentioned at the beginning of the page.
+
+```markdown
+Jacq, K. (2019) Traitement d’images Multispectrales et Spatialisation Des Données Pour La Caractérisation de La Matière Organique Des Phases Solides Naturelles. University Savoie Mont Blanc.
+```
+
 {% include image.html file="Results.jpg" %}
