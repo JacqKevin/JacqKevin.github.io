@@ -22,7 +22,9 @@ Rather than studying specific spectral regions for a compound or chemical bond, 
 		
 The main regression methods that can be found in the literature or that are being developed are presented below and can be schematized with the figure below. More information is available in Tuffery's book (Tufféry2012). 
 
+<center>
 {% include image.html file="Multi.jpg" %}
+</center>
 
 <ul>
 <li> Linear methods: </li>
@@ -70,7 +72,9 @@ From the spectroscopic data, chemical fingerprints of compounds can be obtained 
 <ul>
 <li> Geometric methods are based on the possibility of finding a geometric shape that frames the data set. </li>
 <ul>
+<center>
 {% include image.html file="EM.jpg" %}
+</center>
 <li> The standard principle is based on the assumption that a spectroscopic signal is the sum of sub-signals corresponding to constituents of the sample. Many methods exist and can be described as the determination of a simplex (n-dimensional triangle) that encompasses all the data, and its extremities correspond to the EMs. The best known methods are Pixel Purity Index (PPI, Boardman1993), N-FINDR (Winter1999), Vertex Component Analysis (VCA, Nascimento2005).  </li>
 <li> We can also use the opposite hypothesis, i.e. find in the case of a globally homogeneous sample, pixels different from the majority. With a calculation of the distances, we can highlight them. For example, the algorithm of Kennard and Stone (Kennard1969) is used to find the most different spectra in a dataset. </li>
 </ul>
@@ -118,7 +122,9 @@ Meerdink, S.K., Hook, S.J., Roberts, D.A., Abbott, E.A. (2019) The ECOSTRESS spe
 
 Data can also be grouped in a qualitative way, called classification or pattern recognition. Partial knowledge of the data can be obtained and used, known as supervised classification or discrimination, to estimate, for example, the presence or absence of a compound, or high-medium-high levels of abundance. In the case of unknown data, we speak of unsupervised classification or clustering. These methods can be applied to both the spatial and spectral dimensions.
 
+<center>
 {% include image.html file="classif.jpg" %}
+</center>
 
 ### Unsupervised methods (clustering)
 
