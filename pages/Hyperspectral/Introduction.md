@@ -15,7 +15,9 @@ Thus hyperspectral imaging benefits from the advantages of:
 <li> as well as spectroscopy with the biological-physical-chemical characteristic of the sample properties. </li>
 </ul>
 
+<center>
 {% include image.html file="HSI.jpg" %}
+</center>
 
 ```markdown
 CIE (1999) IEC 61966-2-1:1999: Multimedia Systems and Equipment - Colour Measurement and Management - Part 2-1: Colour Management - Default RGB Colour Space - SRGB
@@ -33,7 +35,9 @@ The electromagnetic spectrum is divided into several spectral ranges according t
 <li> Gamma rays affect energy transitions within the nuclei of atoms. It is also represented by two main methods, gamma spectrometry and Mössbauer spectrometry. </li>
 </ul>
 
-{% include image.html file="Spectre-electromagnetique-en-energie-frequence-longueur-et-nombre-donde-Les-modes.png" %}
+<center>
+{% include image.html file="Spectre-electromagnetique-en-energie-frequence-longueur-et-nombre-donde-Les-modes.png" caption="Schematic electromagnetic spectrum proposed by Banwell" %}
+</center>
 
 ```markdown
 Banwell, C.N., McCash, E.M. (1994) Fundamentals of Molecular Spectroscopy McGraw-Hill
