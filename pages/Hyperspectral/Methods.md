@@ -114,34 +114,6 @@ Lau, I.C., LeGras, M., Laukamp, C., Mason, P., Warren, P. (2017) CSIRO Shortwave
 Meerdink, S.K., Hook, S.J., Roberts, D.A., Abbott, E.A. (2019) The ECOSTRESS spectral library version 1.0. Remote Sensing of Environment 230: 111196
 ```
 
-## Image segmentation
-
-An image carries information about the structures making up a scene or sample. Methods exist to characterize them, called segmentation. They can be grouped into two families:
-<ul>
-<li> Geometric methods that estimate structures in the image using a morphological operator. </li>
-<ul>
-<li> Laminae can be detected using intensity maxima or minima with methods such as H-maxima, or the watershed method (Vincent1991) which considers an image as a topographic relief and will detect their boundaries by "flooding" the image. If the laminae could be characterized by colour ranges, multi-level thresholding could be performed, but since the colours vary along the sample, adaptive thresholding should be considered to extract each lamina (Zuiderveld1994). It is also possible to detect lamina boundaries, which are more or less sharp breaks, with derivatives or gradients, or by modeling the boundary with the Hough transform (Hough1959, Duda1972) for example. The detection of laminae is often performed with a 1D signal along the sample, as it can be sufficiently informative if it is not very noisy. If this is not the case, 1D signals can be multiplied with overlap and then re-associated. It is also possible to use the whole image, but often the laminates are not characterizable over the whole width of the sample, so the different "pieces" have to be put together to reconstruct it, which is not an easy task. The work of Gan (Gan2013) on the subject, proposes to use basic morphological operators such as erosion and dilation to reattach or separate these areas. </li>
-<li> For granulometry, the methods are similar with the detection of breaks between grains through gradients or the watershed. </li>
-</ul>
-<li> Statistical methods that estimate similarities or trends in the image. </li>
-<ul>
-<li> In the case of the detection of laminates, which are redundant and periodic phenomena, approaches based on Fourier transform or wavelets can be used. </li>
-<li> For particle size estimation, the most commonly used approach is based on autocorrelation, which estimates internal dependencies in the image, since neighboring pixels of the same particle are dependent. </li>
-</ul>
-</ul>
-
-```markdown
-Vincent, L., Soille, P. (1991) Watersheds in digital spaces: an efficient algorithm based on immersion simulations. IEEE Transactions on Pattern Analysis and Machine Intelligence 13: 583–598
-
-Zuiderveld, K. (1994) Contrast Limited Adaptive Histogram Equalization. In: Graphics Gems IV Academic Press, 474–485.
-
-Hough, P.V.C. (1959) Machine Analysis of Bubble Chamber Pictures. In: Proc. Int. Conf. High Energy Accelerators and Instrumentation 554–558.
-
-Duda, R.O., Hart, P.E. (1972) Use of the Hough transformation to detect lines and curves in pictures. Communications of the ACM 15: 11–15
-
-Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment laminae: An automated 2-D image processing method. Computers & Geosciences 52: 345–355
-```
-
 ## Classification methods
 
 Data can also be grouped in a qualitative way, called classification or pattern recognition. Partial knowledge of the data can be obtained and used, known as supervised classification or discrimination, to estimate, for example, the presence or absence of a compound, or high-medium-high levels of abundance. In the case of unknown data, we speak of unsupervised classification or clustering. These methods can be applied to both the spatial and spectral dimensions.
@@ -202,4 +174,32 @@ Rosenblatt, F. (1958) The Perceptron: A Probabilistic Model for Information Stor
 Ivakhnenko, A., Lapa, V.G. (1965) Cybernetic Predicting Devices New York, CCM Information Corp.
 
 Schmidhuber, J. (2015) Deep Learning in Neural Networks: An Overview. Neural Networks 61: 85–117
+```
+
+## Image segmentation
+
+An image carries information about the structures making up a scene or sample. Methods exist to characterize them, called segmentation. They can be grouped into two families:
+<ul>
+<li> Geometric methods that estimate structures in the image using a morphological operator. </li>
+<ul>
+<li> Laminae can be detected using intensity maxima or minima with methods such as H-maxima, or the watershed method (Vincent1991) which considers an image as a topographic relief and will detect their boundaries by "flooding" the image. If the laminae could be characterized by colour ranges, multi-level thresholding could be performed, but since the colours vary along the sample, adaptive thresholding should be considered to extract each lamina (Zuiderveld1994). It is also possible to detect lamina boundaries, which are more or less sharp breaks, with derivatives or gradients, or by modeling the boundary with the Hough transform (Hough1959, Duda1972) for example. The detection of laminae is often performed with a 1D signal along the sample, as it can be sufficiently informative if it is not very noisy. If this is not the case, 1D signals can be multiplied with overlap and then re-associated. It is also possible to use the whole image, but often the laminates are not characterizable over the whole width of the sample, so the different "pieces" have to be put together to reconstruct it, which is not an easy task. The work of Gan (Gan2013) on the subject, proposes to use basic morphological operators such as erosion and dilation to reattach or separate these areas. </li>
+<li> For granulometry, the methods are similar with the detection of breaks between grains through gradients or the watershed. </li>
+</ul>
+<li> Statistical methods that estimate similarities or trends in the image. </li>
+<ul>
+<li> In the case of the detection of laminates, which are redundant and periodic phenomena, approaches based on Fourier transform or wavelets can be used. </li>
+<li> For particle size estimation, the most commonly used approach is based on autocorrelation, which estimates internal dependencies in the image, since neighboring pixels of the same particle are dependent. </li>
+</ul>
+</ul>
+
+```markdown
+Vincent, L., Soille, P. (1991) Watersheds in digital spaces: an efficient algorithm based on immersion simulations. IEEE Transactions on Pattern Analysis and Machine Intelligence 13: 583–598
+
+Zuiderveld, K. (1994) Contrast Limited Adaptive Histogram Equalization. In: Graphics Gems IV Academic Press, 474–485.
+
+Hough, P.V.C. (1959) Machine Analysis of Bubble Chamber Pictures. In: Proc. Int. Conf. High Energy Accelerators and Instrumentation 554–558.
+
+Duda, R.O., Hart, P.E. (1972) Use of the Hough transformation to detect lines and curves in pictures. Communications of the ACM 15: 11–15
+
+Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment laminae: An automated 2-D image processing method. Computers & Geosciences 52: 345–355
 ```
