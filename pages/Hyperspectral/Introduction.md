@@ -41,7 +41,7 @@ Banwell, C.N., McCash, E.M. (1994) Fundamentals of Molecular Spectroscopy McGraw
 ISO (2007) ISO 20473:2007 - Optics and Photonics — Spectral Bands
 ```
 
-## Spectroscopic acquisition
+## Spectroscopic acquisition method
 The type of acquisition is also specific to the sensor and the problem to be solved :
 <ul>
 <li> discrete spot analyses give an overall idea of the composition of the sample, </li>
@@ -50,7 +50,7 @@ The type of acquisition is also specific to the sensor and the problem to be sol
 <li> an image that is obtained by acquiring a line to obtain, as before, the overall variability of the sample. </li>
 </ul>
 
-## Hyperspectral acquisition
+## Hyperspectral acquisition method
 As we have just seen, mapping by multiple spectroscopic acquisitions can allow to obtain a hyperspectral image, this method is called point-scan or whiskbroom. Most often the sample will move in both directions and the sensor is fixed to estimate the hyperspectral image of the whole sample. It allows a high spatial resolution for a sample of variable size, but requires an acquisition time that is often important. 
 
 Two other methods exist to obtain a hyperspectral image:
@@ -60,3 +60,13 @@ Two other methods exist to obtain a hyperspectral image:
 </ul>
 
 In the laboratory these three acquisition methods can be used, but in the field or airborne the pushbroom method is preferred.
+
+### Analysis protocol used in the laboratory
+
+Coming soon
+
+```markdown
+Butz, C., Grosjean, M., Fischer, D., Wunderle, S., Tylmann, W., Rein, B. (2015) Hyperspectral imaging spectroscopy: a promising method for the biogeochemical analysis of lake sediments. Journal of Applied Remote Sensing 9: 1–20
+
+Van Exem, A. (2018) Reconstructions de Changements Environnementaux Dans Les Archives Lacustres Par Imagerie Hyperspectrale.
+```
