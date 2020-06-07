@@ -20,4 +20,6 @@ If you mention parts of this site, please cite my thesis or the article from whi
 Jacq, K. (2019) Traitement d’images Multispectrales et Spatialisation Des Données Pour La Caractérisation de La Matière Organique Des Phases Solides Naturelles. University Savoie Mont Blanc.
 ```
 
+<center>
 {% include image.html file="Results.jpg" %}
+</center>
