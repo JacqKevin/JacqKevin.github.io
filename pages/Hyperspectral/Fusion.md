@@ -2,7 +2,6 @@
 title: Fusion
 description: Fusion toolboxes
 permalink: Fusion_HSI.html
-sidebar: Matlab_sidebar
 ---
 
 Comme on a pu le voir, chaque domaine spectral apporte des informations bio-physico-chimiques qui lui sont propres et qui peuvent se retrouver dans d'autres. C'est pourquoi combiner différents jeux de données de plusieurs domaines spectraux est intéressant pour améliorer la caractérisation des échantillons. En fonction du type de capteur, les méthodes employées sont différentes, c'est pourquoi cette section est divisée en deux parties qui traitent de la fusion d'image (2D) et de signaux (1D).
