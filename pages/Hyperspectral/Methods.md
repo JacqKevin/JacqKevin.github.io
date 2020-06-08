@@ -4,7 +4,7 @@ description: Methods
 permalink: Methods_HSI.html
 ---
 
-![Worflow](/images/Worflow.jpg)
+{% include image.html file="Methods.jpg" %}
 
 ## Semi-quantitative methods
 
