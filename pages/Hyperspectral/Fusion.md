@@ -13,7 +13,7 @@ Comme on a pu le voir, chaque domaine spectral apporte des informations bio-phys
 		
 Les méthodes de fusion d'image doivent pallier deux principales difficultés, (1) la modification de la surface des échantillons entre les acquisitions et (2) la non-homogénéité des résolutions. Ce sont des questions qui sont principalement étudiées dans les domaines de la télédétection (étude des terrains) et du médical (diagnostic plus complet d'un patient) pour agglomérer des données multicapteurs. Le domaine de la chimie analytique commence aussi à s'y intéresser en s'inspirant des méthodes développées dans ces deux domaines \cite{DeJuan2019, DeJuan2018}. 
 
-## Hyperspectral image fusion
+## Image fusion
 
 ### Fusion at high resolution
 
