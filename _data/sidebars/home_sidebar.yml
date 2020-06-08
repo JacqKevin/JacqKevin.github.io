@@ -22,7 +22,7 @@ entries:
       url: /Processing_Methods_HSI.html
       output: web
 
-    - title: Fusion
+    - title: Sensor fusion
       url: /Fusion_HSI.html
       output: web
 
