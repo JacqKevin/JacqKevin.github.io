@@ -18,10 +18,14 @@ topnav_dropdowns:
           url: /Introduction_HSI.html
         - title: Preprocessings
           url: /Preprocessing_HSI.html
-        - title: Methods
-          url: /Methods_HSI.html
+        - title: Processing methods
+          url: /Processing_Methods_HSI.html
+        - title: Sensor fusion
+          url: /Fusion_HSI.html
         - title: Applications
           url: /Applications_HSI.html
+        - title: Useful References
+          url: /Link.html
     - title: Toolboxes
       folderitems:
         - title: Matlab
