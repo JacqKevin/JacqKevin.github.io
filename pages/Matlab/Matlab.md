@@ -7,8 +7,9 @@ folder: Matlab
 
 Description soon
 
+<center>
 {% include image.html file="Worflow.jpg" %}
-
+</center>
 
 
 
