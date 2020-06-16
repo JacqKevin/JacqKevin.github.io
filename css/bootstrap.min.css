@@ -221,14 +221,20 @@ optgroup {
 }
 
 table {
-    border-spacing: 0;
-    border-collapse: collapse
+ border-width:1px; 
+ border-style:solid; 
+ border-color:black;
+ width:50%;
+ border-collapse: collapse
 }
-
+ }
 td,
-th {
-    padding: 0
-}
+th { 
+ border-width:1px;
+ border-style:solid; 
+ border-color:black;
+ width:50%;
+ }
 
 
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
