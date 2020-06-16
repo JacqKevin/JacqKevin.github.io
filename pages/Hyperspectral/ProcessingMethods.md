@@ -221,7 +221,7 @@ Schmidhuber, J. (2015) Deep Learning in Neural Networks: An Overview. Neural Net
             <td style="vertical-align:middle;text-align:center;" rowspan="8">Soil (89)</td>
             <td style="vertical-align:middle;text-align:center;" >Vis (Spectroscopy)</td>
             <td style="vertical-align:middle;text-align:center;" rowspan="4">OC</td>
-            <td style="vertical-align:middle;text-align:center;  rowspan="8""><b>D2-PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;"  rowspan="8"><b>D2-PLSR</b></td>
             <td style="vertical-align:middle;text-align:center;">R2cal=0.77</td>
         </tr>
         <tr>
