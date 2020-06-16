@@ -220,7 +220,7 @@ Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment lam
         <tr>
             <th style="text-align:center">Sample</th>
             <th style="text-align:center">Image</th>
-            <th style="text-align:center">Methodology</th>
+            <th style="text-align:center"><b>Methodology</b></th>
             <th style="text-align:center">Remarks</th>
         </tr>
         <tr>
@@ -231,7 +231,7 @@ Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment lam
         <tr>
             <td style="text-align:center">Sediment core</td>
             <td style="text-align:center">X-ray</td>
-            <td style="text-align:center">Maxima and Minima detections</td>
+            <td style="text-align:center"><b>Maxima and Minima detections</b></td>
             <td style="text-align:center">Detection from 3 pixels minimum. Count on the whole picture, but estimates an average variation</td>
         </tr>
         <tr>
@@ -240,7 +240,7 @@ Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment lam
         <tr>
             <td style="text-align:center">Sediment core</td>
             <td style="text-align:center">RGB</td>
-            <td style="text-align:center">Detection of maxima (year) or grey level 0 (season) shifts to 0 (season)</td>
+            <td style="text-align:center"><b>Detection of maxima (year) or grey level 0 (season) shifts to 0 (season)</b></td>
             <td style="text-align:center">Average one line with a few neighbors, then cross over to the gray level. Calculate also the thickness of the laminates.</td>
         </tr>
         <tr>
@@ -249,7 +249,7 @@ Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment lam
         <tr>
             <td style="text-align:center">Sedimentary rock core</td>
             <td style="text-align:center">Gray level</td>
-            <td style="text-align:center">Wavelet transform, gradient edge detection, Hough transform</td>
+            <td style="text-align:center"><b>Wavelet transform, gradient edge detection, Hough transform</b></td>
             <td style="text-align:center">Segmenting laminates and estimating their deformation.</td>
         </tr>
         <tr>
@@ -258,7 +258,7 @@ Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment lam
         <tr>
             <td style="text-align:center">Laminated samples</td>
             <td style="text-align:center">RGB</td>
-            <td style="text-align:center">Detection of minima and maxima</td>
+            <td style="text-align:center"><b>Detection of minima and maxima</b></td>
             <td style="text-align:center">The user defines the calculation area(s).</td>
         </tr>
         <tr>
@@ -267,7 +267,7 @@ Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment lam
         <tr>
             <td style="text-align:center">Sedimentary rock core</td>
             <td style="text-align:center">RGB</td>
-            <td style="text-align:center">Fourier or Wavelet Transform</td>
+            <td style="text-align:center"><b>Fourier or Wavelet Transform</b></td>
             <td style="text-align:center"></td>
         </tr>
         <tr>
@@ -276,7 +276,7 @@ Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment lam
         <tr>
             <td style="text-align:center"></td>
             <td style="text-align:center">RGB</td>
-            <td style="text-align:center">Hilbert transform for detecting gray level maxima and minima</td>
+            <td style="text-align:center"><b>Hilbert transform for detecting gray level maxima and minima</b></td>
             <td style="text-align:center"></td>
         </tr>
         <tr>
@@ -292,7 +292,7 @@ Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment lam
         <tr>
             <th style="text-align:center">Sample</th>
             <th style="text-align:center">Image</th>
-            <th style="text-align:center">Methodology</th>
+            <th style="text-align:center"><b>Methodology</b></th>
             <th style="text-align:center">Remarks</th>
         </tr>
         <tr>
@@ -303,7 +303,7 @@ Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment lam
         <tr>
             <td style="text-align:center">Composite sediments</td>
             <td style="text-align:center">RGB</td>
-            <td style="text-align:center">Autocorrelation on greyscale image</td>
+            <td style="text-align:center"><b>Autocorrelation on greyscale image</b></td>
             <td style="text-align:center"></td>
         </tr>
         <tr>
@@ -312,7 +312,7 @@ Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment lam
         <tr>
             <td style="text-align:center">Sediments</td>
             <td style="text-align:center">RGB</td>
-            <td style="text-align:center">Wavelet transform and its spectral density</td>
+            <td style="text-align:center"><b>Wavelet transform and its spectral density</b></td>
             <td style="text-align:center"></td>
         </tr>
         <tr>
@@ -321,7 +321,7 @@ Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment lam
         <tr>
             <td style="text-align:center">Sediments</td>
             <td style="text-align:center">RGB</td>
-            <td style="text-align:center">Gradient and thresholding</td>
+            <td style="text-align:center"><b>Gradient and thresholding</b></td>
             <td style="text-align:center">Greyscale normalization and equalization</td>
         </tr>
         <tr>
@@ -330,7 +330,7 @@ Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment lam
         <tr>
             <td style="text-align:center">Sediments</td>
             <td style="text-align:center">RGB</td>
-            <td style="text-align:center">Watershed</td>
+            <td style="text-align:center"><b>Watershed</b></td>
             <td style="text-align:center"></td>
         </tr>
         <tr>
@@ -339,7 +339,7 @@ Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment lam
         <tr>
             <td style="text-align:center">Sediments</td>
             <td style="text-align:center">RGB</td>
-            <td style="text-align:center">Autocorrelation</td>
+            <td style="text-align:center"><b>Autocorrelation</b></td>
             <td style="text-align:center"></td>
         </tr>
         <tr>
@@ -348,7 +348,7 @@ Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment lam
         <tr>
             <td style="text-align:center">Sediments</td>
             <td style="text-align:center">RGB</td>
-            <td style="text-align:center">Autocorrelation</td>
+            <td style="text-align:center"><b>Autocorrelation</b></td>
             <td style="text-align:center"></td>
         </tr>
         <tr>
@@ -357,7 +357,7 @@ Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment lam
         <tr>
             <td style="text-align:center">Sediments</td>
             <td style="text-align:center">RGB</td>
-            <td style="text-align:center">Autocorrelation</td>
+            <td style="text-align:center"><b>Autocorrelation</b></td>
             <td style="text-align:center"></td>
         </tr>
         <tr>
@@ -366,7 +366,7 @@ Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment lam
         <tr>
             <td style="text-align:center">Fragmented rocks</td>
             <td style="text-align:center">RGB</td>
-            <td style="text-align:center">Gradient and Watershed</td>
+            <td style="text-align:center"><b>Gradient and Watershed</b></td>
             <td style="text-align:center"></td>
         </tr>
         <tr>
@@ -375,7 +375,7 @@ Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment lam
         <tr>
             <td style="text-align:center">Sediments</td>
             <td style="text-align:center">RGB</td>
-            <td style="text-align:center">Top Hat and Watershed</td>
+            <td style="text-align:center"><b>Top Hat and Watershed</b></td>
             <td style="text-align:center">On grayscale image</td>
         </tr>
         <tr>
@@ -384,7 +384,7 @@ Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment lam
         <tr>
             <td style="text-align:center">Sediments</td>
             <td style="text-align:center">RGB</td>
-            <td style="text-align:center">Autocorrelation</td>
+            <td style="text-align:center"><b>Autocorrelation</b></td>
             <td style="text-align:center"></td>
         </tr>
         <tr>
@@ -393,7 +393,7 @@ Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment lam
         <tr>
             <td style="text-align:center">Sediments</td>
             <td style="text-align:center">RGB</td>
-            <td style="text-align:center">H-maxima</td>
+            <td style="text-align:center"><b>H-maxima</b></td>
             <td style="text-align:center">On grayscale image</td>
         </tr>
         <tr>
@@ -402,7 +402,7 @@ Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment lam
         <tr>
             <td style="text-align:center">Sediments, Rocks</td>
             <td style="text-align:center">RGB on microscope</td>
-            <td style="text-align:center">Threshold then detection</td>
+            <td style="text-align:center"><b>Threshold then detection</b></td>
             <td style="text-align:center"></td>
         </tr>
         <tr>
