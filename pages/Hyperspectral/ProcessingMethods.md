@@ -273,7 +273,7 @@ Schmidhuber, J. (2015) Deep Learning in Neural Networks: An Overview. Neural Net
             <td style="vertical-align:middle;text-align:center;">R2cal=0.77, R2val=0.77</td>
         </tr>
         <tr>
-            <td colspan="5" style="text-align:center">Liu, L., Ji, M., Buchroithner, M. (2018) Transfer learning for soil spectroscopy based on convolutional neural networks and its application in soil clay content mapping using hyperspectral imagery. Sensors 18: 1–18</td>
+            <td colspan="5" style="text-align:center">Gomez, C., Adeline, K., et al. (2018) Sensitivity of clay content prediction to spectral configuration of VNIR/SWIR imaging data, from multispectral to hyperspectral scenarios. Remote Sensing of Environment 204: 18–30</td>
         </tr>
         <tr>
             <td style="vertical-align:middle;text-align:center;">Soil (127)</td>
@@ -404,6 +404,137 @@ Schmidhuber, J. (2015) Deep Learning in Neural Networks: An Overview. Neural Net
         </tr>
         <tr>
             <td colspan="5" style="text-align:center">Jacq, K., Giguet-Covex, C., et al. (2019) High-resolution grain size distribution of sediment core with hyperspectral imaging. Sedimentary Geology 393–394:</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;" rowspan="3">Soil (585)</td>
+            <td style="vertical-align:middle;text-align:center;" rowspan="3">Vis-NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;" rowspan="3">TN</td>
+            <td style="vertical-align:middle;text-align:center;"><b>PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.85, R2val=0.82</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><b>PCR</b></td>
+            <td style="text-align:center">R2cal=0.82, R2val=0.78</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><b>SVM</b></td>
+            <td style="text-align:center">R2cal=0.89, R2val=0.86</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Xu, S., Zhao, Y., Wang, M., Shi, X. (2018) Comparison of multivariate methods for estimating selected soil properties from intact soil cores of paddy fields by Vis–NIR spectroscopy. Geoderma 310: 29–43</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;" rowspan="3">Soil (529)</td>
+            <td style="vertical-align:middle;text-align:center;" rowspan="3">Vis-NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;" rowspan="3">TN</td>
+            <td style="vertical-align:middle;text-align:center;"><b>D2-PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.74</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><b>D2-SVM</b></td>
+            <td style="text-align:center">R2cal=0.76</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><b>D2-MARS</b></td>
+            <td style="text-align:center">R2cal=0.87</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Nawar, S., Mouazen, A.M. (2017) Predictive performance of mobile vis-near infrared spectroscopy for key soil properties at different geographical scales by using spiking and data mining techniques. Catena 151: 118–129</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;" rowspan="3">Soil (585)</td>
+            <td style="vertical-align:middle;text-align:center;" rowspan="3">Vis-NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;" rowspan="3">TP</td>
+            <td style="vertical-align:middle;text-align:center;"><b>PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.77, R2val=0.72</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><b>PCR</b></td>
+            <td style="text-align:center">R2cal=0.73, R2val=0.69</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><b>SVM</b></td>
+            <td style="text-align:center">R2cal=0.86, R2val=0.76</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Xu, S., Zhao, Y., Wang, M., Shi, X. (2018) Comparison of multivariate methods for estimating selected soil properties from intact soil cores of paddy fields by Vis–NIR spectroscopy. Geoderma 310: 29–43</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;" rowspan="5">Soil (72)</td>
+            <td style="vertical-align:middle;text-align:center;" rowspan="3">MIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;" rowspan="5">TPH</td>
+            <td style="vertical-align:middle;text-align:center;"><b>SLR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.38</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><b>MLR</b></td>
+            <td style="text-align:center">R2cal=0.73</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><b>PLSR</b></td>
+            <td style="text-align:center">R2cal=0.86</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;" rowspan="2">NIR (Spectroscopy)</td>
+            <td style="text-align:center"><b>SLR</b></td>
+            <td style="text-align:center">R2cal=0.25</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><b>PLSR</b></td>
+            <td style="text-align:center">R2cal=0.84</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Wartini, N., Brendan, P., Budiman, M. (2017) Rapid assessment of petroleum-contaminated soils with infrared spectroscopy. Geoderma 289: 150–160</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;">Soil (85)</td>
+            <td style="vertical-align:middle;text-align:center;">Vis-NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;">TPH</td>
+            <td style="vertical-align:middle;text-align:center;"><b>D1-PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.63, R2val=0.54</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Douglas, R.K., Nawar, S., Alamar, M.C., Mouazen, A.M., Coulon, F. (2018) Rapid prediction of total petroleum hydrocarbons concentration in contaminated soil using vis-NIR spectroscopy and regression techniques. Science of the Total Environment 616–617: 147–155</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;">Soil</td>
+            <td style="vertical-align:middle;text-align:center;">Vis-NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;">TPH</td>
+            <td style="vertical-align:middle;text-align:center;"><b>D1-PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.92, R2val=0.83</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Douglas, R.K., Nawar, S., Cipullo, S., Alamar, M.C., Coulon, F., Mouazen, A.M. (2018) Evaluation of vis-NIR reflectance spectroscopy sensitivity to weathering for enhanced assessment of oil contaminated soils. Science of the Total Environment 626: 1108–1120</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;">Soil (150)</td>
+            <td style="vertical-align:middle;text-align:center;">Vis-NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;">PAH</td>
+            <td style="vertical-align:middle;text-align:center;"><b>D1-PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.86, R2val=0.89</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Okparanma, R.N., Mouazen, A.M. (2013) Visible and Near-Infrared Spectroscopy Analysis of a Polycyclic Aromatic Hydrocarbon in Soils. The Scientific World Journal 2013: 1–9</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;">Soil (150)</td>
+            <td style="vertical-align:middle;text-align:center;">Vis-NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;">PAH (Phe)</td>
+            <td style="vertical-align:middle;text-align:center;"><b>D1-PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.65, R2val=0.83</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Okparanma, R.N., Mouazen, A.M. (2013) Visible and Near-Infrared Spectroscopy Analysis of a Polycyclic Aromatic Hydrocarbon in Soils. The Scientific World Journal 2013: 1–9</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;">Artificial Soil</td>
+            <td style="vertical-align:middle;text-align:center;">LIF (Spectroscopy, ex: 266nm)</td>
+            <td style="vertical-align:middle;text-align:center;">PAH (Phe, Pyr)</td>
+            <td style="vertical-align:middle;text-align:center;"><b>PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.99</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Lee, C.K., Ko, E.J., Kim, K.W., Kim, Y.J. (2004) Partial Least Square Regression Method for the Detection of Polycyclic Aromatic Hydrocarbons in the Soil Environment Using Laser-Induced Fluorescence Spectroscopy. Water, Air, & Soil Pollution 158: 261–275</td>
         </tr>
     </tbody>
 </table>
