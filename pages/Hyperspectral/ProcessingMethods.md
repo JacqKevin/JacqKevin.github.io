@@ -193,16 +193,6 @@ Schmidhuber, J. (2015) Deep Learning in Neural Networks: An Overview. Neural Net
             <td colspan="5" style="text-align:center">Pinheiro, É., Ceddia, M., Clingensmith, C., Grunwald, S., Vasques, G. (2017) Prediction of Soil Physical and Chemical Properties by Visible and Near-Infrared Diffuse Reflectance Spectroscopy in the Central Amazon. Remote Sensing 9:</td>
         </tr>
         <tr>
-            <td style="vertical-align:middle;text-align:center;">Soil (46)</td>
-            <td style="vertical-align:middle;text-align:center;">NIR (Spectroscopy)</td>
-            <td style="vertical-align:middle;text-align:center;">TOC</td>
-            <td style="vertical-align:middle;text-align:center;"><b>SNV-D2-PLSR</b></td>
-            <td style="vertical-align:middle;text-align:center;">R2cal=0.99, R2val=0.83</td>
-        </tr>
-        <tr>
-            <td colspan="5" style="text-align:center">Tamburini, E., Vincenzi, F., Costa, S., Mantovi, P., Pedrini, P., Castaldelli, G. (2017) Effects of moisture and particle size on quantitative determination of total organic carbon (TOC) in soils using near-infrared spectroscopy. Sensors 17: 1–15</td>
-        </tr>
-        <tr>
             <td style="vertical-align:middle;text-align:center;">Soil (127)</td>
             <td style="vertical-align:middle;text-align:center;">Vis-NIR (Spectroscopy)</td>
             <td style="vertical-align:middle;text-align:center;">OC</td>
@@ -228,6 +218,16 @@ Schmidhuber, J. (2015) Deep Learning in Neural Networks: An Overview. Neural Net
             <td colspan="5" style="text-align:center">Vohland, M., Ludwig, M., Thiele-Bruhn, S., Ludwig, B. (2017) Quantification of soil properties with hyperspectral data: Selecting spectral variables with different methods to improve accuracies and analyze prediction mechanisms. Remote Sensing 9: 1–24</td>
         </tr>
         <tr>
+            <td style="vertical-align:middle;text-align:center;">Soil (46)</td>
+            <td style="vertical-align:middle;text-align:center;">NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;">TOC</td>
+            <td style="vertical-align:middle;text-align:center;"><b>SNV-D2-PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.99, R2val=0.83</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Tamburini, E., Vincenzi, F., Costa, S., Mantovi, P., Pedrini, P., Castaldelli, G. (2017) Effects of moisture and particle size on quantitative determination of total organic carbon (TOC) in soils using near-infrared spectroscopy. Sensors 17: 1–15</td>
+        </tr>
+        <tr>
             <td style="vertical-align:middle;text-align:center;" rowspan="3">Soil (529)</td>
             <td style="vertical-align:middle;text-align:center;" rowspan="3">Vis-NIR (Spectroscopy)</td>
             <td style="vertical-align:middle;text-align:center;" rowspan="3">TC</td>
@@ -244,6 +244,116 @@ Schmidhuber, J. (2015) Deep Learning in Neural Networks: An Overview. Neural Net
         </tr>
         <tr>
             <td colspan="5" style="text-align:center">Nawar, S., Mouazen, A.M. (2017) Predictive performance of mobile vis-near infrared spectroscopy for key soil properties at different geographical scales by using spiking and data mining techniques. Catena 151: 118–129</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;">Soil (96)</td>
+            <td style="vertical-align:middle;text-align:center;">Vis-NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;">Clay</td>
+            <td style="vertical-align:middle;text-align:center;"><b>PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.89, R2val=0.89</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Demattê, J.A.M., Dotto, A.C., Bedin, L.G., Sayão, V.M., Souza, A.B. e. (2019) Soil analytical quality control by traditional and spectroscopy techniques: Constructing the future of a hybrid laboratory for low environmental impact. Geoderma 337: 111–121</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;">Soil (>20000)</td>
+            <td style="vertical-align:middle;text-align:center;">Vis-NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;">Clay</td>
+            <td style="vertical-align:middle;text-align:center;"><b>CNN</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.836</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Liu, L., Ji, M., Buchroithner, M. (2018) Transfer learning for soil spectroscopy based on convolutional neural networks and its application in soil clay content mapping using hyperspectral imagery. Sensors 18: 1–18</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;">Soil (128)</td>
+            <td style="vertical-align:middle;text-align:center;">VNIR-SWIR (HSI)</td>
+            <td style="vertical-align:middle;text-align:center;">Clay</td>
+            <td style="vertical-align:middle;text-align:center;"><b>PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.77, R2val=0.77</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Liu, L., Ji, M., Buchroithner, M. (2018) Transfer learning for soil spectroscopy based on convolutional neural networks and its application in soil clay content mapping using hyperspectral imagery. Sensors 18: 1–18</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;">Soil (127)</td>
+            <td style="vertical-align:middle;text-align:center;">Vis-NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;">Clay</td>
+            <td style="vertical-align:middle;text-align:center;"><b>D2-PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.92, R2val=0.96</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Katuwal, S., Hermansen, C., Knadel, M., Moldrup, P., Greve, M.H., de Jonge, L.W. (2017) Combining X-ray Computed Tomography and Visible Near-Infrared Spectroscopy for Prediction of Soil Structural Properties. Vadose Zone Journal 1–13</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;">Soil (434)</td>
+            <td style="vertical-align:middle;text-align:center;">Vis-NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;">Clay</td>
+            <td style="vertical-align:middle;text-align:center;"><b>D2-PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2val=0.78</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Pinheiro, É., Ceddia, M., Clingensmith, C., Grunwald, S., Vasques, G. (2017) Prediction of Soil Physical and Chemical Properties by Visible and Near-Infrared Diffuse Reflectance Spectroscopy in the Central Amazon. Remote Sensing 9:</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;">Soil (96)</td>
+            <td style="vertical-align:middle;text-align:center;">Vis-NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;">Silt</td>
+            <td style="vertical-align:middle;text-align:center;"><b>PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.92, R2val=0.85</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Demattê, J.A.M., Dotto, A.C., Bedin, L.G., Sayão, V.M., Souza, A.B. e. (2019) Soil analytical quality control by traditional and spectroscopy techniques: Constructing the future of a hybrid laboratory for low environmental impact. Geoderma 337: 111–121</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;">Soil (127)</td>
+            <td style="vertical-align:middle;text-align:center;">Vis-NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;">Silt</td>
+            <td style="vertical-align:middle;text-align:center;"><b>D2-PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.86, R2val=0.87</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Katuwal, S., Hermansen, C., Knadel, M., Moldrup, P., Greve, M.H., de Jonge, L.W. (2017) Combining X-ray Computed Tomography and Visible Near-Infrared Spectroscopy for Prediction of Soil Structural Properties. Vadose Zone Journal 1–13</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;">Soil (434)</td>
+            <td style="vertical-align:middle;text-align:center;">Vis-NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;">Silt</td>
+            <td style="vertical-align:middle;text-align:center;"><b>SNV-PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2val=0.36</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Pinheiro, É., Ceddia, M., Clingensmith, C., Grunwald, S., Vasques, G. (2017) Prediction of Soil Physical and Chemical Properties by Visible and Near-Infrared Diffuse Reflectance Spectroscopy in the Central Amazon. Remote Sensing 9:</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;">Soil (96)</td>
+            <td style="vertical-align:middle;text-align:center;">Vis-NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;">Sand</td>
+            <td style="vertical-align:middle;text-align:center;"><b>PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.92, R2val=0.86</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Demattê, J.A.M., Dotto, A.C., Bedin, L.G., Sayão, V.M., Souza, A.B. e. (2019) Soil analytical quality control by traditional and spectroscopy techniques: Constructing the future of a hybrid laboratory for low environmental impact. Geoderma 337: 111–121</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;">Soil (127)</td>
+            <td style="vertical-align:middle;text-align:center;">Vis-NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;">Sand</td>
+            <td style="vertical-align:middle;text-align:center;"><b>D2-PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.92, R2val=0.93</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Katuwal, S., Hermansen, C., Knadel, M., Moldrup, P., Greve, M.H., de Jonge, L.W. (2017) Combining X-ray Computed Tomography and Visible Near-Infrared Spectroscopy for Prediction of Soil Structural Properties. Vadose Zone Journal 1–13</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;">Soil (434)</td>
+            <td style="vertical-align:middle;text-align:center;">Vis-NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;">Sand</td>
+            <td style="vertical-align:middle;text-align:center;"><b>D1-PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2val=0.62</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Pinheiro, É., Ceddia, M., Clingensmith, C., Grunwald, S., Vasques, G. (2017) Prediction of Soil Physical and Chemical Properties by Visible and Near-Infrared Diffuse Reflectance Spectroscopy in the Central Amazon. Remote Sensing 9:</td>
         </tr>
     </tbody>
 </table>
