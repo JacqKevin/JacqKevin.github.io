@@ -213,6 +213,8 @@ Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment lam
 
 ### References
 
+#### Lamina detection
+
 <table>
     <thead>
         <tr>
@@ -229,11 +231,182 @@ Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment lam
         <tr>
             <td style="text-align:center">Sediment core</td>
             <td style="text-align:center">X-ray</td>
-            <td style="text-align:center">Maxima and Minima detection</td>
+            <td style="text-align:center">Maxima and Minima detections</td>
             <td style="text-align:center">Detection from 3 pixels minimum. Count on the whole picture, but estimates an average variation</td>
         </tr>
         <tr>
             <td colspan="4" style="text-align:center">Damci, E., Çağatay, M.N. (2016) An automated algorithm for dating annually laminated sediments using X-ray radiographic images, with applications to Lake Van (Turkey), Lake Nautajarvi (Finland) and Byfjorden (Sweden). Quaternary International 401: 174–183</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Sediment core</td>
+            <td style="text-align:center">RGB</td>
+            <td style="text-align:center">Detection of maxima (year) or grey level 0 (season) shifts to 0 (season)</td>
+            <td style="text-align:center">Average one line with a few neighbors, then cross over to the gray level. Calculate also the thickness of the laminates.</td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align:center">Weber, M.E., Reichelt, L., Kuhn, G., Pfeiffer, M., Korff, B., Thurow, J., Ricken, W. (2010) BMPix and PEAK tools: New methods for automated laminae recognition and counting-Application to glacial varves from Antarctic marine sediment. Geochemistry, Geophysics, Geosystems 11:</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Sedimentary rock core</td>
+            <td style="text-align:center">Gray level</td>
+            <td style="text-align:center">Wavelet transform, gradient edge detection, Hough transform</td>
+            <td style="text-align:center">Segmenting laminates and estimating their deformation.</td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align:center">Quiniou, T., Selmaoui, N., Laporte-Magoni, C., Allenbach, M. (2007) Calculation of Bedding Angles Inclination from Drill Core Digital Images. MVA2007 IAPR Conference on Machine Vision Applications 252–255</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Laminated samples</td>
+            <td style="text-align:center">RGB</td>
+            <td style="text-align:center">Detection of minima and maxima</td>
+            <td style="text-align:center">The user defines the calculation area(s).</td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align:center">Meyer, M.C., Faber, R., Spö Tl, C. (2006) The WinGeol Lamination Tool : new software for rapid, semi - automated analysis of laminated climate archives. The Holocene 16: 753–761</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Sedimentary rock core</td>
+            <td style="text-align:center">RGB</td>
+            <td style="text-align:center">Fourier or Wavelet Transform</td>
+            <td style="text-align:center"></td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align:center">Selmaoui, N., Repetti, B., Laporte-Magoni, C., Allenbach, M. (2004) Image analysis for core geological descriptions: strata and granulometry detection. In: Proceedings of the 17th International Conference on Pattern Recognition IEEE, 305-310 Vol.4.</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"></td>
+            <td style="text-align:center">RGB</td>
+            <td style="text-align:center">Hilbert transform for detecting gray level maxima and minima</td>
+            <td style="text-align:center"></td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align:center">Rupf, I., Radons, G. (2004) New approaches for automated data processing of annually laminated sediments. Nonlinear Processes in Geophysics 11: 599–607</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Grain size estimation
+
+<table>
+    <thead>
+        <tr>
+            <th style="text-align:center">Sample</th>
+            <th style="text-align:center">Image</th>
+            <th style="text-align:center">Methodology</th>
+            <th style="text-align:center">Remarks</th>
+        </tr>
+        <tr>
+            <th colspan="4" style="text-align:center">Reference</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align:center">Composite sediments</td>
+            <td style="text-align:center">RGB</td>
+            <td style="text-align:center">Autocorrelation on greyscale image</td>
+            <td style="text-align:center"></td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align:center">Cheng, Z., Liu, H. (2015) Digital grain - size analysis based on autocorrelation algorithm. Sedimentary Geology 21–31</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Sediments</td>
+            <td style="text-align:center">RGB</td>
+            <td style="text-align:center">Wavelet transform and its spectral density</td>
+            <td style="text-align:center"></td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align:center">Buscombe, D. (2013) Transferable wavelet method for grain-size distribution from images of sediment surfaces and thin sections, and other natural granular patterns. International Association of Sedimentologists</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Sediments</td>
+            <td style="text-align:center">RGB</td>
+            <td style="text-align:center">Gradient and thresholding</td>
+            <td style="text-align:center">Greyscale normalization and equalization</td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align:center">Baptista, P., Cunha, T.R., Gama, C., Bernardes, C. (2012) A new and practical method to obtain grain size measurements in sandy shores based on digital image acquisition and processing. Sedimentary Geology</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Sediments</td>
+            <td style="text-align:center">RGB</td>
+            <td style="text-align:center">Watershed</td>
+            <td style="text-align:center"></td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align:center">Lewis, T., Francus, P., Bradley, R.S., Kanamaru, K. (2010) An Automated System for the Statistical Analysis of Sediment Texture and Structure at the Micro Scale</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Sediments</td>
+            <td style="text-align:center">RGB</td>
+            <td style="text-align:center">Autocorrelation</td>
+            <td style="text-align:center"></td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align:center">Warrick, J.A., Rubin, D.M., Ruggiero, P., Harney, J.N., Draut, A.E., Buscombe, D. (2009) Cobble cam: grain-size measurements of sand to boulder from digital photographs and autocorrelation analyses. Earth Surface Processes and Landforms 34: 1811–1821</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Sediments</td>
+            <td style="text-align:center">RGB</td>
+            <td style="text-align:center">Autocorrelation</td>
+            <td style="text-align:center"></td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align:center">Buscombe, D. (2008) Estimation of grain-size distributions and associated parameters from digital images of sediment. Sedimentary Geology 210: 1–10</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Sediments</td>
+            <td style="text-align:center">RGB</td>
+            <td style="text-align:center">Autocorrelation</td>
+            <td style="text-align:center"></td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align:center">Barnard, P.L., Rubin, D.M., Harney, J., Mustain, N. (2007) Field test comparison of an autocorrelation technique for determining grain size using a digital ’ beachball ’ camera versus traditional methods. Sedimentary Geology 180–195</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Fragmented rocks</td>
+            <td style="text-align:center">RGB</td>
+            <td style="text-align:center">Gradient and Watershed</td>
+            <td style="text-align:center"></td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align:center">Outal, S. (2006) Quantification Par Analyse d’images de La Granulométrie Des Roches Fragmentées : Amélioration de l’extraction Morphologique Des Surfaces, Amélioration de La Reconstruction Stéréologique. École Nationale Supérieure des Mines de Paris.</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Sediments</td>
+            <td style="text-align:center">RGB</td>
+            <td style="text-align:center">Top Hat and Watershed</td>
+            <td style="text-align:center">On grayscale image</td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align:center">Graham, Rice, D.J., Reid, I. (2005) Automated sizing of coarse-grained sediments : image-processing procedures. Mathematical Geology 37: 1–28</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Sediments</td>
+            <td style="text-align:center">RGB</td>
+            <td style="text-align:center">Autocorrelation</td>
+            <td style="text-align:center"></td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align:center">Rubin, D.M. (2004) A simple autocorrelation algorithm for determining grain size from digital images of sediment. Journal of Sedimentary Research 74: 160–165</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Sediments</td>
+            <td style="text-align:center">RGB</td>
+            <td style="text-align:center">H-maxima</td>
+            <td style="text-align:center">On grayscale image</td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align:center">Selmaoui, N., Repetti, B., Laporte-Magoni, C., Allenbach, M. (2004) Coupled strata and granulometry detection on indurated cores by gray-level image analysis. Geo-Marine Letters 24: 241–251</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Sediments, Rocks</td>
+            <td style="text-align:center">RGB on microscope</td>
+            <td style="text-align:center">Threshold then detection</td>
+            <td style="text-align:center"></td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align:center">Francus, P. (1998) An image-analysis technique to measure grain-size variation in thin sections of soft clastic sediments. Sedimentary Geology 121: 289–298</td>
         </tr>
     </tbody>
 </table>
