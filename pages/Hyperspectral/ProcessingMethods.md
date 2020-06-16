@@ -296,6 +296,16 @@ Schmidhuber, J. (2015) Deep Learning in Neural Networks: An Overview. Neural Net
             <td colspan="5" style="text-align:center">Pinheiro, É., Ceddia, M., Clingensmith, C., Grunwald, S., Vasques, G. (2017) Prediction of Soil Physical and Chemical Properties by Visible and Near-Infrared Diffuse Reflectance Spectroscopy in the Central Amazon. Remote Sensing 9:</td>
         </tr>
         <tr>
+            <td style="vertical-align:middle;text-align:center;">Sediment core</td>
+            <td style="vertical-align:middle;text-align:center;">VNIR-SWIR (HSI)</td>
+            <td style="vertical-align:middle;text-align:center;">Clay</td>
+            <td style="vertical-align:middle;text-align:center;"><b>PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.91,R2val=0.94</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Jacq, K., Giguet-Covex, C., et al. (2019) High-resolution grain size distribution of sediment core with hyperspectral imaging. Sedimentary Geology 393–394:</td>
+        </tr>
+        <tr>
             <td style="vertical-align:middle;text-align:center;">Soil (96)</td>
             <td style="vertical-align:middle;text-align:center;">Vis-NIR (Spectroscopy)</td>
             <td style="vertical-align:middle;text-align:center;">Silt</td>
@@ -326,6 +336,16 @@ Schmidhuber, J. (2015) Deep Learning in Neural Networks: An Overview. Neural Net
             <td colspan="5" style="text-align:center">Pinheiro, É., Ceddia, M., Clingensmith, C., Grunwald, S., Vasques, G. (2017) Prediction of Soil Physical and Chemical Properties by Visible and Near-Infrared Diffuse Reflectance Spectroscopy in the Central Amazon. Remote Sensing 9:</td>
         </tr>
         <tr>
+            <td style="vertical-align:middle;text-align:center;">Sediment core</td>
+            <td style="vertical-align:middle;text-align:center;">VNIR-SWIR (HSI)</td>
+            <td style="vertical-align:middle;text-align:center;">Silt</td>
+            <td style="vertical-align:middle;text-align:center;"><b>PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.91,R2val=0.90</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Jacq, K., Giguet-Covex, C., et al. (2019) High-resolution grain size distribution of sediment core with hyperspectral imaging. Sedimentary Geology 393–394:</td>
+        </tr>
+        <tr>
             <td style="vertical-align:middle;text-align:center;">Soil (96)</td>
             <td style="vertical-align:middle;text-align:center;">Vis-NIR (Spectroscopy)</td>
             <td style="vertical-align:middle;text-align:center;">Sand</td>
@@ -354,6 +374,36 @@ Schmidhuber, J. (2015) Deep Learning in Neural Networks: An Overview. Neural Net
         </tr>
         <tr>
             <td colspan="5" style="text-align:center">Pinheiro, É., Ceddia, M., Clingensmith, C., Grunwald, S., Vasques, G. (2017) Prediction of Soil Physical and Chemical Properties by Visible and Near-Infrared Diffuse Reflectance Spectroscopy in the Central Amazon. Remote Sensing 9:</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;">Sediment core</td>
+            <td style="vertical-align:middle;text-align:center;">VNIR-SWIR (HSI)</td>
+            <td style="vertical-align:middle;text-align:center;">Very Fine Sand</td>
+            <td style="vertical-align:middle;text-align:center;"><b>PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.86,R2val=0.95</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Jacq, K., Giguet-Covex, C., et al. (2019) High-resolution grain size distribution of sediment core with hyperspectral imaging. Sedimentary Geology 393–394:</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;">Sediment core</td>
+            <td style="vertical-align:middle;text-align:center;">VNIR-SWIR (HSI)</td>
+            <td style="vertical-align:middle;text-align:center;">Fine Sand</td>
+            <td style="vertical-align:middle;text-align:center;"><b>PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.93,R2val=0.95</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Jacq, K., Giguet-Covex, C., et al. (2019) High-resolution grain size distribution of sediment core with hyperspectral imaging. Sedimentary Geology 393–394:</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;">Sediment core</td>
+            <td style="vertical-align:middle;text-align:center;">VNIR-SWIR (HSI)</td>
+            <td style="vertical-align:middle;text-align:center;">Particle Size Distribution</td>
+            <td style="vertical-align:middle;text-align:center;"><b>PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.85,R2val=0.83</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Jacq, K., Giguet-Covex, C., et al. (2019) High-resolution grain size distribution of sediment core with hyperspectral imaging. Sedimentary Geology 393–394:</td>
         </tr>
     </tbody>
 </table>
