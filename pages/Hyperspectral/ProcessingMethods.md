@@ -87,28 +87,6 @@ Schmidhuber, J. (2015) Deep Learning in Neural Networks: An Overview. Neural Net
     </thead>
     <tbody>
         <tr>
-            <td style="vertical-align:middle;text-align:center;" rowspan="4">Soil (3793)</td>
-            <td style="vertical-align:middle;text-align:center;" rowspan="4">Vis-NIR (Spectroscopy)</td>
-            <td style="vertical-align:middle;text-align:center;" rowspan="4">SOC</td>
-            <td style="vertical-align:middle;text-align:center;"><b>CNN</b></td>
-            <td style="vertical-align:middle;text-align:center;">R2cal=0.84</td>
-        </tr>
-        <tr>
-            <td style="text-align:center"><b>SNV-SVM</b></td>
-            <td style="text-align:center">R2cal=0.82</td>
-        </tr>
-        <tr>
-            <td style="text-align:center"><b>SNV-PCA-ANN</b></td>
-            <td style="text-align:center">R2cal=0.83</td>
-        </tr>
-        <tr>
-            <td style="text-align:center"><b>SNV-PLSR</b></td>
-            <td style="text-align:center">R2cal=0.82</td>
-        </tr>
-        <tr>
-            <td colspan="5" style="text-align:center">Zhang, X., Lin, T., Xu, J., Luo, X., Ying, Y. (2019) DeepSpectra: An end-to-end deep learning approach for quantitative spectral analysis. Analytica Chimica Acta 1058: 48–57</td>
-        </tr>
-        <tr>
             <td style="vertical-align:middle;text-align:center;">Sediment core</td>
             <td style="vertical-align:middle;text-align:center;">SWIR (HSI)</td>
             <td style="vertical-align:middle;text-align:center;">OM</td>
@@ -157,6 +135,28 @@ Schmidhuber, J. (2015) Deep Learning in Neural Networks: An Overview. Neural Net
             <td colspan="5" style="text-align:center">Xu, S., Zhao, Y., Wang, M., Shi, X. (2018) Comparison of multivariate methods for estimating selected soil properties from intact soil cores of paddy fields by Vis–NIR spectroscopy. Geoderma 310: 29–43</td>
         </tr>
         <tr>
+            <td style="vertical-align:middle;text-align:center;" rowspan="4">Soil (3793)</td>
+            <td style="vertical-align:middle;text-align:center;" rowspan="4">Vis-NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;" rowspan="4">SOC</td>
+            <td style="vertical-align:middle;text-align:center;"><b>CNN</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.84</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><b>SNV-SVM</b></td>
+            <td style="text-align:center">R2cal=0.82</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><b>SNV-PCA-ANN</b></td>
+            <td style="text-align:center">R2cal=0.83</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><b>SNV-PLSR</b></td>
+            <td style="text-align:center">R2cal=0.82</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Zhang, X., Lin, T., Xu, J., Luo, X., Ying, Y. (2019) DeepSpectra: An end-to-end deep learning approach for quantitative spectral analysis. Analytica Chimica Acta 1058: 48–57</td>
+        </tr>
+        <tr>
             <td style="vertical-align:middle;text-align:center;" rowspan="5">Soil (595)</td>
             <td style="vertical-align:middle;text-align:center;" rowspan="5">Vis-NIR (Spectroscopy)</td>
             <td style="vertical-align:middle;text-align:center;" rowspan="5">SOC</td>
@@ -181,6 +181,16 @@ Schmidhuber, J. (2015) Deep Learning in Neural Networks: An Overview. Neural Net
         </tr>
         <tr>
             <td colspan="5" style="text-align:center">Dotto, A.C., Dalmolin, R.S.D., ten Caten, A., Grunwald, S. (2018) A systematic study on the application of scatter-corrective and spectral-derivative preprocessing for multivariate prediction of soil organic carbon by Vis-NIR spectra. Geoderma 314: 262–274</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;">Soil (434)</td>
+            <td style="vertical-align:middle;text-align:center;">Vis-NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;">SOC</td>
+            <td style="vertical-align:middle;text-align:center;"><b>SNV-PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2val=0.71</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Pinheiro, É., Ceddia, M., Clingensmith, C., Grunwald, S., Vasques, G. (2017) Prediction of Soil Physical and Chemical Properties by Visible and Near-Infrared Diffuse Reflectance Spectroscopy in the Central Amazon. Remote Sensing 9:</td>
         </tr>
         <tr>
             <td style="vertical-align:middle;text-align:center;">Soil (46)</td>
@@ -216,16 +226,6 @@ Schmidhuber, J. (2015) Deep Learning in Neural Networks: An Overview. Neural Net
         </tr>
         <tr>
             <td colspan="5" style="text-align:center">Vohland, M., Ludwig, M., Thiele-Bruhn, S., Ludwig, B. (2017) Quantification of soil properties with hyperspectral data: Selecting spectral variables with different methods to improve accuracies and analyze prediction mechanisms. Remote Sensing 9: 1–24</td>
-        </tr>
-        <tr>
-            <td style="vertical-align:middle;text-align:center;">Soil (434)</td>
-            <td style="vertical-align:middle;text-align:center;">Vis-NIR (Spectroscopy)</td>
-            <td style="vertical-align:middle;text-align:center;">SOC</td>
-            <td style="vertical-align:middle;text-align:center;"><b>SNV-PLSR</b></td>
-            <td style="vertical-align:middle;text-align:center;">R2val=0.71</td>
-        </tr>
-        <tr>
-            <td colspan="5" style="text-align:center">Pinheiro, É., Ceddia, M., Clingensmith, C., Grunwald, S., Vasques, G. (2017) Prediction of Soil Physical and Chemical Properties by Visible and Near-Infrared Diffuse Reflectance Spectroscopy in the Central Amazon. Remote Sensing 9:</td>
         </tr>
         <tr>
             <td style="vertical-align:middle;text-align:center;" rowspan="3">Soil (529)</td>
