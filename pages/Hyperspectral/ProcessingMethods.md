@@ -119,6 +119,176 @@ Lau, I.C., LeGras, M., Laukamp, C., Mason, P., Warren, P. (2017) CSIRO Shortwave
 Meerdink, S.K., Hook, S.J., Roberts, D.A., Abbott, E.A. (2019) The ECOSTRESS spectral library version 1.0. Remote Sensing of Environment 230: 111196
 ```
 
+### References
+
+#### Laboratory
+
+<table>
+    <thead>
+        <tr>
+            <th style="text-align:center">Sample</th>
+            <th style="text-align:center">Image</th>
+            <th style="text-align:center">Goal</th>
+            <th style="text-align:center"><b>Methodology</b></th>
+            <th style="text-align:center">Remarks</th>
+        </tr>
+        <tr>
+            <th colspan="5" style="text-align:center">Reference</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align:center">Lake sediment core</td>
+            <td style="text-align:center">VNIR (HSI)</td>
+            <td style="text-align:center">Comparison of watershed sample signals with EMs extracted from IHS data</td>
+            <td style="text-align:center"><b>PPI+SAM</b></td>
+            <td style="text-align:center">Assignment of extracted EMs using field signals</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Van Exem, A., Debret, M., et al. (2019) New source-to-sink approach in an arctic catchment based on hyperspectral core-logging (Lake Linné, Svalbard). Quaternary Science Reviews 203: 128–140</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Rock</td>
+            <td style="text-align:center">VNIR+SWIR (HSI)</td>
+            <td style="text-align:center">Comparison of pure sample signals with HSI spectra</td>
+            <td style="text-align:center"><b>CMIM+SVM</b></td>
+            <td style="text-align:center">CMIM reduces the number of EMs extracted on the basis of their similarity</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Galdames, F.J., Perez, C.A., Estévez, P.A., Adams, M. (2019) Rock lithological classification by hyperspectral, range 3D and color images. Chemometrics and Intelligent Laboratory Systems 189: 138–148</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Sedimentary rock</td>
+            <td style="text-align:center">SWIR (HSI)</td>
+            <td style="text-align:center">Extraction of rock EM for the creation of a library</td>
+            <td style="text-align:center"><b>FCLS, SUnSAL, CLSUnSAL</b></td>
+            <td style="text-align:center">Checking mineralogy with XRD</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Bui, T., Orberger, B., et al. (2018) Building a Hyperspectral Library and its Incorporation into Sparse Unmixing for Mineral Identification. In: IGARSS 2018 - 2018 IEEE International Geoscience and Remote Sensing Symposium IEEE, 4261–4264.</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Soil</td>
+            <td style="text-align:center">ASTER (HSI)</td>
+            <td style="text-align:center">Estimate the components on the soil</td>
+            <td style="text-align:center"><b>ICA</b></td>
+            <td style="text-align:center">Checking mineralogy with XRD</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Ben Rabah, Z., Farah, I.R., Solaiman, B., Ben Ghzala, H. (2009) A New Spectral Unmixing Approach based on ICA and Spectral Angle Measure for Hyperspectral Images. 5th International Conference: Sciences of Electronic, Technologies of Information and Telecommunications 8</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Soil</td>
+            <td style="text-align:center">AVIRIS (HSI)</td>
+            <td style="text-align:center">Estimating soil mineralogy</td>
+            <td style="text-align:center"><b>RCMF, VCA, CLUnSAL</b></td>
+            <td style="text-align:center">The sparse methods may not be relevant if the libraries are not in agreement with the acquired data.</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Akhtar, N., Mian, A. (2017) RCMF: Robust Constrained Matrix Factorization for Hyperspectral Unmixing. IEEE Transactions on Geoscience and Remote Sensing 55: 3354–3366</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Soil</td>
+            <td style="text-align:center">VNIR+SWIR (HSI)</td>
+            <td style="text-align:center">Estimation of soil mineralogy</td>
+            <td style="text-align:center"><b>Mica</b></td>
+            <td style="text-align:center">Comparison with the USGS library. Validation with consistent XRD data</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Koerting, F., Rogass, C., et al. (2015) Drill core mineral analysis by means of the hyperspectral imaging spectrometer Hyspex, XRD and ASD in proximity of the Mýtina Maar, Czech Republic. ISPRS - International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences XL-1-W5: 417–424</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Remote sensing
+
+<table>
+    <thead>
+        <tr>
+            <th style="text-align:center">Sample</th>
+            <th style="text-align:center">Image</th>
+            <th style="text-align:center">Goal</th>
+            <th style="text-align:center"><b>Methodology</b></th>
+            <th style="text-align:center">Remarks</th>
+        </tr>
+        <tr>
+            <th colspan="5" style="text-align:center">Reference</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align:center">Bituminous soil</td>
+            <td style="text-align:center">MIR + SWIR + LWIR (HSI + spectroscopy)</td>
+            <td style="text-align:center">Determine the lithology of samples automatically</td>
+            <td style="text-align:center"><b></b></td>
+            <td style="text-align:center">Create a library with MIR to classify LWIR and SWIR pixels by co-registration.</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Speta, M.A. (2016) Hyperspectral Imaging for the Characterization of Athabasca Oil Sands Core. Alberta.</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Soil</td>
+            <td style="text-align:center">AVIRIS (Airborne)</td>
+            <td style="text-align:center">Estimation of soil mineralogy from drone and a library</td>
+            <td style="text-align:center"><b>SAM+ANN</b></td>
+            <td style="text-align:center"></td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Adep, R.N., Amba, S., Ramesh, H. (2017) EXhype: A tool for mineral classification using hyperspectral data. ISPRS Journal of Photogrammetry and Remote Sensing 124: 106–118</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Soil</td>
+            <td style="text-align:center">SWIR+LWIR (Airborne)</td>
+            <td style="text-align:center">Estimation of soil mineralogy with the extraction of EMs with two sensors taken separately or together</td>
+            <td style="text-align:center"><b>ISMA</b></td>
+            <td style="text-align:center">Assignment with laboratory XRD data. By merging the two classification maps, more mineral information can be obtained.</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Feng, J., Rogge, D., Rivard, B. (2018) Comparison of lithological mapping results from airborne hyperspectral VNIR-SWIR, LWIR and combined data. International Journal of Applied Earth Observation and Geoinformation 64: 340–353</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Soil</td>
+            <td style="text-align:center">AVIRIS (Airborne)</td>
+            <td style="text-align:center">Comparison of EM extraction methods for characterizing soil mineralogy</td>
+            <td style="text-align:center"><b>VCA, MVSA, MCR-ALS</b></td>
+            <td style="text-align:center"></td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Zhang, X., Tauler, R. (2013) Application of Multivariate Curve Resolution Alternating Least Squares (MCR-ALS) to remote sensing hyperspectral imaging. Analytica Chimica Acta 762: 25–38</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Soil</td>
+            <td style="text-align:center">AVIRIS (Airborne)</td>
+            <td style="text-align:center">Comparison of EM extraction methods for characterizing soil mineralogy</td>
+            <td style="text-align:center"><b>VCA, N-FINDR, DFA</b></td>
+            <td style="text-align:center"></td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Zhang, C., Qin, Q., Zhang, T., Sun, Y., Chen, C. (2017) Endmember extraction from hyperspectral image based on discrete firefly algorithm (EE-DFA). ISPRS Journal of Photogrammetry and Remote Sensing 126: 108–119</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Soil</td>
+            <td style="text-align:center">AVIRIS (Airborne)</td>
+            <td style="text-align:center">Scene description from the estimation of EMs</td>
+            <td style="text-align:center"><b>Local Rank + MCR-ALS</b></td>
+            <td style="text-align:center">EM extraction taking into account the space environment with the local rank approach.</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Zhang, X., de Juan, A., Tauler, R. (2016) Local rank-based spatial information for improvement of remote sensing hyperspectral imaging resolution. Talanta 146: 1–9</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Soil</td>
+            <td style="text-align:center">LIR (Airborne)</td>
+            <td style="text-align:center">Determination of discriminating spectral regions</td>
+            <td style="text-align:center"><b></b></td>
+            <td style="text-align:center"></td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Hecker, C., van Ruitenbeek, F.J.A., Bakker, W.H., Fagbohun, B.J., Riley, D., van der Werff, H.M.A., van der Meer, F.D. (2019) Mapping the wavelength position of mineral features in hyperspectral thermal infrared data. International Journal of Applied Earth Observation and Geoinformation 79: 133–140</td>
+        </tr>
+    </tbody>
+</table>
+
 ## Classification methods
 
 Data can also be grouped in a qualitative way, called classification or pattern recognition. Partial knowledge of the data can be obtained and used, known as supervised classification or discrimination, to estimate, for example, the presence or absence of a compound, or high-medium-high levels of abundance. In the case of unknown data, we speak of unsupervised classification or clustering. These methods can be applied to both the spatial and spectral dimensions.
