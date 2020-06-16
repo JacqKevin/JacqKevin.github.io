@@ -2783,6 +2783,7 @@ caption {
     text-align: left
 }
 
+td,
 th {
     text-align: left
     border:1px solid black;
