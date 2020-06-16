@@ -219,23 +219,20 @@ textarea {
 optgroup {
     font-weight: 700
 }
-
 table {
- border-width:1px; 
- border-style:solid; 
- border-color:black;
- width:50%;
- border-collapse: collapse
-}
+ border-collapse:collapse;
+ width:90%;
  }
-td,
-th { 
- border-width:1px;
- border-style:solid; 
- border-color:black;
- width:50%;
+th, td {
+ border:1px solid black;
+ width:20%;
  }
-
+td {
+ text-align:center;
+ }
+caption {
+ font-weight:bold
+ }
 
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 
@@ -2775,6 +2772,8 @@ pre code {
 
 table {
     background-color: transparent
+    border-collapse:collapse;
+    width:90%;
 }
 
 caption {
@@ -2786,6 +2785,8 @@ caption {
 
 th {
     text-align: left
+    border:1px solid black;
+    width:20%;
 }
 
 .table {
