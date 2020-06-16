@@ -7,7 +7,7 @@ permalink: Processing_Methods_HSI.html
 {% include image.html file="Methods.jpg" %}
 </center>
 
-## Semi-quantitative methods
+## Semi-quantitative approaches
 
 A first approach to extracting information from spectral data is to search for characteristic areas corresponding to one or a few wavelength(s). In this case we speak of univariate approaches with a local rather than global spectral approach.
 
@@ -17,7 +17,9 @@ Caution should be used with these indices, however, as several chemical compound
 
 These indices are semi-quantitative and can be subsequently calibrated from regression models by estimating a link with a reference analytical method. This is known as simple linear regression (SLR), which estimates a relationship between an explained variable ($y$, analytical) and an explanatory variable ($x$, spectral).
 
-## Quantitative methods
+## Quantitative approaches
+
+### Methods
 
 Rather than studying specific spectral regions for a compound or chemical bond, global approaches that use the entire spectrum have been developed and are called multivariate methods. Bio-physical-chemical information can be found in different areas of the spectrum, it can also be related to another correlated compound, or on the contrary, it can be perturbed by another. These global methods can thus find all this information, which makes it possible to create efficient prediction models.
 		
@@ -85,14 +87,26 @@ Schmidhuber, J. (2015) Deep Learning in Neural Networks: An Overview. Neural Net
     </thead>
     <tbody>
         <tr>
-            <td style="text-align:center"></td>
-            <td style="text-align:center"></td>
-            <td style="text-align:center"></td>
-            <td style="text-align:center"><b></b></td>
-            <td style="text-align:center"></td>
+            <td style="text-align:center" rowspan="4">Soil (3793)</td>
+            <td style="text-align:center" rowspan="4">Vis-NIR</td>
+            <td style="text-align:center" rowspan="4">SOC</td>
+            <td style="text-align:center"><b>CNN</b></td>
+            <td style="text-align:center">R2cal=0.84</td>
         </tr>
         <tr>
-            <td colspan="5" style="text-align:center"></td>
+            <td style="text-align:center"><b>SNV-SVM</b></td>
+            <td style="text-align:center">R2cal=0.82</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><b>SNV-PCA-ANN</b></td>
+            <td style="text-align:center">R2cal=0.83</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><b>SNV-PLSR</b></td>
+            <td style="text-align:center">R2cal=0.82</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Zhang, X., Lin, T., Xu, J., Luo, X., Ying, Y. (2019) DeepSpectra: An end-to-end deep learning approach for quantitative spectral analysis. Analytica Chimica Acta 1058: 48–57</td>
         </tr>
     </tbody>
 </table>
@@ -127,6 +141,8 @@ Schmidhuber, J. (2015) Deep Learning in Neural Networks: An Overview. Neural Net
 </table>
 
 ## Estimation of pure signals (endmembers)
+
+### Methods
 
 From the spectroscopic data, chemical fingerprints of compounds can be obtained if the sample is pure and homogeneous. In the case of multi- or hyper-spectral images, it is the inhomogeneity of the sample that is studied, and is then characterized through the different compounds it contains by estimating pure signals, also called endmembers (EM) (Bioucas-Dias2012, Keshava2003). These are referred to as unmixing methods for the extraction of pure signals. There are three main groups of methods for estimating these pure signals:
 
@@ -349,7 +365,7 @@ Meerdink, S.K., Hook, S.J., Roberts, D.A., Abbott, E.A. (2019) The ECOSTRESS spe
     </tbody>
 </table>
 
-## Classification methods
+## Classification approaches
 
 Data can also be grouped in a qualitative way, called classification or pattern recognition. Partial knowledge of the data can be obtained and used, known as supervised classification or discrimination, to estimate, for example, the presence or absence of a compound, or high-medium-high levels of abundance. In the case of unknown data, we speak of unsupervised classification or clustering. These methods can be applied to both the spatial and spectral dimensions.
 
@@ -524,6 +540,8 @@ Schmidhuber, J. (2015) Deep Learning in Neural Networks: An Overview. Neural Net
 </table>
 
 ## Image segmentation
+
+#### Methods
 
 An image carries information about the structures making up a scene or sample. Methods exist to characterize them, called segmentation. They can be grouped into two families:
 <ul>
