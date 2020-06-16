@@ -216,24 +216,24 @@ Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment lam
 <table>
     <thead>
         <tr>
-            <th>Sample</th>
-            <th>Image</th>
-            <th>Methodology</th>
-            <th>Remarks</th>
+            <th style="text-align:center">Sample</th>
+            <th style="text-align:center">Image</th>
+            <th style="text-align:center">Methodology</th>
+            <th style="text-align:center">Remarks</th>
         </tr>
         <tr>
-            <th colspan="4">Reference</th>
+            <th colspan="4" style="text-align:center">Reference</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>Sediment core</td>
-            <td>X-ray</td>
-            <td>Maxima and Minima detection</td>
-            <td>Detection from 3 pixels minimum. Count on the whole picture, but estimates an average variation</td>
+            <td style="text-align:center">Sediment core</td>
+            <td style="text-align:center">X-ray</td>
+            <td style="text-align:center">Maxima and Minima detection</td>
+            <td style="text-align:center">Detection from 3 pixels minimum. Count on the whole picture, but estimates an average variation</td>
         </tr>
         <tr>
-            <td colspan="4">Damci, E., Çağatay, M.N. (2016) An automated algorithm for dating annually laminated sediments using X-ray radiographic images, with applications to Lake Van (Turkey), Lake Nautajarvi (Finland) and Byfjorden (Sweden). Quaternary International 401: 174–183</td>
+            <td colspan="4" style="text-align:center">Damci, E., Çağatay, M.N. (2016) An automated algorithm for dating annually laminated sediments using X-ray radiographic images, with applications to Lake Van (Turkey), Lake Nautajarvi (Finland) and Byfjorden (Sweden). Quaternary International 401: 174–183</td>
         </tr>
     </tbody>
 </table>
