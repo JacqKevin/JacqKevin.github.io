@@ -218,6 +218,45 @@ Schmidhuber, J. (2015) Deep Learning in Neural Networks: An Overview. Neural Net
             <td colspan="5" style="text-align:center">Vohland, M., Ludwig, M., Thiele-Bruhn, S., Ludwig, B. (2017) Quantification of soil properties with hyperspectral data: Selecting spectral variables with different methods to improve accuracies and analyze prediction mechanisms. Remote Sensing 9: 1–24</td>
         </tr>
         <tr>
+            <td style="vertical-align:middle;text-align:center;" rowspan="8">Soil (89)</td>
+            <td style="vertical-align:middle;text-align:center;" >Vis (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;" rowspan="4">OC</td>
+            <td style="vertical-align:middle;text-align:center;  rowspan="8""><b>D2-PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.77</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;" >NIR (Spectroscopy)</td>
+            <td style="text-align:center">R2cal=0.72</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;" >SWIR (Spectroscopy)</td>
+            <td style="text-align:center">R2cal=0.78</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;" >Vis-NIR (Spectroscopy)</td>
+            <td style="text-align:center">R2cal=0.78</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;" >Vis (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;" rowspan="4">TOC</td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.78</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;" >NIR (Spectroscopy)</td>
+            <td style="text-align:center">R2cal=0.82</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;" >SWIR (Spectroscopy)</td>
+            <td style="text-align:center">R2cal=0.84</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;" >Vis-NIR (Spectroscopy)</td>
+            <td style="text-align:center">R2cal=0.88</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Peón, J., Fernández, S., Recondo, C., Calleja, J.F. (2017) Evaluation of the spectral characteristics of five hyperspectral and multispectral sensors for soil organic carbon estimation in burned areas. International Journal of Wildland Fire 26: 230–239</td>
+        </tr>
+        <tr>
             <td style="vertical-align:middle;text-align:center;">Soil (46)</td>
             <td style="vertical-align:middle;text-align:center;">NIR (Spectroscopy)</td>
             <td style="vertical-align:middle;text-align:center;">TOC</td>
@@ -505,6 +544,20 @@ Schmidhuber, J. (2015) Deep Learning in Neural Networks: An Overview. Neural Net
         </tr>
         <tr>
             <td colspan="5" style="text-align:center">Douglas, R.K., Nawar, S., Cipullo, S., Alamar, M.C., Coulon, F., Mouazen, A.M. (2018) Evaluation of vis-NIR reflectance spectroscopy sensitivity to weathering for enhanced assessment of oil contaminated soils. Science of the Total Environment 626: 1108–1120</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;" rowspan="2">Soil (72)</td>
+            <td style="vertical-align:middle;text-align:center;">Vis-NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;" rowspan="2">TPH</td>
+            <td style="vertical-align:middle;text-align:center;" rowspan="2"><b>D1-PSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2val=0.70</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Vis-NIR+XRF</td>
+            <td style="text-align:center">R2val=0.78</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Chakraborty, S., Weindorf, D.C., Li, B., Ali Aldabaa, A.A., Ghosh, R.K., Paul, S., Nasim Ali, M. (2015) Development of a hybrid proximal sensing method for rapid identification of petroleum contaminated soils. Science of The Total Environment 514: 399–408</td>
         </tr>
         <tr>
             <td style="vertical-align:middle;text-align:center;">Soil (150)</td>
