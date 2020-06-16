@@ -192,6 +192,59 @@ Schmidhuber, J. (2015) Deep Learning in Neural Networks: An Overview. Neural Net
         <tr>
             <td colspan="5" style="text-align:center">Tamburini, E., Vincenzi, F., Costa, S., Mantovi, P., Pedrini, P., Castaldelli, G. (2017) Effects of moisture and particle size on quantitative determination of total organic carbon (TOC) in soils using near-infrared spectroscopy. Sensors 17: 1–15</td>
         </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;">Soil (127)</td>
+            <td style="vertical-align:middle;text-align:center;">Vis-NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;">OC</td>
+            <td style="vertical-align:middle;text-align:center;"><b>D2-PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.90, R2val=0.92</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Katuwal, S., Hermansen, C., Knadel, M., Moldrup, P., Greve, M.H., de Jonge, L.W. (2017) Combining X-ray Computed Tomography and Visible Near-Infrared Spectroscopy for Prediction of Soil Structural Properties. Vadose Zone Journal 1–13</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;" rowspan="2">Soil (42)</td>
+            <td style="vertical-align:middle;text-align:center;">Vis-NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;" rowspan="2">OC</td>
+            <td style="vertical-align:middle;text-align:center;"><b>PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.94</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">HyMap (HSI)</td>
+            <td style="text-align:center"><b>PLSR</b></td>
+            <td style="text-align:center">R2cal=0.85</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Vohland, M., Ludwig, M., Thiele-Bruhn, S., Ludwig, B. (2017) Quantification of soil properties with hyperspectral data: Selecting spectral variables with different methods to improve accuracies and analyze prediction mechanisms. Remote Sensing 9: 1–24</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;">Soil (434)</td>
+            <td style="vertical-align:middle;text-align:center;">Vis-NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;">SOC</td>
+            <td style="vertical-align:middle;text-align:center;"><b>SNV-PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2val=0.71</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Pinheiro, É., Ceddia, M., Clingensmith, C., Grunwald, S., Vasques, G. (2017) Prediction of Soil Physical and Chemical Properties by Visible and Near-Infrared Diffuse Reflectance Spectroscopy in the Central Amazon. Remote Sensing 9:</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;" rowspan="3">Soil (529)</td>
+            <td style="vertical-align:middle;text-align:center;" rowspan="3">Vis-NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;" rowspan="3">TC</td>
+            <td style="vertical-align:middle;text-align:center;"><b>D2-PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.77</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><b>D2-SVM</b></td>
+            <td style="text-align:center">R2cal=0.79</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><b>D2-MARS</b></td>
+            <td style="text-align:center">R2cal=0.88</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Nawar, S., Mouazen, A.M. (2017) Predictive performance of mobile vis-near infrared spectroscopy for key soil properties at different geographical scales by using spiking and data mining techniques. Catena 151: 118–129</td>
+        </tr>
     </tbody>
 </table>
 
