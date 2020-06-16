@@ -210,3 +210,30 @@ Duda, R.O., Hart, P.E. (1972) Use of the Hough transformation to detect lines an
 
 Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment laminae: An automated 2-D image processing method. Computers & Geosciences 52: 345–355
 ```
+
+### References
+
+<table>
+    <thead>
+        <tr>
+            <td>Sample</td>
+            <td>Image</td>
+            <td>Methodology</td>
+            <td>Remarks</td>
+        </tr>
+        <tr>
+            <th colspan="2">Reference</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>The table body</td>
+            <td>with two columns</td>
+            <td>The table body</td>
+            <td>with two columns</td>
+        </tr>
+        <tr>
+            <th colspan="2">The table header</th>
+        </tr>
+    </tbody>
+</table>
