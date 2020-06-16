@@ -66,6 +66,66 @@ Ivakhnenko, A., Lapa, V.G. (1965) Cybernetic Predicting Devices New York, CCM In
 Schmidhuber, J. (2015) Deep Learning in Neural Networks: An Overview. Neural Networks 61: 85–117
 ```
 
+### References
+
+#### Laboratory
+
+<table>
+    <thead>
+        <tr>
+            <th style="text-align:center">Sample</th>
+            <th style="text-align:center">Spectral domain</th>
+            <th style="text-align:center">Variable</th>
+            <th style="text-align:center"><b>Methodology</b></th>
+            <th style="text-align:center">Performances</th>
+        </tr>
+        <tr>
+            <th colspan="5" style="text-align:center">Reference</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align:center"></td>
+            <td style="text-align:center"></td>
+            <td style="text-align:center"></td>
+            <td style="text-align:center"><b></b></td>
+            <td style="text-align:center"></td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center"></td>
+        </tr>
+    </tbody>
+</table>
+
+#### Remote sensing
+
+<table>
+    <thead>
+        <tr>
+            <th style="text-align:center">Sample</th>
+            <th style="text-align:center">Spectral domain</th>
+            <th style="text-align:center">Variable</th>
+            <th style="text-align:center"><b>Methodology</b></th>
+            <th style="text-align:center">Performances</th>
+        </tr>
+        <tr>
+            <th colspan="5" style="text-align:center">Reference</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align:center"></td>
+            <td style="text-align:center"></td>
+            <td style="text-align:center"></td>
+            <td style="text-align:center"><b></b></td>
+            <td style="text-align:center"></td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center"></td>
+        </tr>
+    </tbody>
+</table>
+
 ## Estimation of pure signals (endmembers)
 
 From the spectroscopic data, chemical fingerprints of compounds can be obtained if the sample is pure and homogeneous. In the case of multi- or hyper-spectral images, it is the inhomogeneity of the sample that is studied, and is then characterized through the different compounds it contains by estimating pure signals, also called endmembers (EM) (Bioucas-Dias2012, Keshava2003). These are referred to as unmixing methods for the extraction of pure signals. There are three main groups of methods for estimating these pure signals:
@@ -353,6 +413,116 @@ Ivakhnenko, A., Lapa, V.G. (1965) Cybernetic Predicting Devices New York, CCM In
 Schmidhuber, J. (2015) Deep Learning in Neural Networks: An Overview. Neural Networks 61: 85–117
 ```
 
+### References
+
+#### Laboratory
+
+<table>
+    <thead>
+        <tr>
+            <th style="text-align:center">Sample</th>
+            <th style="text-align:center">Image</th>
+            <th style="text-align:center">Goal</th>
+            <th style="text-align:center"><b>Methodology</b></th>
+            <th style="text-align:center">Dimension</th>
+        </tr>
+        <tr>
+            <th colspan="5" style="text-align:center">Reference</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align:center">Sediment</td>
+            <td style="text-align:center">VNIR (HSI)</td>
+            <td style="text-align:center">Classify each pixel of the sedimentary core to find volcanic deposits</td>
+            <td style="text-align:center"><b>ANN</b></td>
+            <td style="text-align:center">Spectral</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Aymerich, I.F., Oliva, M., Giralt, S., Martín-Herrero, J. (2016) Detection of Tephra Layers in Antarctic Sediment Cores with Hyperspectral Imaging. Coles, J. A. (ed.) PLOS ONE 11: 1–24</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Sediment</td>
+            <td style="text-align:center">RGB</td>
+            <td style="text-align:center">Discriminate the laminates to count them</td>
+            <td style="text-align:center"><b>Neuro-fuzzy network</b></td>
+            <td style="text-align:center">Spectral</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Ebert, T., Trauth, M.H. (2015) Semi-automated detection of annual laminae (varves) in lake sediments using a fuzzy logic algorithm. Palaeogeography, Palaeoclimatology, Palaeoecology 435: 272–282</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Sediment</td>
+            <td style="text-align:center">RGB</td>
+            <td style="text-align:center">Discriminate the laminates to count them</td>
+            <td style="text-align:center"><b>KNN</b></td>
+            <td style="text-align:center">Spectral</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Ndiaye, M., Davaud, E., Ariztegui, D., Fall, M. (2012) A Semi Automated Method for Laminated Sediments Analysis. International Journal of Geosciences 3: 206–210</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Remote sensing
+
+<table>
+    <thead>
+        <tr>
+            <th style="text-align:center">Sample</th>
+            <th style="text-align:center">Image</th>
+            <th style="text-align:center">Goal</th>
+            <th style="text-align:center"><b>Methodology</b></th>
+            <th style="text-align:center">Dimension</th>
+        </tr>
+        <tr>
+            <th colspan="5" style="text-align:center">Reference</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align:center">Soil</td>
+            <td style="text-align:center">ROSI, AISA (HSI Airborne)</td>
+            <td style="text-align:center">Classify each pixel on the ground to characterize the scene</td>
+            <td style="text-align:center"><b>Data reduction (VCA et ICA) and classification (K-means, SVM)</b></td>
+            <td style="text-align:center">Spectral</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Villa, A. (2012) Advanced Spectral Unmixing and Classification Methods for Hyperspectral Remote Sensing Data.</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Soil</td>
+            <td style="text-align:center">AVIRIS (Airborne)</td>
+            <td style="text-align:center">Classify each pixel on the ground to characterize the scene</td>
+            <td style="text-align:center"><b>Spatial feature extraction, spectral reduction by unmixing, classification using both types of data.</b></td>
+            <td style="text-align:center">Spatial-Spectral</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Han, M., Zhang, C. (2017) Spectral-spatial classification of hyperspectral image based on discriminant sparsity preserving embedding. Neurocomputing 243: 133–141</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Soil</td>
+            <td style="text-align:center">VNIR+SWIR (Airborne)</td>
+            <td style="text-align:center">Classify each ground pixel to characterize the soil types of a plot of land</td>
+            <td style="text-align:center"><b>Data reduction with SAM and a gradient with respect to a pure spectrum, then classification with K-means in this 2D SAM-Gradient space</b></td>
+            <td style="text-align:center">Spectral</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Ogen, Y., Goldshleger, N., Ben-Dor, E. (2017) 3D spectral analysis in the VNIR–SWIR spectral region as a tool for soil classification. Geoderma 302: 100–110</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Soil</td>
+            <td style="text-align:center">AVIRIS (Airborne)</td>
+            <td style="text-align:center">Classify each pixel on the ground to characterize the scene</td>
+            <td style="text-align:center"><b>CNN</b></td>
+            <td style="text-align:center">Spatial-Spectral</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Ben Hamida, A., Benoit, A., Lambert, P., Ben Amar, C. (2018) 3-D Deep Learning Approach for Remote Sensing Image Classification. IEEE Transactions on Geoscience and Remote Sensing 56: 4420–4434</td>
+        </tr>
+    </tbody>
+</table>
+
 ## Image segmentation
 
 An image carries information about the structures making up a scene or sample. Methods exist to characterize them, called segmentation. They can be grouped into two families:
@@ -383,7 +553,9 @@ Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment lam
 
 ### References
 
-#### Lamina detection
+#### Proximal images
+
+##### Lamina detection
 
 <table>
     <thead>
@@ -455,7 +627,7 @@ Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment lam
     </tbody>
 </table>
 
-#### Grain size estimation
+##### Grain size estimation
 
 <table>
     <thead>
@@ -580,3 +752,5 @@ Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment lam
         </tr>
     </tbody>
 </table>
+
+#### Remote images
