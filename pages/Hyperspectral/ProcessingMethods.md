@@ -87,11 +87,11 @@ Schmidhuber, J. (2015) Deep Learning in Neural Networks: An Overview. Neural Net
     </thead>
     <tbody>
         <tr>
-            <td style="text-align:center" rowspan="4">Soil (3793)</td>
-            <td style="text-align:center" rowspan="4">Vis-NIR</td>
-            <td style="text-align:center" rowspan="4">SOC</td>
-            <td style="text-align:center"><b>CNN</b></td>
-            <td style="text-align:center">R2cal=0.84</td>
+            <td style="vertical-align:middle;text-align:center;" rowspan="4">Soil (3793)</td>
+            <td style="vertical-align:middle;text-align:center;" rowspan="4">Vis-NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;" rowspan="4">SOC</td>
+            <td style="vertical-align:middle;text-align:center;"><b>CNN</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.84</td>
         </tr>
         <tr>
             <td style="text-align:center"><b>SNV-SVM</b></td>
@@ -107,6 +107,90 @@ Schmidhuber, J. (2015) Deep Learning in Neural Networks: An Overview. Neural Net
         </tr>
         <tr>
             <td colspan="5" style="text-align:center">Zhang, X., Lin, T., Xu, J., Luo, X., Ying, Y. (2019) DeepSpectra: An end-to-end deep learning approach for quantitative spectral analysis. Analytica Chimica Acta 1058: 48–57</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;">Sediment core</td>
+            <td style="vertical-align:middle;text-align:center;">SWIR (HSI)</td>
+            <td style="vertical-align:middle;text-align:center;">OM</td>
+            <td style="vertical-align:middle;text-align:center;"><b>Autoscale-PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.96, R2val=0.90</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Jacq, K., Perrette, Y., et al. (2019) High-resolution prediction of organic matter concentration with hyperspectral imaging on a sediment core. Science of the Total Environment 663: 236–244</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;">Soil (96)</td>
+            <td style="vertical-align:middle;text-align:center;">Vis-NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;">OM</td>
+            <td style="vertical-align:middle;text-align:center;"><b>PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.92, R2val=0.78</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Demattê, J.A.M., Dotto, A.C., Bedin, L.G., Sayão, V.M., Souza, A.B. e. (2019) Soil analytical quality control by traditional and spectroscopy techniques: Constructing the future of a hybrid laboratory for low environmental impact. Geoderma 337: 111–121</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;">Soil (>20000)</td>
+            <td style="vertical-align:middle;text-align:center;">Vis-NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;">OM</td>
+            <td style="vertical-align:middle;text-align:center;"><b>CNN</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.756</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Liu, L., Ji, M., Buchroithner, M. (2018) Transfer learning for soil spectroscopy based on convolutional neural networks and its application in soil clay content mapping using hyperspectral imagery. Sensors 18: 1–18</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;" rowspan="3">Soil (585)</td>
+            <td style="vertical-align:middle;text-align:center;" rowspan="3">Vis-NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;" rowspan="3">SOM</td>
+            <td style="vertical-align:middle;text-align:center;"><b>PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.86, R2val=0.85</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><b>PCR</b></td>
+            <td style="text-align:center">R2cal=0.83, R2val=0.81</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><b>SVM</b></td>
+            <td style="text-align:center">R2cal=0.90, R2val=0.88</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Xu, S., Zhao, Y., Wang, M., Shi, X. (2018) Comparison of multivariate methods for estimating selected soil properties from intact soil cores of paddy fields by Vis–NIR spectroscopy. Geoderma 310: 29–43</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;" rowspan="5">Soil (595)</td>
+            <td style="vertical-align:middle;text-align:center;" rowspan="5">Vis-NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;" rowspan="5">SOC</td>
+            <td style="vertical-align:middle;text-align:center;"><b>CR-PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2val=0.81</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><b>CR-PCR</b></td>
+            <td style="text-align:center">R2val=0.80</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><b>SNV-MLR</b></td>
+            <td style="text-align:center">R2val=0.79</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><b>D1-SVM</b></td>
+            <td style="text-align:center">R2val=0.80</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><b>SNV-ANN</b></td>
+            <td style="text-align:center">R2val=0.79</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Dotto, A.C., Dalmolin, R.S.D., ten Caten, A., Grunwald, S. (2018) A systematic study on the application of scatter-corrective and spectral-derivative preprocessing for multivariate prediction of soil organic carbon by Vis-NIR spectra. Geoderma 314: 262–274</td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle;text-align:center;">Soil (46)</td>
+            <td style="vertical-align:middle;text-align:center;">NIR (Spectroscopy)</td>
+            <td style="vertical-align:middle;text-align:center;">TOC</td>
+            <td style="vertical-align:middle;text-align:center;"><b>SNV-D2-PLSR</b></td>
+            <td style="vertical-align:middle;text-align:center;">R2cal=0.99, R2val=0.83</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center">Tamburini, E., Vincenzi, F., Costa, S., Mantovi, P., Pedrini, P., Castaldelli, G. (2017) Effects of moisture and particle size on quantitative determination of total organic carbon (TOC) in soils using near-infrared spectroscopy. Sensors 17: 1–15</td>
         </tr>
     </tbody>
 </table>
