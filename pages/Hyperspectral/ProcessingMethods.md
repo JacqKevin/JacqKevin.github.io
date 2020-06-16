@@ -216,10 +216,10 @@ Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment lam
 <table>
     <thead>
         <tr>
-            <td>Sample</td>
-            <td>Image</td>
-            <td>Methodology</td>
-            <td>Remarks</td>
+            <th>Sample</th>
+            <th>Image</th>
+            <th>Methodology</th>
+            <th>Remarks</th>
         </tr>
         <tr>
             <th colspan="4">Reference</th>
@@ -233,7 +233,7 @@ Gan, S.Q., Scholz, C.A. (2013) Extracting paleoclimate signals from sediment lam
             <td>Detection from 3 pixels minimum. Count on the whole picture, but estimates an average variation</td>
         </tr>
         <tr>
-            <th colspan="4">Damci, E., Çağatay, M.N. (2016) An automated algorithm for dating annually laminated sediments using X-ray radiographic images, with applications to Lake Van (Turkey), Lake Nautajarvi (Finland) and Byfjorden (Sweden). Quaternary International 401: 174–183</th>
+            <td colspan="4">Damci, E., Çağatay, M.N. (2016) An automated algorithm for dating annually laminated sediments using X-ray radiographic images, with applications to Lake Van (Turkey), Lake Nautajarvi (Finland) and Byfjorden (Sweden). Quaternary International 401: 174–183</td>
         </tr>
     </tbody>
 </table>
