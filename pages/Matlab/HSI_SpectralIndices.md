@@ -8,6 +8,10 @@ sidebar: Matlab_sidebar
 # Toolbox
 The mandatory data to use this toolbox are a hyperspectral image (M), the corresponding RGB image (RGB), depth (dm), and wavelength (wl). Then, the toolbox will find with wl if it is VNIR or SWIR data. Then, it will propose to you all the possible indices that you can choose to estimate. Finally, an image correlation between the selected indices is made at the end.
 
+<a href="https://github.com/JacqKevin/HSI_Spectral_Indices">
+  HSI_Spectral_Indices repository
+</a>
+
 ## VNIR example
 Here we can see an example with lamination. White laminae present higher values that correspond to the diatoms in spring and summer. Whereas dark laminae corresponding to winter have the lowest values.
 
