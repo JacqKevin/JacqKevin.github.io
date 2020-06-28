@@ -8,6 +8,10 @@ sidebar: Matlab_sidebar
 # Visualization Toolbox
 The mandatory data to use this toolbox are a hyperspectral image (M), the corresponding RGB image (RGB), depth (dm), and wavelength (wl). Then, the toolbox will estimate continuum, first derivative of the HSI.
 
+<a href="https://github.com/JacqKevin/HSI_Visualization">
+  HSI_Visualization repository
+</a>
+
 ## Median raw spectra
 
 {% include image.html file="Raw.jpg" %}
