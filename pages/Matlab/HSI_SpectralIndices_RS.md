@@ -8,6 +8,10 @@ sidebar: Matlab_sidebar
 # Remote sensing indices
 This toolbox uses the following list of remote sensing indices. If you find that important resources are not included, please feel free to contact me.
 
+<a href="https://github.com/JacqKevin/HSI_Spectral_Indices">
+  HSI_Spectral_Indices repository: IndiceRSCalculation.m will calculate all this indices.
+</a>
+
 ## VNIR 400-1000nm 
 * Difference Vegetation Index (DVI)
 ```markdown
