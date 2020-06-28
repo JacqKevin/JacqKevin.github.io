@@ -8,6 +8,10 @@ sidebar: Matlab_sidebar
 # Spectroscopic and hyperspectral indices
 This toolbox uses the following list of spectroscopic indices. If you find that important resources are not included, please feel free to contact me.
 
+<a href="https://github.com/JacqKevin/HSI_Spectral_Indices">
+  HSI_Spectral_Indices repository: IndiceCalculation.m will calculate all this indices.
+</a>
+
 ## VNIR 400-1000nm
 * Chlorophylls R675/R750 
 ```markdown
