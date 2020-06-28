@@ -5,54 +5,134 @@ permalink: Fusion_HSI.html
 sidebar: home_sidebar
 ---
 
-Comme on a pu le voir, chaque domaine spectral apporte des informations bio-physico-chimiques qui lui sont propres et qui peuvent se retrouver dans d'autres. C'est pourquoi combiner différents jeux de données de plusieurs domaines spectraux est intéressant pour améliorer la caractérisation des échantillons. En fonction du type de capteur, les méthodes employées sont différentes, c'est pourquoi cette section est divisée en deux parties qui traitent de la fusion d'image (2D) et de signaux (1D).
+As we have seen, each spectral domain brings its own biophysical-chemical information that can be found in others. This is why combining different data sets from several spectral domains is of interest to improve the characterization of samples. Depending on the type of sensor, the methods used are different, which is why this section is divided into two parts dealing with image (2D) and signal (1D) fusion.
 
 <center>
 {% include image.html file="Fusion_Methods.jpg" %}
 </center>
 		
-Les méthodes de fusion d'image doivent pallier deux principales difficultés, (1) la modification de la surface des échantillons entre les acquisitions et (2) la non-homogénéité des résolutions. Ce sont des questions qui sont principalement étudiées dans les domaines de la télédétection (étude des terrains) et du médical (diagnostic plus complet d'un patient) pour agglomérer des données multicapteurs. Le domaine de la chimie analytique commence aussi à s'y intéresser en s'inspirant des méthodes développées dans ces deux domaines \cite{DeJuan2019, DeJuan2018}. 
+Image fusion methods must overcome two main difficulties, (1) the modification of the sample surface area between acquisitions and (2) the non-homogeneity of the resolutions. These are issues that are mainly studied in the fields of remote sensing (field studies) and medical (more complete diagnosis of a patient) to agglomerate multisensor data. The field of analytical chemistry is also beginning to take an interest in this area, drawing on the methods developed in these two fields.
+
+```markdown
+de Juan, A. (2018) Hyperspectral image analysis. When space meets Chemistry. Journal of Chemometrics 32: 1–13
+
+de Juan, A., Gowen, A., Duponchel, L., Ruckebusch, C. (2019) Image Fusion. In: Data Fusion Methodology and Applications 311–344.
+```
 
 ## Image fusion
 
 ### Fusion at high resolution
 
-L'homogénéisation des résolutions (2) peut être effectuée à plusieurs niveaux. Soit à la plus basse des résolutions, ce qui est effectué lors de l'étape de recalage (1), on peut parler de fusion à basse résolution, qui correspond à une combinaison des jeux de données. Soit on utilise des approches de fusion avancées pour une fusion à haute résolution. Ces méthodes peuvent être regroupées en trois familles suivant le type d'information fusionnée \cite{Dasarathy1997,Martin2005,Ghassemian2016}. Elles peuvent être représentées par la figure \ref{fig:fus}.
+The homogenization of the resolutions (2) can be carried out at several levels. Either at the lowest of the resolutions, which is done in the registration step (1), we can speak of low resolution merging, which corresponds to a combination of the data sets. Or advanced fusion approaches are used for high-resolution fusion. These methods can be grouped into three families according to the type of information merged. 
 
 <center>
 {% include image.html file="Fus.jpg" %}
 </center>
 
+```markdown
+Dasarathy, B.V. (1997) Sensor fusion potential exploitation-innovative architectures and illustrative applications. Proceedings of the IEEE 85: 24–38
+
+Ghassemian, H. (2016) A review of remote sensing image fusion methods. Information Fusion 32: 75–89
+
+Martin, A. (2005) La fusion d’informations. Cours ENSIETA
+```
+
 <ul>
-<li> La fusion de bas niveau ou au niveau pixel consiste à fusionner les informations brutes après l'acquisition, ainsi toutes les informations sont retenues. Ensuite, le capteur composite est prétraité avant la création d'un modèle prédictif quantitatif ou qualitatif. </li>
-<li>  La fusion de niveau moyen ou au niveau des attributs représente la fusion des données initiales réduites, comme par exemple avec une ACP, ou des méthodes de démélange, ou de segmentation. Ceci permet de garder des informations globales sur l'échantillon, et d'enlever le bruit, ainsi que potentiellement des informations locales si des vérifications ne sont pas effectuées. Enfin, un modèle quantitatif ou qualitatif est créé.  </li>
-<li>  La fusion de haut niveau ou au niveau décision consiste en la fusion de données extraites des données initiales, comme par exemple avec les méthodes d'apprentissage automatique ou de régression. Chaque capteur est donc prétraité, puis un modèle quantitatif ou qualitatif est créé pour estimer des cartes d'abondance ou de classification qui sont ensuite fusionnées. Dans le cas, de l'étude d'une unique propriété, il faut s'assurer que des informations discriminantes soient disponibles dans chacun des capteurs.  </li>
+<li> Low-level or pixel-level fusion consists of merging the raw information after the acquisition, so all information is retained. Then, the composite sensor is pre-processed before creating a quantitative or qualitative predictive model. </li>
+<li>  Mid-level or attribute-level merging represents the merging of reduced initial data, such as with a PCA, or de-mixing, or segmentation methods. This allows to keep global information about the sample, and to remove noise, as well as potentially local information if checks are not performed. Finally, a quantitative or qualitative model is created.  </li>
+<li>  High-level or decision-level merging is the merging of data extracted from the initial data, such as with machine learning or regression methods. Each sensor is therefore pre-processed, then a quantitative or qualitative model is created to estimate abundance or classification maps which are then merged. In the case of the study of a single property, it must be ensured that discriminating information is available in each of the sensors.  </li>
 </ul>
 
-Dans le cas des données spectroscopiques, comme on a pu le voir les gammes spectrales ne portent pas toujours des informations similaires. C'est pourquoi la fusion de haut niveau est intéressante pour la fusion de cartes de classification de variables différentes et complémentaires. Comme par exemple pour estimer la minéralogie d'un échantillon sédimentaire qui sont caractérisables avec différentes gammes spectrales qui portent des informations majoritaires. Mais dans le cas d'une même variable entre différents capteurs, cela a peu d'intérêt si certains de ces capteurs portent des informations minoritaires qui ne peuvent permettre une modélisation correcte. 
+In the case of spectroscopic data, as we have seen, spectral ranges do not always carry similar information. This is why high level fusion is interesting for the fusion of classification maps of different and complementary variables. As for example to estimate the mineralogy of a sedimentary sample that are characterizable with different spectral ranges that carry majority information. But in the case of the same variable between different sensors, it is of little interest if some of these sensors carry minority information that cannot allow a correct modeling. 
 
-Il se peut tout de même que des informations minoritaires sur une variable d'intérêt soient contenues dans certaines gammes spectrales, et que leur fusion avec une gamme spectrale portant des informations plus nombreuses, soit bénéfique pour augmenter les performances de modélisation. C'est pourquoi les méthodes de fusion au niveau pixel sont intéressantes et seront mieux détaillées par la suite \cite{Yokoya2017,Li2017,Loncan2015,Vivone2015}. En effet, celles-ci peuvent être regroupées dans quatre familles que l'on peut schématiser avec la figure \ref{fig:recap}. Les deux premières familles ont été créées pour la fusion de données multispectrales avec une image panchromatique (similaire à une image en niveau de gris), c'est pourquoi ces méthodes sont appelées pansharpening. Elles ont ensuite été modifiées pour la fusion de données multi- et hyper-spectrales, on parle d'hypersharpening.
+However, it is possible that minority information on a variable of interest may be contained in certain spectral ranges, and that merging it with a spectral range carrying more information may be beneficial to increase modeling performance. For this reason, pixel-level fusion methods are of interest and will be discussed in more detail later (Yokoya2017, Li2017, Loncan2015, Vivone2015). Indeed, these can be grouped in four families. The first two families were created for merging multispectral data with a panchromatic image (similar to a grayscale image), which is why these methods are called pansharpening. They were then modified for merging multi- and hyper-spectral data, which is called hypersharpening.
 
 <center>
 {% include image.html file="recap.jpg" %}
 </center>
 
 <ul>
-<li> La substitution de composantes (CS) consiste à projeter les données basses (BR) et hautes (HR) résolutions dans un autre espace qui sépare les informations spatiales et spectrales.  Ensuite, ces méthodes vont estimer les composantes BR qui sont les plus proches de celles à HR pour les substituer. Les méthodes les plus utilisées sont l'ACP \cite{Chavez1991}, l'ICA, Intensity-Hue-Saturation (IHS) \cite{Tu2001}, Brovey transform (BT) \cite{Gillespie1987}, Gram-Schmidt (GS) \cite{Laben2000,Aiazzi2007}. </li>
-<li>  L'analyse multirésolution (MRA) décompose les données BR et HR à plusieurs niveaux de résolution similaires en utilisant des ondelettes \cite{Khan2008,Vivone2014,Ranchin2000,Otazu2005} ou des pyramides laplaciennes \cite{Aiazzi2006,Aiazzi2003,Aiazzi2002,Lee2004,Alparone2007} ou gaussiennes. Ensuite, des modèles de passage sont calculés entre ces différentes résolutions pour estimer les hautes et basses fréquences (aussi appelées détails et structures) manquantes dans les données BR interpolées à HR.  </li>
-<li>  Les méthodes qui utilisent des sous espaces sont appelées méthodes sparses, car elles utilisent les méthodes de démélange \cite{Yokoya2011a}. Les données BR et HR sont synthétisées à travers des composantes pures (endmembers) qui peuvent se retrouver entre les deux jeux de données. Cela permet de reconstruire le cube BR à HR.  </li>
-<li>  Les méthodes de régression créent un modèle liant les différentes bandes spectrales entre les données BR et HR réduite à la BR, pour ensuite l'appliquer à haute résolution pour la prédiction du cube BR à HR \cite{DeJuan2019}. </li>
+<li> Component Substitution (CS) involves projecting low (BR) and high (HR) resolution data into another space that separates the spatial and spectral information. Then, these methods will estimate the BR components that are closest to the HR components to substitute them. The most commonly used methods are PCA (Chavez1991), ICA, Intensity-Hue-Saturation (IHS, Tu2001), Brovey transform (BT, Gillespie1987), Gram-Schmidt (GS, Laben2000, Aiazzi2007). </li>
+<li>  Multi-resolution analysis (MRA) decomposes BR and HR data at several similar levels of resolution using wavelets (Khan2008, Vivone2014, Ranchin2000, Otazu2005) or Laplacian pyramids (Aiazzi2006, Aiazzi2003, Aiazzi2002, Lee2004, Alparone2007) or Gaussian pyramids. Then, transition models are computed between these different resolutions to estimate the high and low frequencies (also called details and structures) missing in the RH interpolated BR data.  </li>
+<li>  Methods that use subspaces are called sparsal methods, because they use the (Yokoya2011) methods. BR and HR data are synthesized through pure components (endmembers) that can be found between the two datasets. This allows to reconstruct the BR to HR cube.</li>
+<li>  The regression methods create a model linking the different spectral bands between the reduced BR and HR data to the BR, and then apply it at high resolution for the prediction of the BR to HR cube (DeJuan2019).  </li>
 </ul>
 
-De nouvelles méthodes émergent avec l'utilisation d'approches bayésiennes \cite{YifanZhang2009} ou de réseaux d'apprentissage profond \cite{Liu2018,Dian2018,Shao2018}.
+New methods are emerging with the use of Bayesian approaches such as Zhang2009 or deep learning networks such as Liu2018, Dian2018, Shao2018.
+
+```markdown
+Aiazzi, B., Alparone, L., Baronti, S., Garzelli, A. (2002) Context-driven fusion of high spatial and spectral resolution images based on oversampled multiresolution analysis. IEEE Transactions on Geoscience and Remote Sensing 40: 2300–2312
+
+Aiazzi, B., Alparone, L., Baronti, S., Garzelli, A., Selva, M. (2003) An MTF-based spectral distortion minimizing model for pan-sharpening of very high resolution multispectral images of urban areas. In: 2nd GRSS/ISPRS Joint Workshop on ‘Data Fusion and Remote Sensing over Urban Areas’ IEEE, 90–94.
+
+Aiazzi, B., Alparone, L., Baronti, S., Garzelli, A., Selva, M. (2006) MTF-tailored Multiscale Fusion of High-resolution MS and Pan Imagery. Photogrammetric Engineering & Remote Sensing 72: 591–596
+
+Aiazzi, B., Baronti, S., Selva, M. (2007) Improving Component Substitution Pansharpening Through Multivariate Regression of MS+Pan Data. IEEE Transactions on Geoscience and Remote Sensing 45: 3230–3239
+
+Alparone, L.., Wald, L.., Chanussot, J.., Thomas, C.., Gamba, P.., Bruce, L.M. (2007) Comparison of Pansharpening Algorithms: Outcome of the 2006 GRS-S Data-Fusion Contest. IEEE Transactions on Geoscience and Remote Sensing 45: 3012–3021
+
+Chavez, P.S., Sides, S.C., Anderson, J.A. (1991) Comparison of Three Different Methods to Merge Multiresolution and Multispectral Data: Landsat TM and SPOT Panchromatic. Photogrammetric Engineering and Remote Sensing 57: 295–303
+
+de Juan, A., Gowen, A., Duponchel, L., Ruckebusch, C. (2019) Image Fusion. In: Data Fusion Methodology and Applications 311–344.
+
+Dian, R., Li, S., Guo, A., Fang, L. (2018) Deep Hyperspectral Image Sharpening. IEEE Transactions on Neural Networks and Learning Systems 29: 5345–5355
+
+Gillespie, A.R., Kahle, A.B., Walker, R.E. (1987) Color enhancement of highly correlated images. II. Channel ratio and “chromaticity” transformation techniques. Remote Sensing of Environment 22: 343–365
+
+Khan, M.M., Chanussot, J., Condat, L., Montanvert, A. (2008) Indusion: Fusion of Multispectral and Panchromatic Images Using the Induction Scaling Technique. IEEE Geoscience and Remote Sensing Letters 5: 98–102
+
+Laben, C.A., Brower, B. V. (2000) Process for enhancing the spatial resolution of multispectral imagery using pan-sharpening. U.S. Patent 6,011,875
+
+Lee, C.K., Ko, E.J., Kim, K.W., Kim, Y.J. (2004) Partial Least Square Regression Method for the Detection of Polycyclic Aromatic Hydrocarbons in the Soil Environment Using Laser-Induced Fluorescence Spectroscopy. Water, Air, & Soil Pollution 158: 261–275
+
+Li, S., Kang, X., Fang, L., Hu, J., Yin, H. (2017) Pixel-level image fusion: A survey of the state of the art. Information Fusion 33: 100–112
+
+Liu, Y., Chen, X., Wang, Z., Wang, Z.J., Ward, R.K., Wang, X. (2018) Deep learning for pixel-level image fusion: Recent advances and future prospects. Information Fusion 42: 158–173
+
+Loncan, L., de Almeida, L.B., et al. (2015) Hyperspectral Pansharpening: A Review. IEEE Geoscience and Remote Sensing Magazine 3: 27–46
+
+Otazu, X., Gonzalez-Audicana, M., Fors, O., Nunez, J. (2005) Introduction of sensor spectral response into image fusion methods. Application to wavelet-based methods. IEEE Transactions on Geoscience and Remote Sensing 43: 2376–2385
+
+Ranchin, T., Wald, L. (2000) Fusion of high spatial and spectral resolution images: the ARSIS concept and its implementation. Photogrammetric Engineering and Remote Sensing 66: 49–61
+
+Shao, Z., Cai, J. (2018) Remote Sensing Image Fusion with Deep Convolutional Neural Network. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing 11: 1656–1669
+
+Tu, T.-M., Su, S.-C., Shyu, H.-C., Huang, P.S. (2001) A new look at IHS-like image fusion methods. Information Fusion 2: 177–186
+
+Vivone, G., Restaino, R., Dalla Mura, M., Licciardi, G., Chanussot, J. (2014) Contrast and Error-Based Fusion Schemes for Multispectral Image Pansharpening. IEEE Geoscience and Remote Sensing Letters 11: 930–934
+
+Vivone, G., Alparone, L., et al. (2015) A Critical Comparison Among Pansharpening Algorithms. IEEE Transactions on Geoscience and Remote Sensing 53: 2565–2586
+
+Yokoya, N., Yairi, T., Iwasaki, A. (2011) Coupled non-negative matrix factorization (CNMF) for hyperspectral and multispectral data fusion: Application to pasture classification. In: 2011 IEEE International Geoscience and Remote Sensing Symposium IEEE, 1779–1782.
+
+Yokoya, N., Grohnfeldt, C., Chanussot, J. (2017) Hyperspectral and Multispectral Data Fusion: A comparative review of the recent literature. IEEE Geoscience and Remote Sensing Magazine 5: 29–56
+
+Zhang, Y., De Backer, S., Scheunders, P. (2009) Noise-Resistant Wavelet-Based Bayesian Fusion of Multispectral and Hyperspectral Images. IEEE Transactions on Geoscience and Remote Sensing 47: 3834–3843
+```
 
 ### Fusion at low resolution
 
-Pour corriger les déformations de surface des échantillons entre les acquisitions (1), il faut recaler les images. Dans le cas d'image de télédétection, cela est plutôt simple grâce au georéférencement des pixels. Dans le cas d'image de laboratoire, le plus simple et de les coréférencer, c'est à dire d'acquérir les images avec plusieurs capteurs simultanément ou avec un délai court entre eux. Dans les autres cas, en laboratoire et sur le terrain, il faut des méthodes pour recaler les images. Pour cela, il existe essentiellement deux familles de méthodes \cite{Nasreddine2010,Bloch2006} :
+To correct surface distortions of the samples between acquisitions (1), the images must be resized. In the case of remote sensing images, this is quite simple thanks to the georeferencing of the pixels. In the case of laboratory images, the simplest way is to co-reference them, i.e. to acquire the images with several sensors simultaneously or with a short delay between them. In other cases, in the laboratory and in the field, methods are needed to registered the images. For this, there are essentially two families of methods (Nasreddine2010, Malandain2006):
 
 <ul>
-<li> La première se base sur les intensités des images et est appelée approche iconique. Pour cela, les méthodes utilisent une distance entre les images et cherchent à la minimiser en la déformant sans tenir compte des structures géométriques mais seulement avec les intensités. Dans le cas d'images multi-capteurs, les intensités peuvent être reliées par une relation mathématique non-linéaire. </li>
-<li> La seconde utilise les caractéristiques des images, comme des courbes, des lignes, des points, on parle d'approche géométrique. Il est possible de le faire manuellement avec des points de repère ou automatiquement avec des algorithmes qui vont les détecter, comme par exemple le Speeded Up Robust Features (SURF) \cite{Bay2006} et le Scale-Invariant Feature Transform (SIFT) \cite{Lowe1999}. Ces algorithmes estiment des descripteurs ou points de contrôle à l'échelle globale de l'image. Des versions locales ont ensuite été développées et sont plus performantes pour tenir compte des variations locales de l'échantillon qui sont souvent différentes des variations globales \cite{CeLiu2011,Brigot2017}. Ces descripteurs 2D ont ensuite été généralisés pour des images 3D \cite{Yi2008,Xu2008}, et plus spécifiquement pour des images hyperspectrales \cite{Al-khafaji2018}. Une fois que les points de contrôle ont été définis, un modèle de déformation est estimé pour minimiser la distance entre ces points. Une image sert de base et l'autre image est donc déformée en conséquence pour être calée spatialement sur la première. </li>
+<li> he first is based on the intensities of the images and is called the iconic approach. For this, the methods use a distance between the images and seek to minimize it by distorting it without taking into account the geometric structures but only with the intensities. In the case of multi-sensor images, the intensities can be linked by a non-linear mathematical relationship. </li>
+<li> The second one uses the characteristics of the images, such as curves, lines, points, we talk about a geometric approach. It is possible to do it manually with reference points or automatically with algorithms that will detect them, such as the Speeded Up Robust Features (SURF, Bay2006) and the Scale-Invariant Feature Transform (SIFT, Lowe1999). These algorithms estimate descriptors or control points at the global image scale. Local versions have then been developed and are more powerful to take into account local variations in the sample which are often different from the global variations (Liu2011, Brigot2017). These 2D descriptors were then generalized for 3D images, and more specifically for hyperspectral images. Once the control points have been defined, a deformation model is estimated to minimize the distance between these points. One image is used as a base and the other image is then deformed accordingly to be spatially aligned with the first one. </li>
 </ul>
 
+```markdown
+Bay, H., Tuytelaars, T., Van Gool, L. (2006) SURF: Speeded Up Robust Features. In: 9th European Conference on Computer Vision Graz, Autriche, Springer, Berlin, Heidelberg, 404–417.
+
+Brigot, G. (2017) Prédire La Structure Des Forêts à Partir d’images PolInSAR Par Apprentissage de Descripteurs LIDAR.
+
+Liu, C., Yuen, J., Torralba, A. (2011) SIFT Flow: Dense Correspondence across Scenes and Its Applications. IEEE Transactions on Pattern Analysis and Machine Intelligence 33: 978–994
+
+Lowe, D.G. (1999) Object recognition from local scale-invariant features. In: Proceedings of the Seventh IEEE International Conference on Computer Vision IEEE, 1150–1157 vol.2.
+
+Malandain, G. (2006) Les Mesures de Similarité Pour Le Recalage Des Images Médicales. Universite de Nice Sophia-Antipolis.
+
+Nasreddine, K. (2010) Recalage de Signaux et Reconnaissance de Formes : Application à l’analyse Des Otolithes de Poissons. Université de Bretagne occidentale - Brest.
+```
+
 ## Signal alignment
+
+Description soon
