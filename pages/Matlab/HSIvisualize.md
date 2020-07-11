@@ -12,6 +12,16 @@ The mandatory data to use this toolbox are a hyperspectral image (M), the corres
   HSI_Visualization repository
 </a>
 
+## Q7/4 vs L* diagram
+
+```markdown
+Debret, M., Sebag, D., Desmet, M., Balsam, W., Copard, Y., Mourier, B., Susperrigui, A.-S., Arnaud, F., Bentaleb, I., Chapron, E., Lallier-Vergès, E., Winiarski, T., 2011. Spectrocolorimetric interpretation of sedimentary dynamics: The new “Q7/4 diagram.” Earth-Science Rev. 109, 1–19. https://doi.org/10.1016/j.earscirev.2011.07.002
+```
+
+## Abberant pixels
+
+## Median and standard deviation spectra
+
 ## Median raw spectra
 
 {% include image.html file="Raw.jpg" %}
