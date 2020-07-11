@@ -7,7 +7,7 @@ sidebar: Matlab_sidebar
 
 # Matlab Toolbox for the creation of regression models
 
-If you use this toolbox, we would appreciate a reference to one of the following papers
+If you use this toolbox:  
 
 <a href="https://github.com/JacqKevin/HSI_PLSR">
   HSI_PLSR repository: with only the PLSR approach.
@@ -18,6 +18,8 @@ or SOON!
 <a href="https://github.com/JacqKevin/HSI_Regression">
   HSI_Regression repository: with many approaches (SLR, MLR, PCR, PLSR, BPNN, PLSR-BPNN, RT, RTE, SVM, CNN, MARS).
 </a>
+
+we would appreciate a reference to one of the following papers:
 
 ```markdown
 Jacq, K., Perrette, Y., et al. (2019) High-resolution prediction of organic matter concentration with hyperspectral imaging on a sediment core. Science of the Total Environment 663: 236–244
