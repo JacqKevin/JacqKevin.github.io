@@ -67,7 +67,7 @@ In the laboratory these three acquisition methods can be used, but in the field 
 
 ### Analysis protocol used in the laboratory
 
-Coming soon
+<iframe src="https://www.protocols.io/widgets/doi?uri=null" style="width: 520px; height: 300px; border: 1px solid transparent;"></iframe>
 
 ```markdown
 Butz, C., Grosjean, M., Fischer, D., Wunderle, S., Tylmann, W., Rein, B. (2015) Hyperspectral imaging spectroscopy: a promising method for the biogeochemical analysis of lake sediments. Journal of Applied Remote Sensing 9: 1–20
