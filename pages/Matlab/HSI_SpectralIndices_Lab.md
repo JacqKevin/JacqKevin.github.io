@@ -77,13 +77,22 @@ Das, B., Vinebrooke, R.D., Sanchez-azofeifa, A., Rivard, B., Wolfe, A.P. (2005) 
 * Chlorophylls Area690-730 
 * Chlorophylls (Area650-700)/R670 
 * Phycocyanin (Area600-630)/R615
+```markdown
+Yacobi, Y.Z., Köhler, J., Leunert, F., Gitelson, A., 2015. Phycocyanin-specific absorption coefficient: Eliminating the effect of chlorophylls absorption. Limnol. Oceanogr. Methods 13, 157–168. https://doi.org/10.1002/lom3.10015
+```
 * Bacteriochlorophyll a RABD846
+```markdown
+Butz, C., Grosjean, M., Fischer, D., Wunderle, S., Tylmann, W., Rein, B., 2015. Hyperspectral imaging spectroscopy: a promising method for the biogeochemical analysis of lake sediments. J. Appl. Remote Sens. 9, 1–20. https://doi.org/10.1117/1.JRS.9.096031
+```
 * Carotenoids RABD510 
 ```markdown
 Rein, B., Sirocko, F. (2002) In-situ reflectance spectroscopy - analysing techniques for high-resolution pigment logging in sediment cores. International Journal of Earth Sciences 91: 950–954
 ```
 * Oxydes d555 
-* Oxydes RABA400-560 
+* Total pigment content RABA400-560 
+```markdown
+Rein, B., Sirocko, F. (2002) In-situ reflectance spectroscopy - analysing techniques for high-resolution pigment logging in sediment cores. International Journal of Earth Sciences 91: 950–954
+```
 * Iron Oxydes R720/R880  
 ```markdown
 Jackisch, R., Lorenz, S., Zimmermann, R., Möckel, R., Gloaguen, R. (2018) Drone-borne hyperspectral monitoring of acid mine drainage: An example from the Sokolov lignite district. Remote Sensing 10: 1–23
