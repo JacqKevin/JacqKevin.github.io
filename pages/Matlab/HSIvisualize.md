@@ -12,6 +12,26 @@ The mandatory data to use this toolbox are a hyperspectral image (M), the corres
   HSI_Visualization repository
 </a>
 
+## Images
+Hyperspectral images can be reduced to 3 channels to create pseudo-RGB or composite or false colour images:
+* VNIR - RGB (Red Green Blue): 640 nm – 545 nm – 460 nm
+* VNIR - CIR (Color InfraRed): 860 nm – 650 nm – 555 nm
+* VNIR - NIR (Near InfraRed): 900 nm – 800 nm – 700 nm
+* SWIR: 2162 nm – 2199 nm – 2349nm 
+```markdown
+Speta, M., Gingras, M.K., Rivard, B., 2016. Shortwave Infrared Hyperspectral Imaging: A Novel Method For Enhancing the Visibility of Sedimentary And Biogenic Features In Oil-Saturated Core. J. Sediment. Res. 86, 830–842. https://doi.org/10.2110/jsr.2016.54
+```
+* SWIR - Hydrocarbon: 1722 nm – 1760 nm – 2311 nm 
+```markdown
+Scafutto, R.D.P.M., de Souza Filho, C.R., Rivard, B., 2016. Characterization of mineral substrates impregnated with crude oils using proximal infrared hyperspectral imaging. Remote Sens. Environ. 179, 116–130. https://doi.org/10.1016/j.rse.2016.03.033
+```
+* SWIR - Hydrocarbon: 1722 nm – 2311 nm – 2349 nm 
+```markdown
+Scafutto, R.D.P.M., de Souza Filho, C.R., Rivard, B., 2016. Characterization of mineral substrates impregnated with crude oils using proximal infrared hyperspectral imaging. Remote Sens. Environ. 179, 116–130. https://doi.org/10.1016/j.rse.2016.03.033
+```
+
+-> examples soon
+
 ## Abberant pixels
 
 {% include image.html file="HSIvisualize_Abberant.jpg" %}
