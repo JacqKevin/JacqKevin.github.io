@@ -30,6 +30,9 @@ Scafutto, R.D.P.M., de Souza Filho, C.R., Rivard, B., 2016. Characterization of 
 Scafutto, R.D.P.M., de Souza Filho, C.R., Rivard, B., 2016. Characterization of mineral substrates impregnated with crude oils using proximal infrared hyperspectral imaging. Remote Sens. Environ. 179, 116–130. https://doi.org/10.1016/j.rse.2016.03.033
 ```
 
+
+{% include image.html file="HSIvisualize_Image.jpg" %}
+
 -> examples soon
 
 ## Abberant pixels
