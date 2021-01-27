@@ -1,0 +1,13 @@
+---
+title: "Publication of Evidence for centennial-scale Mid-Holocene episodes of hypolimnetic anoxia in a high-altitude lake system from central Tian Shan (Kyrgyzstan)"
+permalink: HSI_Pigments_Sorrel.html
+published: true
+date: 2020-12-16
+tags: Publication
+---
+
+Publication of the paper <a href="https://www.sciencedirect.com/science/article/abs/pii/S0277379120307101?dgcid=rss_sd_all">"Evidence for centennial-scale Mid-Holocene episodes of hypolimnetic anoxia in a high-altitude lake system from central Tian Shan (Kyrgyzstan)"</a> in Quaternary Science Reviews. It presents the use of pigment indices estimated by HSI data to infer past climate change.
+
+Abstract:
+
+Few sedimentary archives of lake meromixis are available in palaeolimnological records, because long-term observations are limited in time and indisputable sediment proxies of hypolimnetic anoxia are still scarce. Here we use visible and near infrared (VNIR), and short-wave infra-red (SWIR) hyperspectral imaging combined with geochemical analyses to reconstruct lake stratification history, redox status and mixing conditions in the water column of Lake Son Kol (Kyrgyzstan) in Central Tian Shan during the last 8500 years. In particular, the detection of Bacteriopheophytin a (Bphe a), a pigment produced by anoxygenic phototrophic bacteria at the chemocline of meromictic lakes, emphasizes episodes of multi-decadal to centennial hypolimnetic anoxia in Lake Son Kol. Phases of hypolimnetic anoxia are inferred from the deposition of dark organic sediments within a stratified lake system, which occurred during periods of increased snowmelt (and solid winter precipitation) and warmer spring/summer temperatures that promoted floods and the export of terrestrial material from the catchment. Prolonged euxinic conditions in bottom waters (involving the development of a stable chemocline) are reported around 8500, 8400, 8200–7800, 7700–7500, 7300–7000, 6500–6100, 6000–5700 and 5500–5250 cal yr BP. At ca. 5250 cal yr BP, the chemocline abruptly vanished as Lake Son Kol tipped into a regime with predominantly cooler and well-mixed conditions (predominance of oxygenic phototrophs), coeval with higher lake levels. The disappearance of hypolimnetic anoxia in Lake Son Kol coincides with strengthened wind conditions that imply enhanced lake overturning and upward mixing of nutrients in the water column. This study reveals the strong potential of hyperspectral imaging, in combination with more classical palaeolimnological approaches, to reconstruct the lake trophic and mixing history and explore the controlling mechanisms at work on decadal to centennial timescales. Our results outline how abrupt ecosystem changes may occur even in the absence of anthropogenic climate change.
