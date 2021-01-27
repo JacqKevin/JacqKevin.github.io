@@ -13,6 +13,8 @@ A first approach to extracting information from spectral data is to search for c
 
 Absorption or excitation energies in the ranges presented above are quantified at known energy levels. It is therefore possible to create tables that reference the compounds or chemical bonds associated with these energies or wavelengths. As is the case with medium-infrared spectroscopy, UV-visible fluorescence or X-rays. In some ranges this is complicated to achieve because of the superposition of many properties and the spectral resolution of the sensors, as in near-infrared spectroscopy.
 
+Summaries of the indices used in <a href="https://jacqkevin.github.io/HSI_SpectralIndices_Lab.html">"spectroscopy and hyperctral imaging"</a>, as well as in <a href="https://jacqkevin.github.io/HSI_SpectralIndices_RS.html">"remote sensing"</a> are available on these links.
+
 Caution should be used with these indices, however, as several chemical compounds may interact in the same spectral regions and the spectral resolution may not be fine enough to distinguish these compounds. There are also many indices developed in remote sensing for multispectral data, but which are used very little in laboratory spectroscopy because the information sought is not the same.
 
 These indices are semi-quantitative and can be subsequently calibrated from regression models by estimating a link with a reference analytical method. This is known as simple linear regression (SLR), which estimates a relationship between an explained variable ($y$, analytical) and an explanatory variable ($x$, spectral).
