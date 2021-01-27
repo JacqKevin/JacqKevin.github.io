@@ -6,7 +6,11 @@ permalink: Preprocessing_HSI.html
 
 ## Sensor Normalization
 
-Generally, reflectance of the sample are acquire with HSI. It need to be calibrated with a white and a dark to be defined in percentage of reflectance. This step is called data normalization.
+Generally, reflectance of the sample are acquire with HSI. It need to be calibrated with a white and a dark references to be defined in percentage of reflectance. This step is called data normalization. Black can be done with the shutter closed to record instrumental noise. Whereas white has to be done with a specific material, such as a spectralon.
+
+## Data reduction
+
+In order to reduce the amount of data, it is possible to select a region of interest (ROI), or specific wavelengths, or to keep only part of the pixels or wavelengths (binning).
 
 ## Conversion
 
@@ -37,9 +41,9 @@ Savitzky, A., Golay, M.J.E. (1964) Smoothing and Differentiation of Data by Simp
 ## Spectral normalization
 Second spectral processing can be used to normalized the signal base on the mean and standard deviation of the hyperspectral image. Thus, centering or autoscaling can be chosen by the user.
 
-## Data reduction
+## Data compression
 
-They can be reduced to speed up computation time, this is often done with PCA or MNF to remove redundant and correlated (collinear) variables. Or by selecting discriminating and remove irrelevant or noisy wavelengths for a variable to be predicted with variable selection algorithms. 
+The data can be reduced to speed up computation time, this is often done with PCA or MNF to remove redundant and correlated (collinear) variables. Or by selecting discriminating and remove irrelevant or noisy wavelengths for a variable to be predicted with variable selection algorithms. 
 
 ```markdown
 Pearson, K. (1901) On lines and planes of closest fit to systems of points in space. Philosophical Magazine 2: 559–572
