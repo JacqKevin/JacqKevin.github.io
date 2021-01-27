@@ -1,5 +1,5 @@
 ---
-title: Spectroscopic and Remote Sensing indices
+title: Spectroscopic and Hyperspectral indices
 description: Estimation of several chemical parameters based on literature indices. Some were created from spectroscopic and hyperspectral devices, others from remote sensing (multi- and hyper-spectral sensors).
 permalink: HSI_SpectralIndices_Lab.html
 sidebar: Matlab_sidebar
@@ -65,7 +65,7 @@ Wolfe, A.P., Vinebrooke, R.D., Michelutti, N., Rivard, B., Das, B. (2006) Experi
 ```markdown
 Wolfe, A.P., Vinebrooke, R.D., Michelutti, N., Rivard, B., Das, B. (2006) Experimental calibration of lake-sediment spectral reflectance to chlorophyll a concentrations: methodology and paleolimnological validation. Journal of Paleolimnology 36: 91–100
 ```
-* Chlorophylls Area690-730 
+* Chlorophylls Area590-730 
 ```markdown
 Trachsel, M., Grosjean, M., Schnyder, D., Kamenik, C., Rein, B. (2010) Scanning reflectance spectroscopy (380–730 nm): a novel method for quantitative high-resolution climate reconstructions from minerogenic lake sediments. Journal of Paleolimnology 44: 979–994
 ```
@@ -73,16 +73,25 @@ Trachsel, M., Grosjean, M., Schnyder, D., Kamenik, C., Rein, B. (2010) Scanning 
 ```markdown
 Das, B., Vinebrooke, R.D., Sanchez-azofeifa, A., Rivard, B., Wolfe, A.P. (2005) Inferring sedimentary chlorophyll concentrations with reflectance spectroscopy : a novel approach to reconstructing historical changes in the trophic status of mountain lakes. Canadian Journal of Fisheries and Aquatic Sciences 62: 1067–1078
 ```
-* Chlorophylls Area600-650 
-* Chlorophylls Area690-730 
 * Chlorophylls (Area650-700)/R670 
+```markdown
+Van Exem, A., 2018. Reconstructions de changements environnementaux dans les archives lacustres par imagerie hyperspectrale. HAL. Université de Rouen Normandie.
+
+Sorrel, P., Jacq, K., Van Exem, A., Escarguel, G., Dietre, B., Debret, M., Mcgowan, S., Ducept, J., Gauthier, E., Oberhänsli, H., 2021. Evidence for centennial-scale Mid-Holocene episodes of hypolimnetic anoxia in a high-altitude lake system from central Tian Shan (Kyrgyzstan). Quat. Sci. Rev. 252. 
+```
 * Phycocyanin (Area600-630)/R615
 ```markdown
 Yacobi, Y.Z., Köhler, J., Leunert, F., Gitelson, A., 2015. Phycocyanin-specific absorption coefficient: Eliminating the effect of chlorophylls absorption. Limnol. Oceanogr. Methods 13, 157–168. https://doi.org/10.1002/lom3.10015
+
+Sorrel, P., Jacq, K., Van Exem, A., Escarguel, G., Dietre, B., Debret, M., Mcgowan, S., Ducept, J., Gauthier, E., Oberhänsli, H., 2021. Evidence for centennial-scale Mid-Holocene episodes of hypolimnetic anoxia in a high-altitude lake system from central Tian Shan (Kyrgyzstan). Quat. Sci. Rev. 252. 
 ```
 * Bacteriochlorophyll a RABD846
 ```markdown
 Butz, C., Grosjean, M., Fischer, D., Wunderle, S., Tylmann, W., Rein, B., 2015. Hyperspectral imaging spectroscopy: a promising method for the biogeochemical analysis of lake sediments. J. Appl. Remote Sens. 9, 1–20. https://doi.org/10.1117/1.JRS.9.096031
+```
+* Bacteriochlorophyll a (Area750-900)/R844
+```markdown
+Sorrel, P., Jacq, K., Van Exem, A., Escarguel, G., Dietre, B., Debret, M., Mcgowan, S., Ducept, J., Gauthier, E., Oberhänsli, H., 2021. Evidence for centennial-scale Mid-Holocene episodes of hypolimnetic anoxia in a high-altitude lake system from central Tian Shan (Kyrgyzstan). Quat. Sci. Rev. 252. 
 ```
 * Carotenoids RABD510 
 ```markdown
@@ -92,7 +101,18 @@ Rein, B., Sirocko, F. (2002) In-situ reflectance spectroscopy - analysing techni
 ```markdown
 Rein, B., Sirocko, F. (2002) In-situ reflectance spectroscopy - analysing techniques for high-resolution pigment logging in sediment cores. International Journal of Earth Sciences 91: 950–954
 ```
-* Oxydes d555 
+* Oxydes d555 (Hematite)
+```markdown
+Deaton, B.C., Balsam, W.L., 1991. Visible spectroscopy - a rapid method for determining hematite and goethite concentration in geological materials. J. Sediment. Petrol. 61, 628–632.
+```
+* Oxydes d535 (Goethite)
+```markdown
+Deaton, B.C., Balsam, W.L., 1991. Visible spectroscopy - a rapid method for determining hematite and goethite concentration in geological materials. J. Sediment. Petrol. 61, 628–632.
+```
+* 'Hematite/Goethite d555/d535
+```markdown
+Wu, G., Xu, T., Zhang, X., Zhang, C., Yan, N., 2016. The visible spectroscopy of iron oxide minerals in dust particles from ice cores on the Tibetan Plateau. Tellus, Ser. B Chem. Phys. Meteorol. 68, 1–10.
+```
 * Iron Oxydes R720/R880  
 ```markdown
 Jackisch, R., Lorenz, S., Zimmermann, R., Möckel, R., Gloaguen, R. (2018) Drone-borne hyperspectral monitoring of acid mine drainage: An example from the Sokolov lignite district. Remote Sensing 10: 1–23
@@ -103,6 +123,10 @@ Jackisch, R., Lorenz, S., Zimmermann, R., Möckel, R., Gloaguen, R. (2018) Drone
 * Clay RABA2190-2230 
 * Hydroxyl bonds R1450 
 * Moisture R1935 
+* Moisture R1450/R1300
+```markdown
+Bull, C. R. (1991). Wavelength selection for near-infrared reflectance moisture meters. Journal of Agricultural Engineering Research, 49(C), 113–125.
+``` 
 * R1935/R1450 
 * Normalized Differenced Gypsum Ratio (NDGI) 
 ```markdown
@@ -119,4 +143,28 @@ Doublier, M.P., Roache, T., Potel, S. (2010) Short-wavelength infrared spectrosc
 * Kaolinite Crystallinity Index (KCI) 
 ```markdown
 Alonso de Linaje, V., Khan, S.D. (2017) Mapping of diagenetic processes in sandstones using imaging spectroscopy: A case study of the Utrillas Formation, Burgos, Spain. Sedimentary Geology 353: 114–124
+```
+* TBC IND2274
+```markdown
+Rivard, B., Lyder, D., Feng, J., Gallie, A., Cloutis, E., Dougan, P., Gonzalez, S., Cox, D., Lipsett, M.G., 2010. Bitumen content estimation of Athabasca oil sand from broad band infrared reflectance spectra. Can. J. Chem. Eng. 88, 830–838.
+```
+* TBC IND1754
+```markdown
+Rivard, B., Lyder, D., Feng, J., Gallie, A., Cloutis, E., Dougan, P., Gonzalez, S., Cox, D., Lipsett, M.G., 2010. Bitumen content estimation of Athabasca oil sand from broad band infrared reflectance spectra. Can. J. Chem. Eng. 88, 830–838.
+```
+* TBC Ratio2396
+```markdown
+Rivard, B., Lyder, D., Feng, J., Gallie, A., Cloutis, E., Dougan, P., Gonzalez, S., Cox, D., Lipsett, M.G., 2010. Bitumen content estimation of Athabasca oil sand from broad band infrared reflectance spectra. Can. J. Chem. Eng. 88, 830–838.
+```
+* TBC MLR1
+```markdown
+Rivard, B., Lyder, D., Feng, J., Gallie, A., Cloutis, E., Dougan, P., Gonzalez, S., Cox, D., Lipsett, M.G., 2010. Bitumen content estimation of Athabasca oil sand from broad band infrared reflectance spectra. Can. J. Chem. Eng. 88, 830–838.
+```
+* TBC MLR2
+```markdown
+Rivard, B., Lyder, D., Feng, J., Gallie, A., Cloutis, E., Dougan, P., Gonzalez, S., Cox, D., Lipsett, M.G., 2010. Bitumen content estimation of Athabasca oil sand from broad band infrared reflectance spectra. Can. J. Chem. Eng. 88, 830–838.
+```
+* Aromatic Organic Matter
+```markdown
+Sorrel, P., Jacq, K., Van Exem, A., Escarguel, G., Dietre, B., Debret, M., Mcgowan, S., Ducept, J., Gauthier, E., Oberhänsli, H., 2021. Evidence for centennial-scale Mid-Holocene episodes of hypolimnetic anoxia in a high-altitude lake system from central Tian Shan (Kyrgyzstan). Quat. Sci. Rev. 252.
 ```
