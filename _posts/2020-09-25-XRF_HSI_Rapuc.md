@@ -6,7 +6,7 @@ date: 2020-09-25
 tags: Publication
 ---
 
-Publication of the paper <a href="https://www.sciencedirect.com/science/article/abs/pii/S0037073820301913">"HXRF and hyperspectral analyses as an automatic way to detect flood events in sediment cores"</a> in Sedimentary Geology. It presents the combination of XRF and HSI data to discriminate instantaneous event types.
+Publication of the paper <a href="https://www.sciencedirect.com/science/article/abs/pii/S0037073820301913">"XRF and hyperspectral analyses as an automatic way to detect flood events in sediment cores"</a> in Sedimentary Geology. It presents the combination of XRF and HSI data to discriminate instantaneous event types.
 
 Abstract:
 
