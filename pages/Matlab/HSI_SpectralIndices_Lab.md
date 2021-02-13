@@ -76,13 +76,11 @@ Das, B., Vinebrooke, R.D., Sanchez-azofeifa, A., Rivard, B., Wolfe, A.P. (2005) 
 * Chlorophylls (Area650-700)/R670 
 ```markdown
 Van Exem, A., 2018. Reconstructions de changements environnementaux dans les archives lacustres par imagerie hyperspectrale. HAL. Université de Rouen Normandie.
-
 Sorrel, P., Jacq, K., Van Exem, A., Escarguel, G., Dietre, B., Debret, M., Mcgowan, S., Ducept, J., Gauthier, E., Oberhänsli, H., 2021. Evidence for centennial-scale Mid-Holocene episodes of hypolimnetic anoxia in a high-altitude lake system from central Tian Shan (Kyrgyzstan). Quat. Sci. Rev. 252. 
 ```
 * Phycocyanin (Area600-630)/R615
 ```markdown
 Yacobi, Y.Z., Köhler, J., Leunert, F., Gitelson, A., 2015. Phycocyanin-specific absorption coefficient: Eliminating the effect of chlorophylls absorption. Limnol. Oceanogr. Methods 13, 157–168. https://doi.org/10.1002/lom3.10015
-
 Sorrel, P., Jacq, K., Van Exem, A., Escarguel, G., Dietre, B., Debret, M., Mcgowan, S., Ducept, J., Gauthier, E., Oberhänsli, H., 2021. Evidence for centennial-scale Mid-Holocene episodes of hypolimnetic anoxia in a high-altitude lake system from central Tian Shan (Kyrgyzstan). Quat. Sci. Rev. 252. 
 ```
 * Bacteriochlorophyll a RABD846
