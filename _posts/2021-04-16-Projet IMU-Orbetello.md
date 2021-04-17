@@ -1,9 +1,9 @@
 ---
-title: "Co-évolution d’une ville et de sa lagune : avancées du projet IMU-Orbetello"
+title: "Co-evolution of a city and its lagoon: progress of the IMU-Orbetello project"
 permalink: Projet_IMU_Orbetello.html
 published: true
 date: 2021-04-16
-tags: Publication
+tags: Collaborations
 ---
 
 In collaboration with the Archéorient laboratory, samples from the Orbetello lagoon in Italy were analyzed by hyperspectral imaging. A synthesis of the progress of the work on these samples is available <a href="https://archeorient.hypotheses.org/15957">"here"</a>.
