@@ -1,5 +1,5 @@
 ---
-title: "Publication of "A method for highlighting differences between bacteria grown on nutrient agar using near infrared spectroscopy and principal component analysis")"
+title: "Publication of A method for highlighting differences between bacteria grown on nutrient agar using near infrared spectroscopy and principal component analysis"
 permalink: Bacteria_Treguier.html
 published: true
 date: 2021-05-11
